@@ -1,0 +1,4114 @@
+export const GEARS = {
+  "Character": [
+    {
+      "name": "Jonah",
+      "foundIn": "Tour 1",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a0/Jonah.png/revision/latest?cb=20200119155809",
+      "upgrade": {
+        "Cards": [
+          "Starter",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "20",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "/",
+          "400",
+          "1.4k",
+          "3.2k",
+          "6k",
+          "11k",
+          "17.2k",
+          "26k",
+          "36k",
+          "52k",
+          "66k"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          0,
+          15,
+          16
+        ],
+        "Stamina": [
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          6,
+          7,
+          8,
+          9,
+          9
+        ],
+        "Serve": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          12
+        ],
+        "Volley": [
+          2,
+          3,
+          3,
+          4,
+          5,
+          5,
+          6,
+          7,
+          8,
+          8,
+          9
+        ],
+        "Forehand": [
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "Backhand": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "name": "Hope",
+      "foundIn": "Tour 2",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/18/Hope.png/revision/latest?cb=20200119155826",
+      "upgrade": {
+        "Cards": [
+          "Starter",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "40",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "/",
+          "400",
+          "1.4k",
+          "3.2k",
+          "6k",
+          "11k",
+          "17.2k",
+          "26k",
+          "36k",
+          "52k",
+          "66k"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          4,
+          5,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          16,
+          0,
+          20
+        ],
+        "Stamina": [
+          3,
+          4,
+          4,
+          5,
+          6,
+          7,
+          8,
+          8,
+          9,
+          10,
+          11
+        ],
+        "Serve": [
+          3,
+          3,
+          4,
+          5,
+          6,
+          7,
+          7,
+          8,
+          9,
+          10,
+          10
+        ],
+        "Volley": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          10,
+          11,
+          12
+        ],
+        "Forehand": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          11,
+          12
+        ],
+        "Backhand": [
+          3,
+          4,
+          5,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "name": "Florence",
+      "foundIn": "Tour 3",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/d9/Florence.png/revision/latest?cb=20200119155922",
+      "upgrade": {
+        "Cards": [
+          "Starter",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "30",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "/",
+          "1.4k",
+          "3.2k",
+          "6k",
+          "11k",
+          "17.2k",
+          "26k",
+          "36k",
+          "52k",
+          "66k",
+          "110k"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          0,
+          0,
+          25
+        ],
+        "Stamina": [
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          0,
+          0,
+          19
+        ],
+        "Serve": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          0,
+          0,
+          6
+        ],
+        "Volley": [
+          2,
+          2,
+          3,
+          3,
+          4,
+          5,
+          5,
+          6,
+          0,
+          0,
+          8
+        ],
+        "Forehand": [
+          3,
+          3,
+          4,
+          5,
+          6,
+          6,
+          7,
+          8,
+          0,
+          0,
+          10
+        ],
+        "Backhand": [
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          7,
+          7,
+          0,
+          0,
+          10
+        ]
+      }
+    },
+    {
+      "name": "Leo",
+      "foundIn": "Tour 4",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1d/Leo.png/revision/latest?cb=20200119154813",
+      "upgrade": {
+        "Cards": [
+          "Starter",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "20",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "/",
+          "6k",
+          "11k",
+          "17.2k",
+          "26k",
+          "36k",
+          "52k",
+          "66k",
+          "86k",
+          "110k",
+          "180k"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          4,
+          5,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15,
+          16,
+          18,
+          20
+        ],
+        "Stamina": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          6,
+          6,
+          7
+        ],
+        "Serve": [
+          5,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "Volley": [
+          5,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          17
+        ],
+        "Forehand": [
+          3,
+          4,
+          5,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          10,
+          11
+        ],
+        "Backhand": [
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          7,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "name": "Kaito",
+      "foundIn": "Tour 5",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/92/Kaito.png/revision/latest?cb=20200119155948",
+      "upgrade": {
+        "Cards": [
+          "",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "20",
+          "",
+          "30",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "",
+          "6k",
+          "11k",
+          "17.2k",
+          "26k",
+          "36k",
+          "52k",
+          "66k",
+          "86k",
+          "110k",
+          "140k",
+          "180k",
+          "250k"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          25,
+          27,
+          29
+        ],
+        "Stamina": [
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          18,
+          19,
+          20,
+          21
+        ],
+        "Serve": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          6,
+          7,
+          7
+        ],
+        "Volley": [
+          2,
+          3,
+          3,
+          4,
+          5,
+          5,
+          6,
+          7,
+          7,
+          8,
+          9,
+          10,
+          10
+        ],
+        "Forehand": [
+          3,
+          3,
+          4,
+          5,
+          6,
+          6,
+          7,
+          8,
+          9,
+          9,
+          10,
+          11,
+          12
+        ],
+        "Backhand": [
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          7,
+          7,
+          8,
+          9,
+          10,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "name": "Viktoria",
+      "foundIn": "Tour 6",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/29/Viktoria.png/revision/latest?cb=20200119160110",
+      "upgrade": {
+        "Cards": [
+          "L",
+          "2",
+          "3",
+          "",
+          "",
+          "4",
+          "5",
+          "8",
+          "10",
+          "30",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "/",
+          "17.2k",
+          "26k",
+          "36k",
+          "52k",
+          "66k",
+          "86k",
+          "110k",
+          "140k",
+          "180k",
+          "210k",
+          "250k",
+          "440k"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          19
+        ],
+        "Stamina": [
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          6,
+          7,
+          8,
+          9,
+          9,
+          10,
+          11
+        ],
+        "Serve": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          12,
+          13,
+          14
+        ],
+        "Volley": [
+          2,
+          3,
+          3,
+          4,
+          5,
+          5,
+          6,
+          7,
+          8,
+          8,
+          9,
+          10,
+          10
+        ],
+        "Forehand": [
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          19
+        ],
+        "Backhand": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      }
+    },
+    {
+      "name": "Diana",
+      "foundIn": "Tour 7",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/5f/Diana.png/revision/latest?cb=20200119155840",
+      "upgrade": {
+        "Cards": [
+          "2",
+          "L",
+          "L",
+          "2",
+          "3",
+          "4",
+          "5",
+          "40",
+          "10",
+          "30",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "52k",
+          "/",
+          "/",
+          "86k",
+          "110k",
+          "140k",
+          "180k",
+          "250k",
+          "250k",
+          "280k",
+          "360k",
+          "440k",
+          "700k"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          4,
+          6,
+          8,
+          7,
+          11,
+          13,
+          0,
+          16,
+          17,
+          19,
+          21,
+          22,
+          24
+        ],
+        "Stamina": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          6
+        ],
+        "Serve": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "Volley": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          19,
+          20
+        ],
+        "Forehand": [
+          3,
+          3,
+          4,
+          5,
+          6,
+          7,
+          7,
+          8,
+          9,
+          10,
+          10,
+          11,
+          12
+        ],
+        "Backhand": [
+          3,
+          3,
+          4,
+          5,
+          6,
+          6,
+          7,
+          8,
+          9,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "name": "Mei-Li",
+      "foundIn": "Tour 8",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/58/Mei-Li.png/revision/latest?cb=20200129205010",
+      "upgrade": {
+        "Cards": [
+          "",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "140k",
+          "180k",
+          "210k",
+          "250k",
+          "280k",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          4,
+          5,
+          7,
+          9,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          21,
+          23
+        ],
+        "Stamina": [
+          3,
+          4,
+          4,
+          5,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          12
+        ],
+        "Serve": [
+          3,
+          3,
+          4,
+          5,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          12
+        ],
+        "Volley": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          14
+        ],
+        "Forehand": [
+          4,
+          4,
+          5,
+          6,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          14
+        ],
+        "Backhand": [
+          3,
+          4,
+          5,
+          5,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "name": "Luc",
+      "foundIn": "Tour 9",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/bc/Luc.png/revision/latest?cb=20200319135439",
+      "upgrade": {
+        "Cards": [
+          "L",
+          "L",
+          "L",
+          "2",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "/",
+          "/",
+          "/",
+          "210000",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          3,
+          0,
+          4,
+          6,
+          0,
+          8,
+          12,
+          0,
+          15,
+          16,
+          18,
+          0,
+          21
+        ],
+        "Stamina": [
+          2,
+          0,
+          3,
+          4,
+          0,
+          5,
+          5,
+          0,
+          7,
+          7,
+          8,
+          0,
+          9
+        ],
+        "Serve": [
+          4,
+          0,
+          6,
+          7,
+          0,
+          9,
+          10,
+          0,
+          11,
+          12,
+          13,
+          0,
+          15
+        ],
+        "Volley": [
+          2,
+          0,
+          3,
+          4,
+          0,
+          5,
+          6,
+          0,
+          7,
+          8,
+          8,
+          0,
+          9
+        ],
+        "Forehand": [
+          5,
+          0,
+          7,
+          8,
+          0,
+          11,
+          12,
+          0,
+          14,
+          15,
+          16,
+          0,
+          19
+        ],
+        "Backhand": [
+          4,
+          0,
+          5,
+          6,
+          0,
+          8,
+          9,
+          0,
+          11,
+          12,
+          13,
+          0,
+          15
+        ]
+      }
+    }
+  ],
+  "Racket": [
+    {
+      "name": "The Bullseye",
+      "foundIn": "Tour 7",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ae/The_Bullseye.png/revision/latest?cb=20200119172849",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "",
+          "",
+          "20",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "183.4k",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Forehand": [
+          0,
+          0,
+          0,
+          15,
+          0,
+          0,
+          27,
+          29,
+          32,
+          0,
+          0,
+          0,
+          43
+        ]
+      }
+    },
+    {
+      "name": "The Eagle",
+      "foundIn": "Tour 1 and above",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/18/The_Eagle.png/revision/latest?cb=20200119160844",
+      "upgrade": {
+        "Cards": [
+          "L",
+          "2",
+          "10",
+          "",
+          "20",
+          "50",
+          "150",
+          "400",
+          "800",
+          "1000",
+          "2000"
+        ],
+        "Price": [
+          "",
+          "600",
+          "1.4k",
+          "",
+          "2.5k",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          5
+        ],
+        "Forehand": [
+          3,
+          4,
+          6,
+          9,
+          13,
+          16,
+          20,
+          23,
+          25,
+          27,
+          30
+        ]
+      }
+    },
+    {
+      "name": "The Hammer",
+      "foundIn": "Tour 6",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3a/The_Hammer.png/revision/latest?cb=20200119171931",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "",
+          "3",
+          "9",
+          "60",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "45.9K",
+          "58.4K",
+          "",
+          "87.5k",
+          "104.2k",
+          "116.7k",
+          "150k",
+          "183.4k",
+          "216.7k"
+        ]
+      },
+      "skills": {
+        "Backhand": [
+          0,
+          0,
+          0,
+          6,
+          7,
+          7,
+          7,
+          7,
+          8,
+          9,
+          9,
+          10,
+          10
+        ],
+        "Forehand": [
+          0,
+          0,
+          0,
+          12,
+          15,
+          19,
+          23,
+          26,
+          28,
+          31,
+          33,
+          36,
+          38
+        ]
+      }
+    },
+    {
+      "name": "The Outback",
+      "foundIn": "Tour 3 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a1/The_Outback.png/revision/latest?cb=20200119163206",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "30",
+          "60",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Backhand": [
+          0,
+          0,
+          0,
+          8,
+          9,
+          9,
+          9,
+          10,
+          0,
+          0,
+          12
+        ],
+        "Forehand": [
+          0,
+          0,
+          0,
+          5,
+          8,
+          12,
+          16,
+          18,
+          0,
+          0,
+          24
+        ]
+      }
+    },
+    {
+      "name": "The Panther",
+      "foundIn": "Tour 4 and above",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/27/The_Panther.png/revision/latest?cb=20200119163628",
+      "upgrade": {
+        "Cards": [
+          "L",
+          "L",
+          "UL",
+          "2",
+          "4",
+          "10",
+          "30",
+          "60",
+          "150",
+          "400",
+          "800"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "45.9k",
+          "58.4k",
+          "75k",
+          "104.2k"
+        ]
+      },
+      "skills": {
+        "Forehand": [
+          0,
+          0,
+          11,
+          14,
+          18,
+          23,
+          26,
+          28,
+          31,
+          34,
+          36
+        ]
+      }
+    },
+    {
+      "name": "The Patriot",
+      "foundIn": "Tour 2 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/88/The_Patriot.png/revision/latest?cb=20200119170819",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "30",
+          "60",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Backhand": [
+          0,
+          0,
+          0,
+          6,
+          6,
+          6,
+          6,
+          7,
+          0,
+          8,
+          8
+        ],
+        "Forehand": [
+          0,
+          0,
+          0,
+          11,
+          15,
+          19,
+          23,
+          25,
+          0,
+          30,
+          33
+        ]
+      }
+    },
+    {
+      "name": "The Samurai",
+      "foundIn": "Tour 5 and above",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/4b/The_Samurai.png/revision/latest?cb=20200119164010",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "20",
+          "50",
+          "100",
+          "200",
+          "400",
+          "800",
+          "1k"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "49.5k",
+          "58.4k",
+          "75k",
+          "87.5k",
+          "",
+          "183.4K"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          0,
+          0,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          6,
+          6
+        ],
+        "Forehand": [
+          0,
+          0,
+          6,
+          9,
+          12,
+          16,
+          20,
+          22,
+          24,
+          27,
+          29,
+          31,
+          33
+        ]
+      }
+    },
+    {
+      "name": "Zeus",
+      "foundIn": "Tour 8",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3c/Zeus.png/revision/latest?cb=20200119174426",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "10",
+          "",
+          "",
+          "50",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "210k",
+          "",
+          "",
+          "250k",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          0,
+          0,
+          7,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13
+        ],
+        "Forehand": [
+          0,
+          0,
+          2,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          28
+        ]
+      }
+    }
+  ],
+  "Grip": [
+    {
+      "name": "Tactical Grip",
+      "foundIn": "Tour 7",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/99/Tactical_Grip.png/revision/latest?cb=20200119183439",
+      "upgrade": {
+        "Cards": [
+          "",
+          "2",
+          "4",
+          "10",
+          "20",
+          "50",
+          "60",
+          "120",
+          "400",
+          "500",
+          "1000",
+          "2000",
+          "4000"
+        ],
+        "Price": [
+          "",
+          "58.4k",
+          "75k",
+          "87.5k",
+          "104.2k",
+          "116.7k",
+          "",
+          "",
+          "216.7k",
+          "250k",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Volley": [
+          8,
+          9,
+          10,
+          11,
+          11,
+          11,
+          0,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "Backhand": [
+          0,
+          1,
+          2,
+          5,
+          8,
+          12,
+          0,
+          18,
+          20,
+          22,
+          24,
+          26,
+          28
+        ]
+      }
+    },
+    {
+      "name": "The Cobra",
+      "foundIn": "Tour 4 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/f/f1/The_Cobra.png/revision/latest?cb=20200119165513",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "9",
+          "30",
+          "60",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "45.9k",
+          "58.4k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Forehand": [
+          0,
+          0,
+          0,
+          8,
+          9,
+          9,
+          9,
+          10,
+          0,
+          0,
+          12
+        ],
+        "Backhand": [
+          0,
+          0,
+          0,
+          5,
+          8,
+          12,
+          16,
+          18,
+          0,
+          0,
+          24
+        ]
+      }
+    },
+    {
+      "name": "The Forge",
+      "foundIn": "Tour 6 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/86/The_Forge.png/revision/latest?cb=20200119183013",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "",
+          "",
+          "40",
+          "60",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "45.9k",
+          "58.4k",
+          "",
+          "87.5k",
+          "104.2k",
+          "116.7k",
+          "150k",
+          "183.4k",
+          "216.7k"
+        ]
+      },
+      "skills": {
+        "Forehand": [
+          0,
+          0,
+          0,
+          6,
+          7,
+          7,
+          7,
+          7,
+          8,
+          9,
+          9,
+          10,
+          10
+        ],
+        "Backhand": [
+          0,
+          0,
+          0,
+          12,
+          15,
+          19,
+          23,
+          26,
+          28,
+          31,
+          33,
+          36,
+          38
+        ]
+      }
+    },
+    {
+      "name": "The Katana",
+      "foundIn": "Tour 5 and above",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/7b/The_Katana.png/revision/latest?cb=20200119180752",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "2",
+          "",
+          "10",
+          "20",
+          "50",
+          "60",
+          "120",
+          "240",
+          "800",
+          "1k"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "15k",
+          "",
+          "27.5k",
+          "35.9k",
+          "45.9k",
+          "58.4k",
+          "75.0k",
+          "87.5k",
+          "104.2k",
+          "116,7k"
+        ]
+      },
+      "skills": {
+        "Volley": [
+          0,
+          0,
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          6,
+          7,
+          7,
+          8,
+          8
+        ],
+        "Backhand": [
+          0,
+          0,
+          6,
+          9,
+          12,
+          16,
+          20,
+          22,
+          24,
+          27,
+          29,
+          31,
+          33
+        ]
+      }
+    },
+    {
+      "name": "The Machete",
+      "foundIn": "Tour 3 and above",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/df/The_Machete.png/revision/latest?cb=20200119181219",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "30",
+          "60",
+          "150",
+          "400",
+          "800"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "45.9k",
+          "75k"
+        ]
+      },
+      "skills": {
+        "Backhand": [
+          0,
+          0,
+          11,
+          14,
+          18,
+          22,
+          26,
+          28,
+          31,
+          34,
+          36
+        ]
+      }
+    },
+    {
+      "name": "The Talon",
+      "foundIn": "Tour 2 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/c/c2/The_Talon.png/revision/latest?cb=20200119181315",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "30",
+          "60",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Forehand": [
+          0,
+          0,
+          0,
+          6,
+          6,
+          6,
+          6,
+          7,
+          0,
+          0,
+          8
+        ],
+        "Backhand": [
+          0,
+          0,
+          0,
+          11,
+          15,
+          19,
+          23,
+          25,
+          0,
+          0,
+          33
+        ]
+      }
+    },
+    {
+      "name": "The Titan",
+      "foundIn": "Tour 8",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/71/The_Titan.png/revision/latest?cb=20200119182008",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "20",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "380k",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Backhand": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27,
+          0,
+          32,
+          0,
+          0,
+          0,
+          43
+        ]
+      }
+    },
+    {
+      "name": "The Warrior",
+      "foundIn": "Tour 1 and above",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/dd/The_Warrior.png/revision/latest?cb=20200119181657",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "10",
+          "20",
+          "50",
+          "150",
+          "400",
+          "800",
+          "1000",
+          "2000"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "1.4k",
+          "2.5k",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k"
+        ]
+      },
+      "skills": {
+        "Volley": [
+          0,
+          0,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          7
+        ],
+        "Backhand": [
+          0,
+          0,
+          6,
+          9,
+          13,
+          16,
+          20,
+          23,
+          25,
+          27,
+          30
+        ]
+      }
+    }
+  ],
+  "Shoe": [
+    {
+      "name": "The Anvil",
+      "foundIn": "Tour 6",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a8/The_Anvil.png/revision/latest?cb=20200119193426",
+      "upgrade": {
+        "Carte": [
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "20",
+          "50",
+          "60",
+          "120",
+          "400",
+          "800",
+          "1k"
+        ],
+        "Prezzo": [
+          "",
+          "",
+          "",
+          "35.9k",
+          "45.9k",
+          "58.4k",
+          "75k",
+          "87.5k",
+          "104.2k",
+          "116.7k",
+          "150k",
+          "183.4k",
+          "216.7k"
+        ]
+      },
+      "skills": {
+        "Stamina": [
+          0,
+          0,
+          6,
+          6,
+          6,
+          7,
+          7,
+          7,
+          8,
+          8,
+          9,
+          10,
+          10
+        ],
+        "Agility": [
+          0,
+          0,
+          9,
+          13,
+          18,
+          23,
+          29,
+          32,
+          36,
+          40,
+          43,
+          47,
+          51
+        ]
+      }
+    },
+    {
+      "name": "The Ballistic",
+      "foundIn": "Tour 7 and above",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/b7/The_Balistic.png/revision/latest?cb=20200119193138",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "2",
+          "",
+          "10",
+          "20",
+          "50",
+          "60",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "87.5k",
+          "",
+          "116.7k",
+          "150k",
+          "183.4k",
+          "216.7k",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Serve": [
+          null,
+          null,
+          5,
+          5,
+          5,
+          6,
+          6,
+          6,
+          7,
+          0,
+          7,
+          8,
+          8
+        ],
+        "Agility": [
+          null,
+          null,
+          9,
+          13,
+          18,
+          23,
+          29,
+          32,
+          36,
+          0,
+          43,
+          47,
+          51
+        ]
+      }
+    },
+    {
+      "name": "The Feather",
+      "foundIn": "Tour 1 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/19/The_Feather.png/revision/latest?cb=20200119192517",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "30",
+          "60",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "2.5k",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          0,
+          0,
+          0,
+          18,
+          23,
+          28,
+          34,
+          38,
+          0,
+          0,
+          50
+        ]
+      }
+    },
+    {
+      "name": "The Hades Treads",
+      "foundIn": "Tour 8",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/f/f4/Hades_Treads.png/revision/latest?cb=20200119193746",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "-",
+          "3",
+          "9",
+          "20",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "380k",
+          "450k",
+          "510k",
+          "560k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          0,
+          0,
+          0,
+          19,
+          24,
+          0,
+          0,
+          39,
+          43,
+          47,
+          51,
+          55,
+          60
+        ]
+      }
+    },
+    {
+      "name": "The Hunter",
+      "foundIn": "Tour 3 and above",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1b/The_Hunter.png/revision/latest?cb=20200119192607",
+      "upgrade": {
+        "Cards": [
+          "",
+          "3",
+          "4",
+          "10",
+          "20",
+          "50",
+          "150",
+          "400",
+          "800",
+          "1k",
+          "2k"
+        ],
+        "Price": [
+          "",
+          "2.5k",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "45.9k",
+          "75k"
+        ]
+      },
+      "skills": {
+        "Serve": [
+          3,
+          4,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          7
+        ],
+        "Agility": [
+          3,
+          6,
+          9,
+          14,
+          19,
+          24,
+          29,
+          33,
+          36,
+          40,
+          44
+        ]
+      }
+    },
+    {
+      "name": "The Piranha",
+      "foundIn": "Tour 4 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/69/The_Piranha.png/revision/latest?cb=20200119192707",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "30",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "45.9k",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Stamina": [
+          0,
+          0,
+          0,
+          12,
+          13,
+          14,
+          14,
+          15,
+          0,
+          0,
+          18
+        ],
+        "Agility": [
+          0,
+          0,
+          0,
+          10,
+          15,
+          20,
+          25,
+          28,
+          0,
+          0,
+          39
+        ]
+      }
+    },
+    {
+      "name": "The Raptor",
+      "foundIn": "Tour 2 and above",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/33/The_Raptor.png/revision/latest?cb=20200119194149",
+      "upgrade": {
+        "Cards": [
+          "",
+          "2",
+          "4",
+          "10",
+          "20",
+          "50",
+          "150",
+          "400",
+          "",
+          "1k",
+          "2k"
+        ],
+        "Price": [
+          "-",
+          "0.6k",
+          "",
+          "2.5k",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "45.9k"
+        ]
+      },
+      "skills": {
+        "Stamina": [
+          4,
+          4,
+          5,
+          5,
+          6,
+          6,
+          6,
+          7,
+          7,
+          8,
+          8
+        ],
+        "Agility": [
+          3,
+          6,
+          9,
+          14,
+          19,
+          24,
+          29,
+          33,
+          36,
+          40,
+          44
+        ]
+      }
+    },
+    {
+      "name": "The Shuriken",
+      "foundIn": "Tour 5 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/42/The_Shuriken.png/revision/latest?cb=20200119193927",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "5",
+          "10",
+          "20",
+          "40",
+          "60",
+          "100",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "45.9k",
+          "58.4k",
+          "75k",
+          "87.5k",
+          "104k",
+          "116.7k"
+        ]
+      },
+      "skills": {
+        "Serve": [
+          0,
+          0,
+          0,
+          11,
+          11,
+          12,
+          12,
+          13,
+          14,
+          15,
+          15,
+          16,
+          17
+        ],
+        "Agility": [
+          0,
+          0,
+          0,
+          10,
+          15,
+          20,
+          25,
+          28,
+          32,
+          35,
+          39,
+          42,
+          45
+        ]
+      }
+    }
+  ],
+  "Wristband": [
+    {
+      "name": "Jolly Roger",
+      "foundIn": "Tour 3 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/8f/Jolly_Roger.png/revision/latest?cb=20200119212854",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "30",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Serve": [
+          0,
+          0,
+          0,
+          11,
+          11,
+          12,
+          12,
+          13,
+          0,
+          0,
+          15
+        ],
+        "Volley": [
+          0,
+          0,
+          0,
+          1,
+          5,
+          9,
+          13,
+          15,
+          0,
+          0,
+          21
+        ]
+      }
+    },
+    {
+      "name": "The Gladiator",
+      "foundIn": "Tour 7 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/98/The_Gladiator.png/revision/latest?cb=20200119213722",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "",
+          "",
+          "3",
+          "9",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "104.2k",
+          "",
+          "",
+          "183.4k",
+          "216.7k",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Volley": [
+          0,
+          0,
+          0,
+          13,
+          18,
+          0,
+          26,
+          29,
+          32,
+          35,
+          38,
+          41,
+          44
+        ]
+      }
+    },
+    {
+      "name": "The Kodiak",
+      "foundIn": "Tour 6 and above",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/26/The_Kodiak.png/revision/latest?cb=20200119213602",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "2",
+          "",
+          "3",
+          "20",
+          "20",
+          "60",
+          "120",
+          "240",
+          "500",
+          "1000"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "35.9K",
+          "",
+          "58.4k",
+          "75k",
+          "87.5k",
+          "104k",
+          "116.7k",
+          "150k",
+          "183.4k",
+          "291.7k"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          0,
+          0,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          6,
+          6
+        ],
+        "Volley": [
+          0,
+          0,
+          2,
+          6,
+          10,
+          14,
+          18,
+          21,
+          23,
+          25,
+          28,
+          30,
+          32
+        ]
+      }
+    },
+    {
+      "name": "The Koi",
+      "foundIn": "Tour 5 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/0/0a/The_Koi.png/revision/latest?cb=20200119213437",
+      "upgrade": {
+        "Cards": [
+          "L",
+          "L",
+          "L",
+          "",
+          "2",
+          "",
+          "",
+          "",
+          "",
+          "60",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "L",
+          "L",
+          "L",
+          "",
+          "21.7k",
+          "35.9k",
+          "49.5k",
+          "58.4k",
+          "75k",
+          "75k",
+          "104k",
+          "116.7k",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          null,
+          null,
+          null,
+          8,
+          8,
+          8,
+          8,
+          9,
+          10,
+          10,
+          11,
+          12,
+          13
+        ],
+        "Volley": [
+          null,
+          null,
+          null,
+          1,
+          5,
+          9,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25
+        ]
+      }
+    },
+    {
+      "name": "The Macaw",
+      "foundIn": "Tour 4 and above",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/6b/The_Macaw.png/revision/latest?cb=20200119213314",
+      "upgrade": {
+        "Cards": [
+          "L",
+          "2",
+          "4",
+          "10",
+          "20",
+          "50",
+          "150",
+          "400",
+          "800",
+          "1000",
+          "2000"
+        ],
+        "Price": [
+          "L",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "45.9k",
+          "58.4k",
+          "75k",
+          "104.2k"
+        ]
+      },
+      "skills": {
+        "Serve": [
+          3,
+          4,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          7
+        ],
+        "Volley": [
+          0,
+          1,
+          3,
+          6,
+          10,
+          14,
+          19,
+          21,
+          24,
+          26,
+          28
+        ]
+      }
+    },
+    {
+      "name": "The Rocket",
+      "foundIn": "Tour 2 and above",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/af/The_Rocket.png/revision/latest?cb=20200119213210",
+      "upgrade": {
+        "Cards": [
+          "",
+          "2",
+          "",
+          "10",
+          "20",
+          "50",
+          "150",
+          "400",
+          "800",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "600",
+          "",
+          "2.5k",
+          "4.6k",
+          "7.2k",
+          "10.9K",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "45.9k"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          0,
+          0,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          5
+        ],
+        "Volley": [
+          0,
+          0,
+          3,
+          6,
+          10,
+          14,
+          19,
+          21,
+          24,
+          26,
+          28
+        ]
+      }
+    },
+    {
+      "name": "The Shield",
+      "foundIn": "Tour 8",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3b/The_Shield.png/revision/latest?cb=20200119214118",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "20",
+          "50",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "300k",
+          "380k",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Serve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          6,
+          0,
+          0,
+          7,
+          0,
+          0,
+          8
+        ],
+        "Volley": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          18,
+          0,
+          0,
+          25,
+          0,
+          0,
+          32
+        ]
+      }
+    },
+    {
+      "name": "The Tomahawk",
+      "foundIn": "Tour 1 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/22/The_Tomahawk.png/revision/latest?cb=20200119213054",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "4",
+          "10",
+          "20",
+          "60",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Volley": [
+          0,
+          0,
+          0,
+          12,
+          16,
+          21,
+          25,
+          28,
+          31,
+          0,
+          37
+        ]
+      }
+    }
+  ],
+  "Nutrition": [
+    {
+      "name": "Antioxidants",
+      "foundIn": "Tour 6",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ab/Antioxidants.png/revision/latest?cb=20200120003733",
+      "upgrade": {
+        "carte": [
+          "",
+          "2",
+          "4",
+          "10",
+          "20",
+          "50",
+          "",
+          "120",
+          "240",
+          "500",
+          "1k",
+          "2k",
+          "4k"
+        ],
+        "prezzo": [
+          "",
+          "21.7K",
+          "",
+          "35.9k",
+          "",
+          "58400",
+          "",
+          "87.5k",
+          "104.2k",
+          "116.7k",
+          "150k",
+          "183.4k",
+          "291.7k"
+        ]
+      },
+      "skills": {
+        "Forehand": [
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          6,
+          6,
+          7
+        ],
+        "Stamina": [
+          0,
+          1,
+          2,
+          6,
+          9,
+          13,
+          18,
+          20,
+          0,
+          25,
+          27,
+          29,
+          31
+        ]
+      }
+    },
+    {
+      "name": "Carboload",
+      "foundIn": "Tour 7",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/55/Carboload.png/revision/latest?cb=20200120003547",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "4",
+          "10",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "116.7k",
+          "150k",
+          "183.4k",
+          "216.7k",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Forehand": [
+          0,
+          0,
+          0,
+          0,
+          9,
+          9,
+          9,
+          10,
+          11,
+          11,
+          12,
+          13,
+          14
+        ],
+        "Stamina": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          8,
+          12,
+          14,
+          15,
+          17,
+          19,
+          21,
+          23
+        ]
+      }
+    },
+    {
+      "name": "Increased Hydration",
+      "foundIn": "Tour 2 and above",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/d0/Increased_Hydration.png/revision/latest?cb=20200120003908",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "3",
+          "4",
+          "20",
+          "60",
+          "120",
+          "150",
+          "400",
+          "800"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "2.5k",
+          "4.6k",
+          "7,2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "45.9k"
+        ]
+      },
+      "skills": {
+        "Forehand": [
+          0,
+          0,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5
+        ],
+        "Stamina": [
+          0,
+          0,
+          3,
+          6,
+          10,
+          14,
+          18,
+          21,
+          23,
+          25,
+          28
+        ]
+      }
+    },
+    {
+      "name": "Keto Sourcing",
+      "foundIn": "Tour 5 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/e/ef/Keto_Sourcing.png/revision/latest?cb=20200120004017",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "",
+          "",
+          "20",
+          "",
+          "",
+          "100",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "21.7k",
+          "",
+          "",
+          "45.9k",
+          "58.4k",
+          "",
+          "87.5k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Stamina": [
+          0,
+          0,
+          0,
+          14,
+          19,
+          0,
+          27,
+          31,
+          34,
+          37,
+          0,
+          0,
+          46
+        ]
+      }
+    },
+    {
+      "name": "Lean Protein",
+      "foundIn": "Tour 1 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/dc/Lean_Protein.png/revision/latest?cb=20200120004222",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "30",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "2.5k",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Stamina": [
+          0,
+          0,
+          0,
+          13,
+          17,
+          22,
+          26,
+          29,
+          0,
+          0,
+          38
+        ]
+      }
+    },
+    {
+      "name": "Macrobiotic",
+      "foundIn": "Tour 3 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/4d/Macrobiotic.png/revision/latest?cb=20200120004328",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "30",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Volley": [
+          0,
+          0,
+          0,
+          11,
+          11,
+          11,
+          12,
+          12,
+          13,
+          14,
+          15
+        ],
+        "Stamina": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          8,
+          12,
+          14,
+          15,
+          17,
+          19
+        ]
+      }
+    },
+    {
+      "name": "Neutral Energy",
+      "foundIn": "Tour 7",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/77/Natural_Energy.png/revision/latest?cb=20200120003344",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "10",
+          "",
+          "20",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "250k",
+          "",
+          "300k",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Stamina": [
+          0,
+          0,
+          0,
+          0,
+          9,
+          13,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          31
+        ],
+        "Volley": [
+          0,
+          0,
+          0,
+          0,
+          5,
+          5,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "name": "Vegan Diet",
+      "foundIn": "Tour 4 and above",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/36/Vegan_Diet.png/revision/latest?cb=20200120004146",
+      "upgrade": {
+        "Cards": [
+          "L",
+          "2",
+          "4",
+          "20",
+          "",
+          "50",
+          "240",
+          "400",
+          "1k",
+          "2k",
+          "4k"
+        ],
+        "Price": [
+          "",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21,7k",
+          "27,5k",
+          "35.9k",
+          "45,9k",
+          "58.4k",
+          "75k",
+          "104.2k"
+        ]
+      },
+      "skills": {
+        "Volley": [
+          3,
+          4,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          7
+        ],
+        "Stamina": [
+          0,
+          1,
+          3,
+          6,
+          10,
+          14,
+          18,
+          21,
+          23,
+          25,
+          28
+        ]
+      }
+    }
+  ],
+  "Workout": [
+    {
+      "name": "Endurance",
+      "foundIn": "Tour 1 and above",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/0/0a/Endurance.png/revision/latest?cb=20200120002438",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "30",
+          "60",
+          "150",
+          "400",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "1.4k",
+          "2.5k",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k"
+        ]
+      },
+      "skills": {
+        "Stamina": [
+          0,
+          0,
+          5,
+          5,
+          6,
+          6,
+          6,
+          7,
+          7,
+          8,
+          8
+        ],
+        "Serve": [
+          0,
+          0,
+          4,
+          7,
+          11,
+          16,
+          20,
+          23,
+          25,
+          27,
+          30
+        ]
+      }
+    },
+    {
+      "name": "Lunges",
+      "foundIn": "Tour 8",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/87/Lunges.png/revision/latest?cb=20200120002857",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "3",
+          "9",
+          "20",
+          "60",
+          "120",
+          "240"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "380k",
+          "450k",
+          "530k",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Serve": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          34,
+          0,
+          0,
+          0,
+          46
+        ]
+      }
+    },
+    {
+      "name": "Mountain Climber",
+      "foundIn": "Tour 7 and above",
+      "rarity": "Rare",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/80/Mountain_Climber.png/revision/latest?cb=20200120003033",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "2",
+          "",
+          "",
+          "20",
+          "",
+          "100",
+          "200",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "87.5k",
+          "",
+          "",
+          "150k",
+          "",
+          "216.7k",
+          "250k",
+          ""
+        ]
+      },
+      "skills": {
+        "Backhand": [
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          0,
+          0,
+          7
+        ],
+        "Serve": [
+          0,
+          0,
+          3,
+          7,
+          11,
+          15,
+          20,
+          22,
+          24,
+          27,
+          0,
+          0,
+          34
+        ]
+      }
+    },
+    {
+      "name": "Plyometrics",
+      "foundIn": "Tour 3 and above",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ac/Plyometrics.png/revision/latest?cb=20200120002534",
+      "upgrade": {
+        "Cards": [
+          "",
+          "2",
+          "4",
+          "10",
+          "20",
+          "50",
+          "150",
+          "400",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "2.5k",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "45.9k",
+          "75k"
+        ]
+      },
+      "skills": {
+        "Backhand": [
+          0,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5
+        ],
+        "Serve": [
+          0,
+          2,
+          4,
+          7,
+          11,
+          16,
+          20,
+          23,
+          25,
+          27,
+          30
+        ]
+      }
+    },
+    {
+      "name": "Powerlifting",
+      "foundIn": "Tour 4 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/e/e0/Powerlifting.png/revision/latest?cb=20200120002611",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "9",
+          "20",
+          "",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "45.9k",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Stamina": [
+          0,
+          0,
+          0,
+          12,
+          13,
+          14,
+          14,
+          15,
+          0,
+          0,
+          18
+        ],
+        "Serve": [
+          0,
+          0,
+          0,
+          2,
+          6,
+          10,
+          15,
+          17,
+          0,
+          0,
+          23
+        ]
+      }
+    },
+    {
+      "name": "Resistance Band",
+      "foundIn": "Tour 6 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/67/Resistance_Band.png/revision/latest?cb=20200120003159",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "3",
+          "9",
+          "60",
+          "100",
+          "150",
+          "300"
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "87.5k",
+          "104.2k",
+          "116.7k",
+          "150k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Backhand": [
+          0,
+          0,
+          0,
+          8,
+          9,
+          9,
+          9,
+          10,
+          11,
+          11,
+          12,
+          0,
+          14
+        ],
+        "Serve": [
+          0,
+          0,
+          0,
+          2,
+          6,
+          10,
+          15,
+          17,
+          19,
+          21,
+          23,
+          0,
+          27
+        ]
+      }
+    },
+    {
+      "name": "Sprint",
+      "foundIn": "Tour 2 and above",
+      "rarity": "Epic",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/bb/Sprint.png/revision/latest?cb=20200120002656",
+      "upgrade": {
+        "Cards": [
+          "",
+          "",
+          "",
+          "",
+          "2",
+          "4",
+          "10",
+          "20",
+          "60",
+          "",
+          ""
+        ],
+        "Price": [
+          "",
+          "",
+          "",
+          "",
+          "4.6k",
+          "7.2k",
+          "10.9k",
+          "15k",
+          "21.7k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Serve": [
+          0,
+          0,
+          0,
+          14,
+          18,
+          22,
+          27,
+          30,
+          33,
+          0,
+          39
+        ]
+      }
+    },
+    {
+      "name": "Weight lifting",
+      "foundIn": "Tour 5 and above",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/e/e2/Weight_Lifting.png/revision/latest?cb=20200120002758",
+      "upgrade": {
+        "Cards": [
+          "L",
+          "2",
+          "L",
+          "10",
+          "20",
+          "50",
+          "100",
+          "120",
+          "240",
+          "800",
+          "1k",
+          "2k",
+          "4k"
+        ],
+        "Price": [
+          "L",
+          "10.9k",
+          "L",
+          "15k",
+          "21.7k",
+          "27.5k",
+          "35.9k",
+          "49.5k",
+          "58.4k",
+          "75k",
+          "87.5k",
+          "104.2k",
+          "183.4k"
+        ]
+      },
+      "skills": {
+        "Stamina": [
+          4,
+          5,
+          6,
+          6,
+          6,
+          7,
+          7,
+          7,
+          8,
+          8,
+          9,
+          10,
+          10
+        ],
+        "Serve": [
+          0,
+          2,
+          3,
+          7,
+          11,
+          15,
+          20,
+          22,
+          24,
+          27,
+          29,
+          32,
+          34
+        ]
+      }
+    }
+  ]
+};

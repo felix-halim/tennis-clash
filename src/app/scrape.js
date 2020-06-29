@@ -94,6 +94,7 @@ function get(url) {
 
 async function get_and_parse(url) {
   const item = {
+    url,
     name: '',
     foundIn: '',
     rarity: '',

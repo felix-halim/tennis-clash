@@ -26,7 +26,7 @@
           </ng-template>
           <table class="border" cellpadding="5" cellspacing="0">
             <tr>
-              <th width="80">Level</th>
+              <th width="80">Level [<a [href]="item.url" target="_blank">edit</a>]</th>
               <th width="25" *ngFor="let v of item.total; index as i" (click)="setInventory(g.category, item.name, i)"
                 [ngClass]="{'selected': hasInventory(g.category, item.name, i)}" style="text-align: right">
                 {{ i + 1 }}
@@ -39,7 +39,7 @@
                 {{ s || '-' }}</td>
             </tr>
             <tr>
-              <th>Total</th>
+              <th>Total Power</th>
               <th *ngFor="let t of item.total; index as i" (click)="setInventory(g.category, item.name, i)"
                 [ngClass]="{'selected': hasInventory(g.category, item.name, i)}" style="text-align: right">
                 {{ t || '-' }}</th>
@@ -84,7 +84,7 @@
         <th width="60" colspan="3" style="text-align: center;">Min Power</th>
       </tr>
       <tr *ngFor="let attr of ATTRIBUTES" height="33">
-        <th *ngIf="attr === 'Total'" colspan="4" style="text-align: right">Total Power: &nbsp;</th>
+        <th *ngIf="attr === 'Total'" colspan="4">Total Power</th>
         <ng-container *ngIf="attr !== 'Total'">
           <td>{{ attr }}</td>
           <td align="center">

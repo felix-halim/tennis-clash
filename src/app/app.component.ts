@@ -71,7 +71,6 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
       const level = Math.min(inventoryLevel, configs.levelCap);
       const item = GEARS[cat].find(item => item.name === name);
       const attrPowers = itemPowers[name] = {};
-      console.log('items', name, inventoryLevel, item);
       for (const [attr, values] of Object.entries<number[]>(item.skills)) {
         attrPowers[attr] = values[level];
         maxAttr[attr] = Math.max(maxAttr[attr] ?? 0, values[level]);
@@ -180,10 +179,13 @@ export class AppComponent implements OnDestroy {
     for (const category of CATEGORIES) {
       const items = [];
       const value = GEARS[category];
-      for (const item of value.sort((a, b) => a.foundIn <= b.foundIn ? -1 : 1)) {
+      for (const item of value.sort((a, b) => a.foundIn < b.foundIn ? -1 : 1)) {
         const attrs = [];
         const total = [];
         for (const [attr, skills] of Object.entries<any>(item.skills)) {
+          const i = ATTRIBUTES.indexOf(attr);
+          if (i === -1 || i === ATTRIBUTES.length - 1)
+            alert('Unknown attribute: ' + attr);
           attrs.push({ attr, skills });
           for (let i = 0; i < skills.length; i++) {
             total[i] = (total[i] ?? 0) + skills[i];

@@ -1,9 +1,10 @@
 export const GEARS = {
   "Character": [
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Jonah",
       "name": "Jonah",
-      "foundIn": "Tour 1",
-      "rarity": "Epic",
+      "foundIn": "",
+      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a0/Jonah.png/revision/latest?cb=20200119155809",
       "upgrade": {
         "Cards": [
@@ -115,9 +116,10 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Hope",
       "name": "Hope",
-      "foundIn": "Tour 2",
-      "rarity": "Epic",
+      "foundIn": "",
+      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/18/Hope.png/revision/latest?cb=20200119155826",
       "upgrade": {
         "Cards": [
@@ -229,9 +231,10 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Florence",
       "name": "Florence",
-      "foundIn": "Tour 3",
-      "rarity": "Epic",
+      "foundIn": "",
+      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/d9/Florence.png/revision/latest?cb=20200119155922",
       "upgrade": {
         "Cards": [
@@ -343,9 +346,10 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Leo",
       "name": "Leo",
-      "foundIn": "Tour 4",
-      "rarity": "Epic",
+      "foundIn": "",
+      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1d/Leo.png/revision/latest?cb=20200119154813",
       "upgrade": {
         "Cards": [
@@ -457,9 +461,10 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Kaito",
       "name": "Kaito",
-      "foundIn": "Tour 5",
-      "rarity": "Epic",
+      "foundIn": "",
+      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/92/Kaito.png/revision/latest?cb=20200119155948",
       "upgrade": {
         "Cards": [
@@ -587,9 +592,10 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Viktoria",
       "name": "Viktoria",
-      "foundIn": "Tour 6",
-      "rarity": "Epic",
+      "foundIn": "",
+      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/29/Viktoria.png/revision/latest?cb=20200119160110",
       "upgrade": {
         "Cards": [
@@ -717,9 +723,10 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Diana",
       "name": "Diana",
-      "foundIn": "Tour 7",
-      "rarity": "Epic",
+      "foundIn": "",
+      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/5f/Diana.png/revision/latest?cb=20200119155840",
       "upgrade": {
         "Cards": [
@@ -847,9 +854,10 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Mei-Li",
       "name": "Mei-Li",
-      "foundIn": "Tour 8",
-      "rarity": "Epic",
+      "foundIn": "",
+      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/58/Mei-Li.png/revision/latest?cb=20200129205010",
       "upgrade": {
         "Cards": [
@@ -977,9 +985,10 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Luc",
       "name": "Luc",
-      "foundIn": "Tour 9",
-      "rarity": "Epic",
+      "foundIn": "",
+      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/bc/Luc.png/revision/latest?cb=20200319135439",
       "upgrade": {
         "Cards": [
@@ -1109,6 +1118,7 @@ export const GEARS = {
   ],
   "Racket": [
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Bullseye",
       "name": "The Bullseye",
       "foundIn": "Tour 7",
       "rarity": "Epic",
@@ -1164,6 +1174,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Eagle",
       "name": "The Eagle",
       "foundIn": "Tour 1 and above",
       "rarity": "Common",
@@ -1226,6 +1237,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Hammer",
       "name": "The Hammer",
       "foundIn": "Tour 6",
       "rarity": "Epic",
@@ -1296,6 +1308,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Outback",
       "name": "The Outback",
       "foundIn": "Tour 3 and above",
       "rarity": "Epic",
@@ -1358,6 +1371,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Panther",
       "name": "The Panther",
       "foundIn": "Tour 4 and above",
       "rarity": "Rare",
@@ -1407,6 +1421,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Patriot",
       "name": "The Patriot",
       "foundIn": "Tour 2 and above",
       "rarity": "Epic",
@@ -1469,6 +1484,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Samurai",
       "name": "The Samurai",
       "foundIn": "Tour 5 and above",
       "rarity": "Rare",
@@ -1539,6 +1555,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Zeus",
       "name": "Zeus",
       "foundIn": "Tour 8",
       "rarity": "Common",
@@ -1611,6 +1628,7 @@ export const GEARS = {
   ],
   "Grip": [
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Tactical_Grip",
       "name": "Tactical Grip",
       "foundIn": "Tour 7",
       "rarity": "Common",
@@ -1681,6 +1699,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Cobra",
       "name": "The Cobra",
       "foundIn": "Tour 4 and above",
       "rarity": "Epic",
@@ -1743,6 +1762,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Forge",
       "name": "The Forge",
       "foundIn": "Tour 6 and above",
       "rarity": "Epic",
@@ -1813,6 +1833,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Katana",
       "name": "The Katana",
       "foundIn": "Tour 5 and above",
       "rarity": "Rare",
@@ -1883,6 +1904,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Machete",
       "name": "The Machete",
       "foundIn": "Tour 3 and above",
       "rarity": "Rare",
@@ -1932,6 +1954,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Talon",
       "name": "The Talon",
       "foundIn": "Tour 2 and above",
       "rarity": "Epic",
@@ -1994,6 +2017,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Titan",
       "name": "The Titan",
       "foundIn": "Tour 8",
       "rarity": "Epic",
@@ -2049,6 +2073,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Warrior",
       "name": "The Warrior",
       "foundIn": "Tour 1 and above",
       "rarity": "Common",
@@ -2113,6 +2138,7 @@ export const GEARS = {
   ],
   "Shoe": [
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Anvil",
       "name": "The Anvil",
       "foundIn": "Tour 6",
       "rarity": "Rare",
@@ -2183,6 +2209,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Ballistic",
       "name": "The Ballistic",
       "foundIn": "Tour 7 and above",
       "rarity": "Rare",
@@ -2253,6 +2280,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Feather",
       "name": "The Feather",
       "foundIn": "Tour 1 and above",
       "rarity": "Epic",
@@ -2302,6 +2330,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Hades_Treads",
       "name": "The Hades Treads",
       "foundIn": "Tour 8",
       "rarity": "Epic",
@@ -2357,6 +2386,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Hunter",
       "name": "The Hunter",
       "foundIn": "Tour 3 and above",
       "rarity": "Common",
@@ -2419,6 +2449,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Piranha",
       "name": "The Piranha",
       "foundIn": "Tour 4 and above",
       "rarity": "Epic",
@@ -2481,6 +2512,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Raptor",
       "name": "The Raptor",
       "foundIn": "Tour 2 and above",
       "rarity": "Common",
@@ -2543,6 +2575,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Shuriken",
       "name": "The Shuriken",
       "foundIn": "Tour 5 and above",
       "rarity": "Epic",
@@ -2615,6 +2648,7 @@ export const GEARS = {
   ],
   "Wristband": [
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Jolly_Roger",
       "name": "Jolly Roger",
       "foundIn": "Tour 3 and above",
       "rarity": "Epic",
@@ -2677,6 +2711,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Gladiator",
       "name": "The Gladiator",
       "foundIn": "Tour 7 and above",
       "rarity": "Epic",
@@ -2732,6 +2767,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Kodiak",
       "name": "The Kodiak",
       "foundIn": "Tour 6 and above",
       "rarity": "Rare",
@@ -2802,6 +2838,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Koi",
       "name": "The Koi",
       "foundIn": "Tour 5 and above",
       "rarity": "Epic",
@@ -2872,6 +2909,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Macaw",
       "name": "The Macaw",
       "foundIn": "Tour 4 and above",
       "rarity": "Common",
@@ -2934,6 +2972,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Rocket",
       "name": "The Rocket",
       "foundIn": "Tour 2 and above",
       "rarity": "Common",
@@ -2996,6 +3035,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Shield",
       "name": "The Shield",
       "foundIn": "Tour 8",
       "rarity": "Rare",
@@ -3062,6 +3102,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/The_Tomahawk",
       "name": "The Tomahawk",
       "foundIn": "Tour 1 and above",
       "rarity": "Epic",
@@ -3113,6 +3154,7 @@ export const GEARS = {
   ],
   "Nutrition": [
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Antioxidants",
       "name": "Antioxidants",
       "foundIn": "Tour 6",
       "rarity": "Common",
@@ -3183,6 +3225,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Carboload",
       "name": "Carboload",
       "foundIn": "Tour 7",
       "rarity": "Epic",
@@ -3253,6 +3296,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Increased_Hydration",
       "name": "Increased Hydration",
       "foundIn": "Tour 2 and above",
       "rarity": "Rare",
@@ -3315,6 +3359,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Keto_Sourcing",
       "name": "Keto Sourcing",
       "foundIn": "Tour 5 and above",
       "rarity": "Epic",
@@ -3370,6 +3415,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Lean_Protein",
       "name": "Lean Protein",
       "foundIn": "Tour 1 and above",
       "rarity": "Epic",
@@ -3419,6 +3465,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Macrobiotic",
       "name": "Macrobiotic",
       "foundIn": "Tour 3 and above",
       "rarity": "Epic",
@@ -3481,6 +3528,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Neutral_Energy",
       "name": "Neutral Energy",
       "foundIn": "Tour 7",
       "rarity": "Rare",
@@ -3551,6 +3599,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Vegan_Diet",
       "name": "Vegan Diet",
       "foundIn": "Tour 4 and above",
       "rarity": "Common",
@@ -3615,6 +3664,7 @@ export const GEARS = {
   ],
   "Workout": [
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Endurance",
       "name": "Endurance",
       "foundIn": "Tour 1 and above",
       "rarity": "Rare",
@@ -3677,6 +3727,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Lunges",
       "name": "Lunges",
       "foundIn": "Tour 8",
       "rarity": "Epic",
@@ -3732,6 +3783,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Mountain_Climber",
       "name": "Mountain Climber",
       "foundIn": "Tour 7 and above",
       "rarity": "Rare",
@@ -3798,6 +3850,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Plyometrics",
       "name": "Plyometrics",
       "foundIn": "Tour 3 and above",
       "rarity": "Common",
@@ -3860,6 +3913,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Powerlifting",
       "name": "Powerlifting",
       "foundIn": "Tour 4 and above",
       "rarity": "Epic",
@@ -3922,6 +3976,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Resistance_Band",
       "name": "Resistance Band",
       "foundIn": "Tour 6 and above",
       "rarity": "Epic",
@@ -3992,6 +4047,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Sprint",
       "name": "Sprint",
       "foundIn": "Tour 2 and above",
       "rarity": "Epic",
@@ -4041,6 +4097,7 @@ export const GEARS = {
       }
     },
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Weight_lifting",
       "name": "Weight lifting",
       "foundIn": "Tour 5 and above",
       "rarity": "Common",

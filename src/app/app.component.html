@@ -66,44 +66,40 @@
       Click on the column to see its configuration.
     </p>
 
+    <table>
+      <tr>
+        <th>Set Level Cap :</th>
+        <td width="50">
+          <mat-select [value]="levelCap" (selectionChange)="formGroup.get('levelCap').setValue($event.value)">
+            <mat-option [value]="4">5</mat-option>
+            <mat-option [value]="6">7</mat-option>
+            <mat-option [value]="8">9</mat-option>
+            <mat-option [value]="10">11</mat-option>
+            <mat-option [value]="12">13</mat-option>
+          </mat-select>
+        </td>
+      </tr>
+    </table>
+
     <table class="border" cellpadding="5" cellspacing="0" style="float: left;">
       <tr>
-        <th width="80" style="padding: 0" height="39">
-          <mat-select [value]="levelCap" (selectionChange)="formGroup.get('levelCap').setValue($event.value)">
-            <mat-option [value]="4">Cap:L5</mat-option>
-            <mat-option [value]="5">Cap:L6</mat-option>
-            <mat-option [value]="6">Cap:L7</mat-option>
-            <mat-option [value]="7">Cap:L8</mat-option>
-            <mat-option [value]="8">Cap:L9</mat-option>
-            <mat-option [value]="9">Cap:L10</mat-option>
-            <mat-option [value]="10">Cap:L11</mat-option>
-            <mat-option [value]="11">Cap:L12</mat-option>
-            <mat-option [value]="12">Cap:L13</mat-option>
-          </mat-select>
-        </th>
-        <th width="60" colspan="3" style="text-align: center;">Min Power</th>
+        <th colspan="2" width="140" height="29" style="text-align: center;">Set Minimum Power</th>
       </tr>
       <tr *ngFor="let attr of ATTRIBUTES" height="33">
-        <th *ngIf="attr === 'Total'" colspan="4">Total Power</th>
+        <th *ngIf="attr === 'Total'" colspan="2" style="text-align: right;">Total Power (Desc):</th>
         <ng-container *ngIf="attr !== 'Total'">
           <td>{{ attr }}</td>
-          <td align="center">
-            <img (click)="changeAttr(attr, -1)" style="display: block;" height="20"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAE+UlEQVR4nO2b3W9URRTAf7tYHmwBKYmpli3VWAFbFSVteNAEij7rq/IVjP4NEnnBALGvJhrTUIJEfVaiiYpCjd8fT8QtCEGxgtBWwGrlgSKpD+dO59xbur337sx0W/tLbnayOzPnzLkzc2bOzMIC/28KgeUtB+4HVgL10QNwLXouAKeB0VAK+TbAOqAb2AR0AXemLDcCfAf0A8eBE16080QJ2A38BEw4ek4BLyE9xykue8AaYBfwLFCX+O0q8CUwgHTxQWAM29XvAJYAq4DVQDvwGNCYqOcG8A7wCnDGoe5VsQI4ANwk/tZ+BvYAjwDFHPUWgUeBl4FfEnXfBHqZaqDgbAcuE1fuQ2AjbntXAZlHPkrIGgG2OpSTmgbgrYQynwPrA8juRIaTln0Y61G80wqcVMIvAzsI61ILwE5kbjF6lIEW34IfAM4rod8D9/gWWoES8d5wEXjIl7AO4IoS1gvc5ktYBuqAPuI9st21kBLwmxLS41pAlRQQj2P0u4C4VCc0EB/ze11V7IH9WD1/xNHEqGf7XhcVeqRAfDgcqrbC7aqyr6iNMT8TdcC3WL235K1oBXaRc4UALsYhq7AucoScK8YDWCvucKZaOJ7D6v9G1sJrsGv7LwgfN3BBAfgMacO/SBwiNW9irRdieeuLLmw7DqYtVALGsRubuc5RpC3jpIwn7MZabaM3tcLRjW3PrjQFTkWZzzE3x36SAjaecHKmzOuw1trjVa2w7MO2q0P/kIzUbFbp9zwrFZIjKt1dKeMH2IVPnjBWrbIIuzCq+GKHo0xHKmWao7yPtO2S/lK/5eXYuH05kFIhGYg+m5AoNBA3wGqVPh1Co8DoNrWZhDbAXSo96F2d8Pyq0nebhN7eLlHpsQwVN5FwLQEpA0Mp8/6t0ktNwoUBnkCCJrPBNuDtlHl1mybbOp9cXS50D7ilhVLwKfCkG3Uyk8Vb3bKHuzDAEOnH4WyyVKUn5wM9BC6qtLOQcg3RqtKTbdUG0H5SrwnmC7pNk0fr2gCjyFIYZs+t+cScFl0C/pouk1kvz8fN0J9I297VPyQb2R99NgIP+9crGOux6/9+/UPSAMdU+mmfGgXmKZU+Nm2uiPkcEhuYIS8gt7FM+GiTP72CsRnbnhfTFNBh8Y/96RWMT5C2XAea0xY6hLVapx+9grAB246+LAXvQ46TJpArKHNxLigCX2OPxtoqZ59KL9Z6O52qFoYXsPq/lqeCRuRoeQJZRMzmZaistGDvMw0j8c5cbMVa8RumXoGtRRYjt9eM3s9UW+Fh4hNJLc8HBeITeOoT4UrUI4EHU+l+F5V6oger5wngdlcVr0SiqqbyV6mtnpC8JnceD1d62olfjO6jNuaExcS7/R/AWl/C1hK/MPkDcK8vYSlowfr6CeB34EHfQkvIJUQj9CpyISnkkCgCz2P3+GbMO/9HyXTUE+925h5hVwDZGxCXrGUfxOGEl4Ut2MWSeY4iZ/Aue0QR2dWZjY15hnHg56ulEbmHZ/YO5jmH3CvuREJSWVkUld1H3AOZtf3rqFPevLh8S23IJaRtTPUOo8imqoxEZAeRwKQJTi6LnlbkPl878Hj0nWYcOYbrAc461N0pzYghBoi/tWqeMhLMSL2fT4vvmbsDGbvdyATZlLLcEPLHyeNIDC9VKCsPoVdzy5Au3owcvzVE348B/yB+/AwV4vYLLOCW/wBqaYFUiDT7rAAAAABJRU5ErkJggg==" />
-          </td>
-          <td>
-            <input type="number" (change)="formGroup.get(attr).setValue($event.target.value)"
-              [value]="formGroup.get(attr).value" style="width: 25px">
-          </td>
-          <td align="center">
-            <img (click)="changeAttr(attr, 1); $event.stopPropagation();" style="display: block;" height="20"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAFS0lEQVR4nO2bz29VRRTHP69YFrYVWxJTLQ+KsfywqCB5yAITqTFhpxsXCpZgdKN/gAY3GkXr0kRjGkpQia51paJQo/iTRIO+ghAVK4ilQq1WF1bqc3HudM69fS333s5MXmu/yeSe3HvnnHPPm5kz55x5sID/NwqB5TUDq4BlQEPUAP6K2lngJDAaSiHfBlgPdAFbgU3ANSn7DQOfA/3AYeCYF+08oQg8AXwLVBy1E8BuZOQ4hcsRsAZ4HLgfqE88GwGOAAPIEB8ExrBD/WqgCVgBrAY6gS1AS4LPP8DrwHPAKYe6zwpLgb3ABPFf7XvgSWADUJeDbx1wK/AU8EOC9wTQy1QDBUc3cIG4cm8Dd+B2dBWQdeSdhKxhYIdDOanRCBxIKPMhsDGA7BIynbTsV7EexTvageNK+AVgJ2FdagHYhawtRo8ysNy34BuBM0roF8BK30JnQJH4aDgH3OxL2DrgohLWC1zhS1gG1AN9xEdkp2shReAnJaTHtYBZooB4HKPfWcSlOkEj8Tn/tCvGHrAHq+c3OFoY9Wrf64KhRxSIT4f9s2XYrZh9TG3M+cuhHvgMq/f2vIyWYjc5F3HvYlqBe6PW6pj3CqyLHCbnjnEv1oo7nalmsU3x3+aB/4OK/8tZO6/B7u0/ws8mx7cBCsAHEf9LSB4iNV7BKudre+vbACA5CCNjX9pORWAcG9j4QggDAByMZIxTJZ9QLUztxsbzz/vTKxjMpq2elJHjCcRip/Eb4IQaAQVsPuF48mFyBKxHFkCQELPiUbFQqABvRPRaJKaZRNIAdyr6TY9KhcZbiu7SD5IG2BpdR4CvfWoUGF8Cv0X0jAYoRdcjwL+elQqJCWQrD3CbfqAN0IzN25cDKBUaA9G1FclCA3EDrFb0yRAaBYb+pg5DaANcq+hB7+qEx4+Kvs4QOrxtUvRYBsatJFxLSmxI0Jdy8CgDQynf/UPRV1V74VHsxqSj2gvTYIfqF7plqQmsUv0eMTfzVGzmFfQU0MO+KfniDHgfuCuH7BLwbETvBo7m4JHFW1Wd4i4MMET6eaihZX+FGNIn9LyfXA/0FDinaGcp5RpCu6Inv1UbQPtJvSeYL9DfNFla1wYYBc5HdB63Vusw1aJfgN/NzaQXMAvRlirP5jIWId8EcvRmEsmP7I+uLcAtnpUKiY3Y/X+/fpA0wCFF3+NTo8C4W9GHpn0rwnxOiQ0kH1ab5weiazty1GWuowt7huG1NB10WvxdT0pBuBHwXiTjb6Atbaf9WOVKl3k3L0IYYLOS0Zel4w1IeFpB0mNzsTRWB3yCLY1liXABOQtgFNzlVDWBbwM8rPi/mIdBC1JariBZYtfxgc/y+EokC1xBdrfNeRnpZMenTD0CW4tYjJxeM3rfN1uGpkJkFpLQR+yzoEB8AU9dEZ4JDUjiwTDd44KpJ/Rg9TwGXOmK8TIkq2qYv0BtjYTkMbkzeDg12kn8YHQftbEmLCY+7H9FiqBesJb4gcmjwPW+hKXAcqyvrwA/Azf5FlpEDiEaoSPIgaSQU6IOeAjr6sycd/6PkunQQHzYVZDi46YAsjcjLlnL3ofDBS8LtmM3S6YdRCIwlyOiDjm7YAIb087jwM/PFi3IOTwTO5h2GjlXXEJSUlmxKOr7DHEPZPb2L6GqvHnh8lfqQP409QBTvcMoElSVkYzsIJKYNMnJJVFrR0pYncDt0T2NcSRf0QN851B3p2hDDDGAuxpgGXiMDPF8Wvheudchc7cLWSDTBj1DSPb2MJLDm5LKcoXQu7klyBBvQ8pvjdH9MeBPxI+fQuXtF7AAv/gPdSKzNmoXUQMAAAAASUVORK5CYII=" />
+          <td width="60">
+            <mat-select [value]="formGroup.get(attr).value"
+              (selectionChange)="formGroup.get(attr).setValue($event.value)">
+              <mat-option *ngFor="let e of [].constructor(121); index as i" [value]="i">&#8805; {{ i }}</mat-option>
+            </mat-select>
           </td>
         </ng-container>
       </tr>
     </table>
 
-    <div style="width: calc(100% - 187px); overflow-x:scroll">
+    <div style="width: calc(100% - 152px); overflow-x:scroll">
       <table *ngIf="selectedConfig" class="border" cellpadding="5" cellspacing="0">
         <tr height="40">
           <th *ngFor="let c of topConfigs; index as i" [ngClass]="{'selected': selectedConfig == c}"

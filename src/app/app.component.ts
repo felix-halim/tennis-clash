@@ -149,8 +149,6 @@ export class AppComponent implements OnDestroy {
   inventories: ItemsByCategory;
   formGroup: FormGroup;
 
-  multiplier = 1;
-  lastClickTs = 0;
   subscription: Subscription;
 
   computeTrigger$ = new BehaviorSubject<string>('');
@@ -228,19 +226,6 @@ export class AppComponent implements OnDestroy {
 
   hasInventory(category: string, name: string, level: number) {
     return this.inventories?.[category]?.[name] === level;
-  }
-
-  changeAttr(attr: string, amt: number) {
-    const now = Date.now();
-    if (now - this.lastClickTs < 500) {
-      this.multiplier *= 2;
-    } else {
-      this.multiplier = 1;
-    }
-    this.lastClickTs = now;
-    const a = this.formGroup.get(attr);
-    let val = +(a.value ?? 0) + amt * this.multiplier;
-    a.setValue(Math.min(200, Math.max(0, val)));
   }
 
   stats(s: any) {

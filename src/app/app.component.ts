@@ -87,6 +87,7 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
 }
 
 function saveTopConfig(config: Config) {
+  if (!config.powers['Total'].current) return;
   const configs = config.topConfigs;
   configs.push({
     itemNames: [...config.itemNames],

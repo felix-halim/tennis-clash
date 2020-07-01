@@ -1,9 +1,10 @@
 import { Component, OnDestroy } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 import { GEARS } from './gears';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Subscription, BehaviorSubject } from 'rxjs';
-import { debounceTime, map, shareReplay } from 'rxjs/operators';
+import { debounceTime, map, shareReplay, tap } from 'rxjs/operators';
 
 const CATEGORIES = Object.keys(GEARS);
 const ATTRIBUTES = ['Agility', 'Stamina', 'Serve', 'Volley', 'Forehand', 'Backhand', 'Total'];
@@ -139,6 +140,17 @@ function computeBestConfigs(config: Config) {
 
 @Component({
   selector: 'app-root',
+  animations: [
+    trigger('toggleClick', [
+      state('true', style({})),
+      state('false', style({
+        opacity: 1,
+        backgroundColor: 'gray'
+      })),
+      transition('true => false', animate('0.25s')),
+      transition('false => true', animate('0.1s'))
+    ])
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -152,13 +164,16 @@ export class AppComponent implements OnDestroy {
   subscription: Subscription;
 
   computeTrigger$ = new BehaviorSubject<string>('');
+  isOpen = true;
 
   bestConfigs$ = this.computeTrigger$.pipe(
+    tap(() => { this.isOpen = false; }),
     debounceTime(1000),
     map(() => initialConfig(this.inventories, this.formGroup.value)),
     map(config => {
       const top = computeBestConfigs(config).topConfigs;
       this.selectedConfig = top[0];
+      this.isOpen = true;
       return top;
     }),
     shareReplay(1));

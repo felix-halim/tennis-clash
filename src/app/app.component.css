@@ -19,15 +19,15 @@
   background-color: #DDD;
   border-right: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
-  text-align: left;
 }
 
 .selected {
   background-color: lightgreen;
 }
 
-th, td {
+th.number, td.number {
   cursor: pointer;
+  text-align: right;
 }
 
 /* Chrome, Safari, Edge, Opera */

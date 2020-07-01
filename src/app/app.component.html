@@ -28,20 +28,20 @@
             <tr>
               <th width="80">Level [<a [href]="item.url" target="_blank">edit</a>]</th>
               <th width="25" *ngFor="let v of item.total; index as i" (click)="setInventory(g.category, item.name, i)"
-                [ngClass]="{'selected': hasInventory(g.category, item.name, i)}" style="text-align: right">
+                [ngClass]="{'selected': hasInventory(g.category, item.name, i), 'number': true}">
                 {{ i + 1 }}
               </th>
             </tr>
             <tr *ngFor="let a of item.attrs">
               <td>{{ a.attr }}</td>
               <td *ngFor="let s of a.skills; index as i" (click)="setInventory(g.category, item.name, i)"
-                [ngClass]="{'selected': hasInventory(g.category, item.name, i)}" align="right">
+                [ngClass]="{'selected': hasInventory(g.category, item.name, i), 'number': true}">
                 {{ s || '-' }}</td>
             </tr>
             <tr>
               <th>Total Power</th>
               <th *ngFor="let t of item.total; index as i" (click)="setInventory(g.category, item.name, i)"
-                [ngClass]="{'selected': hasInventory(g.category, item.name, i)}" style="text-align: right">
+                [ngClass]="{'selected': hasInventory(g.category, item.name, i), 'number': true}">
                 {{ t || '-' }}</th>
             </tr>
           </table>
@@ -62,7 +62,7 @@
     <p style="padding: 10px; margin-top: 0;">
       After selecting your available cards (for each category) above,
       the table below will give you the best achievable Total Power in descending order.
-      You can adjust the level cap and set the minimum value for each attribute to tune it to your liking.
+      You can adjust the level cap and set your preferred minimum power for each attribute.
       Click on the column to see its configuration.
     </p>
 
@@ -71,11 +71,7 @@
         <th>Set Level Cap :</th>
         <td width="50">
           <mat-select [value]="levelCap" (selectionChange)="formGroup.get('levelCap').setValue($event.value)">
-            <mat-option [value]="4">5</mat-option>
-            <mat-option [value]="6">7</mat-option>
-            <mat-option [value]="8">9</mat-option>
-            <mat-option [value]="10">11</mat-option>
-            <mat-option [value]="12">13</mat-option>
+            <mat-option *ngFor="let e of [].constructor(9); index as i" [value]="i+4">{{ i+5 }}</mat-option>
           </mat-select>
         </td>
       </tr>
@@ -100,16 +96,17 @@
     </table>
 
     <div style="width: calc(100% - 152px); overflow-x:scroll">
-      <table *ngIf="selectedConfig" class="border" cellpadding="5" cellspacing="0">
+      <table [@toggleClick]="isOpen" *ngIf="selectedConfig" class="border" cellpadding="5" cellspacing="0">
         <tr height="40">
-          <th *ngFor="let c of topConfigs; index as i" [ngClass]="{'selected': selectedConfig == c}"
-            (click)="selectedConfig = c" style="text-align: right">
+          <th *ngFor="let c of topConfigs; index as i" [ngClass]="{'selected': selectedConfig == c, 'number': true}"
+            (click)="selectedConfig = c; endMarker.scrollIntoView({behavior:'smooth'})">
             <div style="width: 25px">#{{ i + 1 }}</div>
           </th>
         </tr>
         <tr *ngFor="let attr of ATTRIBUTES" height="33">
-          <td *ngFor="let c of topConfigs; index as i" [ngClass]="{'selected': selectedConfig == c}"
-            (click)="selectedConfig = c" style="text-align: right;">{{ c.powers[attr].current }}</td>
+          <td *ngFor="let c of topConfigs; index as i" [ngClass]="{'selected': selectedConfig == c, 'number': true}"
+            (click)="selectedConfig = c; endMarker.scrollIntoView({behavior:'smooth'})">
+            {{ c.powers[attr].current }}</td>
         </tr>
       </table>
 
@@ -143,5 +140,7 @@
         </td>
       </tr>
     </table>
+
+    <br #endMarker>
   </ng-container>
 </ng-container>

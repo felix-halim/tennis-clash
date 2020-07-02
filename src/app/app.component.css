@@ -25,7 +25,8 @@
   background-color: lightgreen;
 }
 
-th.number, td.number {
+th.number,
+td.number {
   cursor: pointer;
   text-align: right;
 }
@@ -40,4 +41,8 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.invalid {
+  background-color: #FFCCCC;
 }

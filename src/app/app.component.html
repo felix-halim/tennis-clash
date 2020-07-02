@@ -62,8 +62,10 @@
     <p style="padding: 10px; margin-top: 0;">
       After selecting your available cards (for each category) above,
       the table below will give you the best achievable Total Power in descending order.
-      You can adjust the level cap and set your preferred minimum power for each attribute.
+      You can adjust the level cap and set your preferred power for each attribute.
       Click on the column to see its lineup.
+      Click the <span style="color:blue">attribute name</span> to toggle to
+      range-based input where you can set the maximum power value as well.
     </p>
 
     <table>
@@ -77,19 +79,23 @@
       </tr>
     </table>
 
-    <table class="border" cellpadding="5" cellspacing="0" style="float: left;">
+    <table [formGroup]="formGroup" class="border" cellpadding="5" cellspacing="0" style="float: left;">
       <tr>
-        <th colspan="2" width="140" height="29" style="text-align: center;">Set Minimum Power</th>
+        <th colspan="2" width="140" height="29" style="text-align: center;">Set Preferred Power</th>
       </tr>
       <tr *ngFor="let attr of ATTRIBUTES" height="33">
         <th *ngIf="attr === 'Total'" colspan="2" style="text-align: right;">Total Power (Desc):</th>
         <ng-container *ngIf="attr !== 'Total'">
-          <td>{{ attr }}</td>
-          <td width="60">
-            <mat-select [value]="formGroup.get(attr).value"
-              (selectionChange)="formGroup.get(attr).setValue($event.value)">
-              <mat-option *ngFor="let e of [].constructor(121); index as i" [value]="i">&#8805; {{ i }}</mat-option>
-            </mat-select>
+          <td>
+            <a style="cursor: pointer; color: blue" (click)="toggleFormat(attr)">{{ attr }}</a>
+          </td>
+          <td width="60" [ngClass]="{'invalid': isInvalidValue(attr)}">
+            <input *ngIf="isRangeValue(attr); else minValue" type="text" [formControlName]="attr" style="width: 50px;">
+            <ng-template #minValue>
+              <mat-select [formControlName]="attr">
+                <mat-option *ngFor="let e of [].constructor(121); index as i" [value]="i">&#8805; {{ i }}</mat-option>
+              </mat-select>
+            </ng-template>
           </td>
         </ng-container>
       </tr>
@@ -117,7 +123,7 @@
             <br>
             <h2>No lineup found</h2>
             <br>
-            Try decreasing one of the minimum powers.
+            Try decreasing your preferred minimum powers or increasing the maximum powers.
           </td>
         </tr>
       </table>
@@ -146,7 +152,8 @@
 
   <mat-divider></mat-divider>
   <p style="padding: 5px;">
-    <a href="https://www.facebook.com/groups/2305127729776201/permalink/2659181671037470" target="_blank">Send Feedback</a> &nbsp; | &nbsp;
+    <a href="https://www.facebook.com/groups/2305127729776201/permalink/2659181671037470" target="_blank">Send
+      Feedback</a> &nbsp; | &nbsp;
     <a href="https://github.com/felix-halim/tennis-clash" target="_blank">Source Code</a> &nbsp; | &nbsp;
     <a href="https://tennis-clash.fandom.com/wiki/Category:Items" target="_blank">Dataset</a>
   </p>

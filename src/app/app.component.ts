@@ -39,6 +39,9 @@ interface Config {
       /** Minimum power requirement. */
       minimum: number;
 
+      /** Maximum power requirement. */
+      maximum: number;
+
       /** The current total power. */
       current: number;
     }
@@ -59,10 +62,15 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
     topConfigs: []
   };
   for (const attr of ATTRIBUTES) {
-    config.powers[attr] = {
-      minimum: configs[attr],
-      current: 0,
-    };
+    let minimum = +configs[attr];
+    let maximum = 999;
+    const v = configs[attr] + '';
+    if (v.indexOf('-') !== -1) {
+      const range = v.split('-');
+      minimum = +range[0];
+      maximum = +range[1];
+    }
+    config.powers[attr] = { minimum, maximum, current: 0 };
   }
   for (let c = CATEGORIES.length - 1; c >= 0; c--) {
     const cat = CATEGORIES[c];
@@ -115,6 +123,7 @@ function computeBestConfigs(config: Config) {
     const p = config.powers[attr];
     const maxRemainer = (catIdx >= CATEGORIES.length) ? 0 : config.maxRemainingPowers[catIdx][attr];
     if (p.current + maxRemainer < p.minimum) return config;
+    if (p.current > p.maximum) return config;
   }
 
   if (catIdx >= CATEGORIES.length) return saveTopConfig(config);
@@ -252,5 +261,21 @@ export class AppComponent implements OnDestroy {
       }
     }
     return arr;
+  }
+
+  isRangeValue(attr: string) {
+    const strValue = this.formGroup.get(attr).value + '';
+    return strValue.indexOf('-') !== -1;
+  }
+
+  isInvalidValue(attr: string) {
+    const re = /^\d{0,3}(-\d{0,3})?$/;
+    return !re.exec(this.formGroup.get(attr).value);
+  }
+
+  toggleFormat(attr: string) {
+    const strValue = this.formGroup.get(attr).value + '';
+    const newValue = this.isRangeValue(attr) ? +strValue.split('-')[0] : (strValue + '-999');
+    this.formGroup.get(attr).setValue(newValue);
   }
 }

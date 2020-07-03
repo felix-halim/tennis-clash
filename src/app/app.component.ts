@@ -31,6 +31,9 @@ interface Config {
   /** The power of each available item in a category. */
   itemPowers: { [itemName: string]: AttributePower }[];
 
+  /** The level of each available item in a category. */
+  itemLevel: { [itemName: string]: number }[];
+
   /** The maximum power for the rest of the categories on the right. */
   maxRemainingPowers: AttributePower[];
 
@@ -57,6 +60,7 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
   const config: Config = {
     itemNames: [],
     itemPowers: [],
+    itemLevel: [],
     maxRemainingPowers: [],
     powers: {},
     topConfigs: []
@@ -76,10 +80,12 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
     const cat = CATEGORIES[c];
     const maxAttr = {};
     const itemPowers = config.itemPowers[c] = {};
+    const itemLevel = config.itemLevel[c] = {};
     for (const [name, inventoryLevel] of Object.entries<number>(inventories[cat] ?? {})) {
       const level = Math.min(inventoryLevel, configs.levelCap);
       const item = GEARS[cat].find(item => item.name === name);
       const attrPowers = itemPowers[name] = {};
+      itemLevel[name] = level + 1;
       for (const [attr, values] of Object.entries<number[]>(item.skills)) {
         attrPowers[attr] = values[level];
         maxAttr[attr] = Math.max(maxAttr[attr] ?? 0, values[level]);
@@ -100,6 +106,7 @@ function saveTopConfig(config: Config) {
   configs.push({
     itemNames: [...config.itemNames],
     itemPowers: config.itemPowers,
+    itemLevel: config.itemLevel,
     maxRemainingPowers: [],
     powers: JSON.parse(JSON.stringify(config.powers)),
     topConfigs: []

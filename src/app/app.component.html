@@ -144,11 +144,18 @@
       </tr>
       <tr *ngFor="let cat of CATEGORIES; index as i">
         <td>{{ cat }}</td>
-        <td><b>{{ c.itemNames[i] }}</b> (
-          <ng-container *ngFor="let e of stats(c.itemPowers[i][c.itemNames[i]])">
-            {{ e }}
+        <td>
+          <ng-container *ngIf="c.itemNames[i]; else tooRestrictive">
+            <b>{{ c.itemNames[i] }}</b> (
+            {{ 'Lev:' + c.itemLevel[i][c.itemNames[i]] }}
+            <ng-container *ngFor="let e of stats(c.itemPowers[i][c.itemNames[i]])">
+              {{ e }}
+            </ng-container>
+            )
           </ng-container>
-          )
+          <ng-template #tooRestrictive>
+            <b style="color: red">None</b>: your preferences are too restrictive.
+          </ng-template>
         </td>
       </tr>
     </table>

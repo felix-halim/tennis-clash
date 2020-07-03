@@ -202,7 +202,10 @@ export class AppComponent implements OnDestroy {
     for (const category of CATEGORIES) {
       const items = [];
       const value = GEARS[category];
-      for (const item of value.sort((a, b) => a.foundIn < b.foundIn ? -1 : 1)) {
+      if (category !== 'Character') {
+        value.sort((a, b) => a.foundIn < b.foundIn ? -1 : 1);
+      }
+      for (const item of value) {
         const attrs = [];
         const total = [];
         for (const [attr, skills] of Object.entries<any>(item.skills)) {

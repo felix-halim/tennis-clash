@@ -135,6 +135,8 @@ async function get_and_parse(url) {
   // Upgrade costs
   const startUpgrade = s.indexOf('<table class="article-table">');
   const endUpgrade = s.indexOf('</table>', i);
+  let levelStartI = s.indexOf('</th><th>', startUpgrade) + 9;
+  let levelStart = +s.substring(levelStartI, s.indexOf('\n', levelStartI));
   for (i = startUpgrade; i !== -1; ) {
     i = s.indexOf('<td>', i) + 4;
     if (i === 3 || i >= endUpgrade) break;
@@ -143,6 +145,7 @@ async function get_and_parse(url) {
     const end = s.indexOf('</td></tr>', j);
     const upgrade = [];
     for (let level = 1; ; level++) {
+      if (level < levelStart) { upgrade.push(""); continue; }
       const k = s.indexOf('</td><td>', i);
       if (k === -1 || k >= end) break;
       i = k + 9;
@@ -155,6 +158,8 @@ async function get_and_parse(url) {
 
   // Skills
   i = s.indexOf('<table class="article-table">', startUpgrade + 1);
+  levelStartI = s.indexOf('</th><th>', startUpgrade) + 9;
+  levelStart = +s.substring(levelStartI, s.indexOf('\n', levelStartI));
   while (i !== -1) {
     i = s.indexOf('<td>', i) + 4;
     if (i === 3) break;
@@ -163,6 +168,7 @@ async function get_and_parse(url) {
     const end = s.indexOf('</td></tr>', j);
     const skills = [];
     for (let level = 1; ; level++) {
+      if (level < levelStart) { skills.push(0); continue; }
       const k = s.indexOf('</td><td>', i);
       if (k === -1 || k >= end) break;
       i = k + 9;
@@ -178,7 +184,7 @@ async function get_and_parse(url) {
 }
 
 (async () => {
-  // const url = 'https://tennis-clash.fandom.com/wiki/Jonah';
+  // const url = 'https://tennis-clash.fandom.com/wiki/The_Kodiak';
   // return console.log(JSON.stringify(await get_and_parse(url), null, 2));
   const GEARS = {};
   for (const [category, urls] of Object.entries(GEARS_URLS)) {
@@ -187,5 +193,5 @@ async function get_and_parse(url) {
       items.push(await get_and_parse(url));
     }
   }
-  console.log(JSON.stringify(GEARS, null, 2));
+  console.log('export const GEARS = ' + JSON.stringify(GEARS, null, 2) + ';');
 })();

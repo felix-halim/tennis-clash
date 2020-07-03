@@ -3,7 +3,7 @@
 <p style="padding: 10px; margin-top: 0;">
   Select your available cards for each category by clicking the column according to the level of your card.
   You can update incorrect attribute values by clicking the [<b>edit</b>] link at the top-left of the table,
-  edit the values at the fandom Wiki page, then let me know by sending feedback (at the bottom of this page).
+  edit the fandom Wiki page to the correct value, then let me know by sending feedback (at the bottom of this page).
 </p>
 
 <mat-tab-group>
@@ -42,13 +42,13 @@
               <td>{{ a.attr }}</td>
               <td *ngFor="let s of a.skills; index as i" (click)="setInventory(g.category, item.name, i)"
                 [ngClass]="{'selected': hasInventory(g.category, item.name, i), 'number': true}">
-                {{ s || '-' }}</td>
+                {{ s }}</td>
             </tr>
             <tr>
               <th>Total Power</th>
               <th *ngFor="let t of item.total; index as i" (click)="setInventory(g.category, item.name, i)"
                 [ngClass]="{'selected': hasInventory(g.category, item.name, i), 'number': true}">
-                {{ t || '-' }}</th>
+                {{ t }}</th>
             </tr>
           </table>
         </mat-tab>

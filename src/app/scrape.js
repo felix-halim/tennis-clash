@@ -13,6 +13,7 @@ const GEARS_URLS = {
     'https://tennis-clash.fandom.com/wiki/Luc',
   ],
   'Racket': [
+    'https://tennis-clash.fandom.com/wiki/Starter_Racket',
     'https://tennis-clash.fandom.com/wiki/The_Bullseye',
     'https://tennis-clash.fandom.com/wiki/The_Eagle',
     'https://tennis-clash.fandom.com/wiki/The_Hammer',
@@ -23,6 +24,7 @@ const GEARS_URLS = {
     'https://tennis-clash.fandom.com/wiki/Zeus',
   ],
   'Grip': [
+    'https://tennis-clash.fandom.com/wiki/Starter_Grip',
     'https://tennis-clash.fandom.com/wiki/Tactical_Grip',
     'https://tennis-clash.fandom.com/wiki/The_Cobra',
     'https://tennis-clash.fandom.com/wiki/The_Forge',
@@ -33,6 +35,7 @@ const GEARS_URLS = {
     'https://tennis-clash.fandom.com/wiki/The_Warrior',
   ],
   'Shoe': [
+    'https://tennis-clash.fandom.com/wiki/Starter_Shoes',
     'https://tennis-clash.fandom.com/wiki/The_Anvil',
     'https://tennis-clash.fandom.com/wiki/The_Ballistic',
     'https://tennis-clash.fandom.com/wiki/The_Feather',
@@ -43,6 +46,7 @@ const GEARS_URLS = {
     'https://tennis-clash.fandom.com/wiki/The_Shuriken',
   ],
   'Wristband': [
+    'https://tennis-clash.fandom.com/wiki/Starter_Band',
     'https://tennis-clash.fandom.com/wiki/Jolly_Roger',
     'https://tennis-clash.fandom.com/wiki/The_Gladiator',
     'https://tennis-clash.fandom.com/wiki/The_Kodiak',
@@ -53,6 +57,7 @@ const GEARS_URLS = {
     'https://tennis-clash.fandom.com/wiki/The_Tomahawk',
   ],
   'Nutrition': [
+    'https://tennis-clash.fandom.com/wiki/Starter_Protein',
     'https://tennis-clash.fandom.com/wiki/Antioxidants',
     'https://tennis-clash.fandom.com/wiki/Carboload',
     'https://tennis-clash.fandom.com/wiki/Increased_Hydration',
@@ -63,6 +68,7 @@ const GEARS_URLS = {
     'https://tennis-clash.fandom.com/wiki/Vegan_Diet',
   ],
   'Workout': [
+    'https://tennis-clash.fandom.com/wiki/Starter_Training',
     'https://tennis-clash.fandom.com/wiki/Endurance',
     'https://tennis-clash.fandom.com/wiki/Lunges',
     'https://tennis-clash.fandom.com/wiki/Mountain_Climber',
@@ -137,7 +143,7 @@ async function get_and_parse(url) {
   const endUpgrade = s.indexOf('</table>', i);
   let levelStartI = s.indexOf('</th><th>', startUpgrade) + 9;
   let levelStart = +s.substring(levelStartI, s.indexOf('\n', levelStartI));
-  for (i = startUpgrade; i !== -1; ) {
+  for (i = startUpgrade; i !== -1 && !item.name.startsWith('Starter'); ) {
     i = s.indexOf('<td>', i) + 4;
     if (i === 3 || i >= endUpgrade) break;
     j = s.indexOf('\n', i);
@@ -157,7 +163,8 @@ async function get_and_parse(url) {
   }
 
   // Skills
-  i = s.indexOf('<table class="article-table">', startUpgrade + 1);
+  const startSkill = startUpgrade + (item.name.startsWith('Starter') ? 0 : 1);
+  i = s.indexOf('<table class="article-table">', startSkill);
   levelStartI = s.indexOf('</th><th>', startUpgrade) + 9;
   levelStart = +s.substring(levelStartI, s.indexOf('\n', levelStartI));
   while (i !== -1) {
@@ -184,7 +191,7 @@ async function get_and_parse(url) {
 }
 
 (async () => {
-  // const url = 'https://tennis-clash.fandom.com/wiki/The_Kodiak';
+  // const url = 'https://tennis-clash.fandom.com/wiki/Starter_Band';
   // return console.log(JSON.stringify(await get_and_parse(url), null, 2));
   const GEARS = {};
   for (const [category, urls] of Object.entries(GEARS_URLS)) {

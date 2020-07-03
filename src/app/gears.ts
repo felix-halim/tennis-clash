@@ -1118,6 +1118,19 @@ export const GEARS = {
   ],
   "Racket": [
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Starter_Racket",
+      "name": "Starter Racket",
+      "foundIn": "Start",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/ba/Starter_Racket.png/revision/latest?cb=20200119161107",
+      "upgrade": {},
+      "skills": {
+        "Forehand": [
+          3
+        ]
+      }
+    },
+    {
       "url": "https://tennis-clash.fandom.com/wiki/The_Bullseye",
       "name": "The Bullseye",
       "foundIn": "Tour 7",
@@ -1411,7 +1424,7 @@ export const GEARS = {
           11,
           14,
           18,
-          23,
+          22,
           26,
           28,
           31,
@@ -1627,6 +1640,19 @@ export const GEARS = {
     }
   ],
   "Grip": [
+    {
+      "url": "https://tennis-clash.fandom.com/wiki/Starter_Grip",
+      "name": "Starter Grip",
+      "foundIn": "Start",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/62/Starter_Grip.png/revision/latest?cb=20200119180605",
+      "upgrade": {},
+      "skills": {
+        "Backhand": [
+          3
+        ]
+      }
+    },
     {
       "url": "https://tennis-clash.fandom.com/wiki/Tactical_Grip",
       "name": "Tactical Grip",
@@ -2138,6 +2164,19 @@ export const GEARS = {
   ],
   "Shoe": [
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Starter_Shoes",
+      "name": "Starter Shoes",
+      "foundIn": "Start",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1b/Starter_Shoe.png/revision/latest?cb=20200119185209",
+      "upgrade": {},
+      "skills": {
+        "Agility": [
+          3
+        ]
+      }
+    },
+    {
       "url": "https://tennis-clash.fandom.com/wiki/The_Anvil",
       "name": "The Anvil",
       "foundIn": "Tour 6",
@@ -2648,6 +2687,19 @@ export const GEARS = {
   ],
   "Wristband": [
     {
+      "url": "https://tennis-clash.fandom.com/wiki/Starter_Band",
+      "name": "Starter Band",
+      "foundIn": "Start",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/0/03/Starter_Band.png/revision/latest?cb=20200119212711",
+      "upgrade": {},
+      "skills": {
+        "Volley": [
+          0
+        ]
+      }
+    },
+    {
       "url": "https://tennis-clash.fandom.com/wiki/Jolly_Roger",
       "name": "Jolly Roger",
       "foundIn": "Tour 3 and above",
@@ -3153,6 +3205,19 @@ export const GEARS = {
     }
   ],
   "Nutrition": [
+    {
+      "url": "https://tennis-clash.fandom.com/wiki/Starter_Protein",
+      "name": "Starter Protein",
+      "foundIn": "Start",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/4d/Starter_Protein.png/revision/latest?cb=20200120004110",
+      "upgrade": {},
+      "skills": {
+        "Stamina": [
+          0
+        ]
+      }
+    },
     {
       "url": "https://tennis-clash.fandom.com/wiki/Antioxidants",
       "name": "Antioxidants",
@@ -3663,6 +3728,19 @@ export const GEARS = {
     }
   ],
   "Workout": [
+    {
+      "url": "https://tennis-clash.fandom.com/wiki/Starter_Training",
+      "name": "Starter Training",
+      "foundIn": "Start",
+      "rarity": "Common",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ac/Starter_Training.png/revision/latest?cb=20200120002723",
+      "upgrade": {},
+      "skills": {
+        "Serve": [
+          1
+        ]
+      }
+    },
     {
       "url": "https://tennis-clash.fandom.com/wiki/Endurance",
       "name": "Endurance",

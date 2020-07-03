@@ -8,6 +8,15 @@ import { debounceTime, map, shareReplay, tap } from 'rxjs/operators';
 
 const CATEGORIES = Object.keys(GEARS);
 const ATTRIBUTES = ['Agility', 'Stamina', 'Serve', 'Volley', 'Forehand', 'Backhand', 'Total'];
+const STARTERS = [
+  ['Character', 'Jonah'],
+  ['Racket', 'Starter Racket'],
+  ['Grip', 'Starter Grip'],
+  ['Shoe', 'Starter Shoes'],
+  ['Wristband', 'Starter Band'],
+  ['Nutrition', 'Starter Protein'],
+  ['Workout', 'Starter Training'],
+];
 
 interface LevelByItem {
   /** The current level of each item. */
@@ -136,7 +145,6 @@ function computeBestConfigs(config: Config) {
   if (catIdx >= CATEGORIES.length) return saveTopConfig(config);
 
   config.itemNames.push('');
-  computeBestConfigs(config);
   for (const [itemName, attrPowers] of Object.entries<AttributePower>(config.itemPowers[catIdx])) {
     config.itemNames[catIdx] = itemName;
     for (const [attr, power] of Object.entries<number>(attrPowers)) {
@@ -199,6 +207,11 @@ export class AppComponent implements OnDestroy {
 
   constructor() {
     this.inventories = JSON.parse(localStorage.inventories ?? '{}');
+    for (const [category, itemName] of STARTERS) {
+      if (this.inventories[category]?.[itemName] === undefined) {
+        this.setInventory(category, itemName, 0);
+      }
+    }
 
     const configs = JSON.parse(localStorage.configs ?? '{}');
     for (const attr of ATTRIBUTES)

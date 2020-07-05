@@ -46,3 +46,7 @@ input[type=number] {
 .invalid {
   background-color: #FFCCCC;
 }
+
+.ignored {
+  background-color: lightgray;
+}

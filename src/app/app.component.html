@@ -72,6 +72,8 @@
       Click on the column to see its lineup.
       Click the <span style="color:blue">attribute name</span> to toggle to
       range-based input where you can set the maximum power value as well.
+      If you don't care about the attribute, set the preferred power to "ignore"
+      to exclude it from the Total Power computation.
     </p>
 
     <table>
@@ -89,7 +91,7 @@
       <tr>
         <th colspan="2" width="140" height="29" style="text-align: center;">Set Preferred Power</th>
       </tr>
-      <tr *ngFor="let attr of ATTRIBUTES" height="33">
+      <tr *ngFor="let attr of ATTRIBUTES" height="33" [ngClass]="{'ignored': isIgnored(attr)}">
         <th *ngIf="attr === 'Total'" colspan="2" style="text-align: right;">Total Power (Desc):</th>
         <ng-container *ngIf="attr !== 'Total'">
           <td>
@@ -99,7 +101,12 @@
             <input *ngIf="isRangeValue(attr); else minValue" type="text" [formControlName]="attr" style="width: 50px;">
             <ng-template #minValue>
               <mat-select [formControlName]="attr">
-                <mat-option *ngFor="let e of [].constructor(121); index as i" [value]="i">&#8805; {{ i }}</mat-option>
+                <mat-option *ngFor="let e of [].constructor(121); index as i" [value]="i">
+                  <ng-container *ngIf="i; else ignore">
+                    &#8805; {{ i }}
+                  </ng-container>
+                  <ng-template #ignore>ignore</ng-template>
+                </mat-option>
               </mat-select>
             </ng-template>
           </td>
@@ -115,7 +122,7 @@
             <div style="width: 25px">#{{ i + 1 }}</div>
           </th>
         </tr>
-        <tr *ngFor="let attr of ATTRIBUTES" height="33">
+        <tr *ngFor="let attr of ATTRIBUTES" height="33" [ngClass]="{'ignored': isIgnored(attr)}">
           <td *ngFor="let c of topConfigs; index as i" [ngClass]="{'selected': selectedConfig == c, 'number': true}"
             (click)="selectedConfig = c; endMarker.scrollIntoView({behavior:'smooth'})">
             {{ c.powers[attr].current }}</td>

@@ -149,14 +149,18 @@ function computeBestConfigs(config: Config) {
     config.itemNames[catIdx] = itemName;
     for (const [attr, power] of Object.entries<number>(attrPowers)) {
       config.powers[attr].current += power;
-      config.powers['Total'].current += power;
+      if (config.powers[attr].minimum > 0) {
+        config.powers['Total'].current += power;
+      }
     }
 
     computeBestConfigs(config);
 
     for (const [attr, power] of Object.entries<number>(attrPowers)) {
       config.powers[attr].current -= power;
-      config.powers['Total'].current -= power;
+      if (config.powers[attr].minimum > 0) {
+        config.powers['Total'].current -= power;
+      }
     }
   }
   config.itemNames.pop();
@@ -215,7 +219,7 @@ export class AppComponent implements OnDestroy {
 
     const configs = JSON.parse(localStorage.configs ?? '{}');
     for (const attr of ATTRIBUTES)
-      configs[attr] = new FormControl(configs[attr] ?? 0);
+      configs[attr] = new FormControl(configs[attr] ?? 1);
     configs['levelCap'] = new FormControl(configs['levelCap'] ?? 12);
     this.formGroup = new FormGroup(configs);
 
@@ -292,7 +296,7 @@ export class AppComponent implements OnDestroy {
   }
 
   isInvalidValue(attr: string) {
-    const re = /^\d{0,3}(-\d{0,3})?$/;
+    const re = /^\d{1,3}(-\d{0,3})?$/;
     return !re.exec(this.formGroup.get(attr).value);
   }
 
@@ -300,5 +304,9 @@ export class AppComponent implements OnDestroy {
     const strValue = this.formGroup.get(attr).value + '';
     const newValue = this.isRangeValue(attr) ? +strValue.split('-')[0] : (strValue + '-999');
     this.formGroup.get(attr).setValue(newValue);
+  }
+
+  isIgnored(attr: string) {
+    return this.formGroup.get(attr).value === 0;
   }
 }

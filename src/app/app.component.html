@@ -4,9 +4,14 @@
   Select your available cards for each category by clicking the column according to the level of your card.
   You can update incorrect attribute values by clicking the [<b>edit</b>] link at the top-left of the table,
   edit the fandom Wiki page to the correct value, then let me know by sending feedback (at the bottom of this page).
+  If you would like to export/import your current card settings,
+  <b><u><a style="cursor: pointer; color: blue" (click)="toggleMode()">click here</a></u></b>
+  to toggle to JSON mode and copy/paste the JSON text.
 </p>
 
-<mat-tab-group>
+<textarea *ngIf="mode === 'JSON'" (change)="updateJson(ta.value)" #ta rows="30" cols="30">{{ configJson }}</textarea>
+
+<mat-tab-group *ngIf="mode !== 'JSON'">
   <mat-tab *ngFor="let g of gears">
     <ng-template mat-tab-label>
       {{g.category}}

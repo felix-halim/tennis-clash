@@ -203,11 +203,18 @@ export class AppComponent implements OnDestroy {
       const top = computeBestConfigs(config).topConfigs;
       this.selectedConfig = top[0];
       this.isOpen = true;
+      this.configJson = JSON.stringify({
+        "inventories": JSON.parse(localStorage.inventories),
+        "configs": JSON.parse(localStorage.configs),
+      }, null, 2);
       return top;
     }),
     shareReplay(1));
 
   selectedConfig: Config | null = null;
+
+  mode = 'graph';
+  configJson = '';
 
   constructor() {
     this.inventories = JSON.parse(localStorage.inventories ?? '{}');
@@ -257,6 +264,23 @@ export class AppComponent implements OnDestroy {
 
   get levelCap(): any {
     return this.formGroup.get('levelCap').value;
+  }
+
+  toggleMode() {
+    this.mode = this.mode === 'JSON' ? 'graph' : 'JSON';
+  }
+
+  updateJson(val) {
+    try {
+      const json = JSON.parse(val);
+      this.inventories = json.inventories;
+      this.formGroup.setValue(json.configs);
+      this.computeTrigger$.next('');
+      console.log('Changed configs', json);
+    } catch (e) {
+      alert(e);
+      console.error(e);
+    }
   }
 
   setInventory(category: string, name: string, level: number) {

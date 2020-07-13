@@ -333,4 +333,17 @@ export class AppComponent implements OnDestroy {
   isIgnored(attr: string) {
     return this.formGroup.get(attr).value === 0;
   }
+
+  formatUpgrade(s: string) {
+    s = s.toLowerCase();
+    if (!s) return '?';
+    if (s === '/' || s === 'starter') return '/';
+    if (s[s.length - 1] === 'k') s = s.substring(0, s.length - 1);
+    else if (s.length > 3) s = s.substring(0, s.length - 3);
+    if (s.length > 3) {
+      const i = s.indexOf('.');
+      s = i === -1 ? s : s.substring(0, i);
+    }
+    return s;
+  }
 }

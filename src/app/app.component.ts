@@ -95,6 +95,10 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
       const item = GEARS[cat].find(item => item.name === name);
       const attrPowers = itemPowers[name] = {};
       itemLevel[name] = level + 1;
+      if (!item?.skills) {
+        alert('Item not found: ' + name);
+        continue;
+      }
       for (const [attr, values] of Object.entries<number[]>(item.skills)) {
         attrPowers[attr] = values[level];
         maxAttr[attr] = Math.max(maxAttr[attr] ?? 0, values[level]);

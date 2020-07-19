@@ -58,6 +58,9 @@ interface Config {
   /** The maximum power for the rest of the categories on the right. */
   maxRemainingPowers: number[][];
 
+  /** The maximum total power for the rest of the categories on the right. */
+  maxRemainingTotalPower: number[];
+
   /** The power value at each attribute index. */
   powerConfig: PowerConfig[];
 
@@ -85,6 +88,7 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
     itemPowers: [],
     itemLevel: [],
     maxRemainingPowers: [],
+    maxRemainingTotalPower: [],
     powerConfig: [],
     currentPowers: 0,
     totalPower: 0,
@@ -129,12 +133,13 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
       itemPowers[name] = attrPowers;
     }
     const rem = config.maxRemainingPowers[c] = [];
-    for (const [i, attr] of ATTRIBUTES.entries()) {
-      const nextRem = (c + 1 < CATEGORIES.length) ? (config.maxRemainingPowers[c + 1][i] ?? 0) : 0;
+    for (const [i] of ATTRIBUTES.entries()) {
+      const nextRem = config.maxRemainingPowers[c + 1]?.[i] ?? 0;
       rem[i] = nextRem + maxAttr[i];
     }
-
-
+    config.maxRemainingTotalPower[c] =
+      maxAttr.reduce((prev, cur) => prev + (cur ?? 0), 0) +
+      (config.maxRemainingTotalPower[c + 1] ?? 0);
   }
   return config;
 }
@@ -154,18 +159,13 @@ function saveTopConfig(config: Config) {
   if (!config.currentPowers) return config;
   config.numConfig++;
 
-  config.totalPower = 0;
-  for (const [i] of ATTRIBUTES.entries()) {
-    if (config.powerConfig[i].minimum == 0) continue;
-    config.totalPower += getPower(config.currentPowers, i);
-  }
-
   const configs = config.topConfigs;
   configs.push({
     itemNames: [...config.itemNames],
     itemPowers: config.itemPowers,
     itemLevel: config.itemLevel,
     maxRemainingPowers: [],
+    maxRemainingTotalPower: [],
     powerConfig: config.powerConfig,
     currentPowers: config.currentPowers,
     totalPower: config.totalPower,
@@ -187,13 +187,20 @@ function saveTopConfig(config: Config) {
 
 function computeBestConfigs(config: Config) {
   const catIdx = config.itemNames.length;
+
+  config.totalPower = 0;
   for (const [i] of ATTRIBUTES.entries()) {
     const { minimum, maximum } = config.powerConfig[i];
     const maxRemainer = (catIdx >= CATEGORIES.length) ? 0 : (config.maxRemainingPowers[catIdx][i] ?? 0);
     const current = getPower(config.currentPowers, i);
     if (current + maxRemainer < minimum) return config;
     if (current > maximum) return config;
+    if (config.powerConfig[i].minimum == 0) continue;
+    config.totalPower += getPower(config.currentPowers, i);
   }
+
+  if (config.totalPower + config.maxRemainingTotalPower[catIdx] <
+    config.topConfigs[config.topConfigs.length - 1]?.totalPower) return config;
 
   if (catIdx >= CATEGORIES.length) return saveTopConfig(config);
 
@@ -215,10 +222,10 @@ function computeBestConfigs(config: Config) {
       state('true', style({})),
       state('false', style({
         opacity: 1,
-        backgroundColor: 'gray'
+        backgroundColor: 'yellow'
       })),
       transition('true => false', animate('0.25s')),
-      transition('false => true', animate('0.1s'))
+      transition('false => true', animate('2.5s'))
     ])
   ],
   templateUrl: './app.component.html',
@@ -239,7 +246,7 @@ export class AppComponent implements OnDestroy {
 
   bestConfigs$ = this.computeTrigger$.pipe(
     tap(() => { this.isOpen = false; }),
-    debounceTime(1000),
+    debounceTime(10),
     map(() => initialConfig(this.inventories, this.formGroup.value)),
     map(config => {
       let top = computeBestConfigs(config).topConfigs;

@@ -1617,8 +1617,8 @@ export const GEARS = {
           9,
           10,
           10,
-          0,
-          0,
+          11,
+          12,
           13
         ],
         "Forehand": [
@@ -1632,8 +1632,8 @@ export const GEARS = {
           18,
           20,
           22,
-          0,
-          0,
+          24,
+          26,
           28
         ]
       }
@@ -1738,7 +1738,7 @@ export const GEARS = {
           "",
           "2",
           "4",
-          "9",
+          "10",
           "30",
           "60",
           "",
@@ -2183,7 +2183,7 @@ export const GEARS = {
       "rarity": "Rare",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a8/The_Anvil.png/revision/latest?cb=20200119193426",
       "upgrade": {
-        "Carte": [
+        "Cards": [
           "",
           "",
           "",
@@ -2198,7 +2198,7 @@ export const GEARS = {
           "800",
           "1k"
         ],
-        "Prezzo": [
+        "Price": [
           "",
           "",
           "",
@@ -3225,7 +3225,7 @@ export const GEARS = {
       "rarity": "Common",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ab/Antioxidants.png/revision/latest?cb=20200120003733",
       "upgrade": {
-        "carte": [
+        "Cards": [
           "",
           "2",
           "4",
@@ -3240,13 +3240,13 @@ export const GEARS = {
           "2k",
           "4k"
         ],
-        "prezzo": [
+        "Price": [
           "",
           "21.7K",
           "",
           "35.9k",
           "",
-          "58400",
+          "58.4k",
           "",
           "87.5k",
           "104.2k",
@@ -4065,7 +4065,7 @@ export const GEARS = {
           "",
           "",
           "",
-          "",
+          "2",
           "",
           "",
           "3",
@@ -4080,7 +4080,7 @@ export const GEARS = {
           "",
           "",
           "",
-          "",
+          "45.9",
           "",
           "",
           "87.5k",

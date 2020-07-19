@@ -65,7 +65,7 @@
               <td>Up Price (K)</td>
               <td *ngFor="let p of item.upgrade.Price; index as i" (click)="setInventory(g.category, item.name, i)"
                 [ngClass]="{'selected': hasInventory(g.category, item.name, i), 'number': true}">
-                {{ formatUpgrade(p) }}</td>
+                {{ formatUpgrade(p, true) }}</td>
             </tr>
           </table>
         </mat-tab>
@@ -109,25 +109,25 @@
         <th colspan="2" width="140" height="29" style="text-align: center;">Set Preferred Power</th>
       </tr>
       <tr *ngFor="let attr of ATTRIBUTES" height="33" [ngClass]="{'ignored': isIgnored(attr)}">
-        <th *ngIf="attr === 'Total'" colspan="2" style="text-align: right;">Total Power (Desc):</th>
-        <ng-container *ngIf="attr !== 'Total'">
-          <td>
-            <a style="cursor: pointer; color: blue" (click)="toggleFormat(attr)">{{ attr }}</a>
-          </td>
-          <td width="60" [ngClass]="{'invalid': isInvalidValue(attr)}">
-            <input *ngIf="isRangeValue(attr); else minValue" type="text" [formControlName]="attr" style="width: 50px;">
-            <ng-template #minValue>
-              <mat-select [formControlName]="attr">
-                <mat-option *ngFor="let e of [].constructor(121); index as i" [value]="i">
-                  <ng-container *ngIf="i; else ignore">
-                    &#8805; {{ i }}
-                  </ng-container>
-                  <ng-template #ignore>ignore</ng-template>
-                </mat-option>
-              </mat-select>
-            </ng-template>
-          </td>
-        </ng-container>
+        <td>
+          <a style="cursor: pointer; color: blue" (click)="toggleFormat(attr)">{{ attr }}</a>
+        </td>
+        <td width="60" [ngClass]="{'invalid': isInvalidValue(attr)}">
+          <input *ngIf="isRangeValue(attr); else minValue" type="text" [formControlName]="attr" style="width: 50px;">
+          <ng-template #minValue>
+            <mat-select [formControlName]="attr">
+              <mat-option *ngFor="let e of [].constructor(121); index as i" [value]="i">
+                <ng-container *ngIf="i; else ignore">
+                  &#8805; {{ i }}
+                </ng-container>
+                <ng-template #ignore>ignore</ng-template>
+              </mat-option>
+            </mat-select>
+          </ng-template>
+        </td>
+      </tr>
+      <tr height="33">
+        <th colspan="2" style="text-align: right;">Total Power (Desc):</th>
       </tr>
     </table>
 
@@ -139,10 +139,15 @@
             <div style="width: 25px">#{{ i + 1 }}</div>
           </th>
         </tr>
-        <tr *ngFor="let attr of ATTRIBUTES" height="33" [ngClass]="{'ignored': isIgnored(attr)}">
+        <tr *ngFor="let attr of ATTRIBUTES; index as attrIndex" height="33" [ngClass]="{'ignored': isIgnored(attr)}">
           <td *ngFor="let c of topConfigs; index as i" [ngClass]="{'selected': selectedConfig == c, 'number': true}"
             (click)="selectedConfig = c; endMarker.scrollIntoView({behavior:'smooth'})">
-            {{ c.powers[attr].current }}</td>
+            {{ getPower(c.currentPowers, attrIndex) }}</td>
+        </tr>
+        <tr height="33">
+          <td *ngFor="let c of topConfigs; index as i" [ngClass]="{'selected': selectedConfig == c, 'number': true}"
+            (click)="selectedConfig = c; endMarker.scrollIntoView({behavior:'smooth'})">
+            {{ c.totalPower }}</td>
         </tr>
       </table>
 

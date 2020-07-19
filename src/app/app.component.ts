@@ -7,7 +7,7 @@ import { Subscription, BehaviorSubject } from 'rxjs';
 import { debounceTime, map, shareReplay, tap } from 'rxjs/operators';
 
 const CATEGORIES = Object.keys(GEARS);
-const ATTRIBUTES = ['Agility', 'Stamina', 'Serve', 'Volley', 'Forehand', 'Backhand', 'Total'];
+const ATTRIBUTES = ['Agility', 'Stamina', 'Serve', 'Volley', 'Forehand', 'Backhand'];
 const STARTERS = [
   ['Character', 'Jonah'],
   ['Racket', 'Starter Racket'],
@@ -17,6 +17,15 @@ const STARTERS = [
   ['Nutrition', 'Starter Protein'],
   ['Workout', 'Starter Training'],
 ];
+const MASK = 255;
+const EXPONENTS = [1];
+for (let i = 1; i < 6; i++) {
+  EXPONENTS[i] = EXPONENTS[i - 1] * 256;
+}
+
+function getPower(value: number, attrIndex: number) {
+  return (value / EXPONENTS[attrIndex]) & MASK;
+}
 
 interface LevelByItem {
   /** The current level of each item. */
@@ -28,9 +37,12 @@ interface ItemsByCategory {
   [category: string]: LevelByItem;
 }
 
-interface AttributePower {
-  /** The power of this attribute name. */
-  [attrName: string]: number;
+interface PowerConfig {
+  /** Minimum power requirement. */
+  minimum: number;
+
+  /** Maximum power requirement. */
+  maximum: number;
 }
 
 interface Config {
@@ -38,29 +50,31 @@ interface Config {
   itemNames: string[];
 
   /** The power of each available item in a category. */
-  itemPowers: { [itemName: string]: AttributePower }[];
+  itemPowers: { [itemName: string]: number }[];
 
   /** The level of each available item in a category. */
   itemLevel: { [itemName: string]: number }[];
 
   /** The maximum power for the rest of the categories on the right. */
-  maxRemainingPowers: AttributePower[];
+  maxRemainingPowers: number[][];
 
-  powers: {
-    [attr: string]: {
-      /** Minimum power requirement. */
-      minimum: number;
+  /** The power value at each attribute index. */
+  powerConfig: PowerConfig[];
 
-      /** Maximum power requirement. */
-      maximum: number;
+  /** Current total powers for each attribute. */
+  currentPowers: number;
 
-      /** The current total power. */
-      current: number;
-    }
-  };
+  /** Total power of all preferred only powers. */
+  totalPower: number;
 
   /** The top N configs based on total powers. */
   topConfigs: Config[];
+
+  /** For debugging number of configs found. */
+  numConfig: number
+
+  /** The start time of the trigger. */
+  startTime: number;
 }
 
 function initialConfig(inventories: ItemsByCategory, configs: any) {
@@ -71,10 +85,14 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
     itemPowers: [],
     itemLevel: [],
     maxRemainingPowers: [],
-    powers: {},
-    topConfigs: []
+    powerConfig: [],
+    currentPowers: 0,
+    totalPower: 0,
+    topConfigs: [],
+    numConfig: 0,
+    startTime: Date.now()
   };
-  for (const attr of ATTRIBUTES) {
+  for (const [i, attr] of ATTRIBUTES.entries()) {
     let minimum = +configs[attr];
     let maximum = 999;
     const v = configs[attr] + '';
@@ -83,55 +101,85 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
       minimum = +range[0];
       maximum = +range[1];
     }
-    config.powers[attr] = { minimum, maximum, current: 0 };
+    config.powerConfig[i] = { minimum, maximum };
   }
   for (let c = CATEGORIES.length - 1; c >= 0; c--) {
     const cat = CATEGORIES[c];
-    const maxAttr = {};
+    const maxAttr = [];
     const itemPowers = config.itemPowers[c] = {};
     const itemLevel = config.itemLevel[c] = {};
     for (const [name, inventoryLevel] of Object.entries<number>(inventories[cat] ?? {})) {
       const level = Math.min(inventoryLevel, configs.levelCap);
       const item = GEARS[cat].find(item => item.name === name);
-      const attrPowers = itemPowers[name] = {};
       itemLevel[name] = level + 1;
       if (!item?.skills) {
         alert('Item not found: ' + name);
         continue;
       }
+      let attrPowers = 0;
       for (const [attr, values] of Object.entries<number[]>(item.skills)) {
-        attrPowers[attr] = values[level];
-        maxAttr[attr] = Math.max(maxAttr[attr] ?? 0, values[level]);
+        const i = ATTRIBUTES.indexOf(attr);
+        if (i === -1) {
+          alert(`Attribute ${attr} not found for item ${name}`);
+          continue;
+        }
+        attrPowers += values[level] * EXPONENTS[i];
+        maxAttr[i] = Math.max(maxAttr[i] ?? 0, values[level]);
       }
+      itemPowers[name] = attrPowers;
     }
-    const rem = config.maxRemainingPowers[c] = {};
-    for (const attr of ATTRIBUTES) {
-      const nextRem = (c + 1 < CATEGORIES.length) ? config.maxRemainingPowers[c + 1][attr] : 0;
-      rem[attr] = nextRem + maxAttr[attr];
+    const rem = config.maxRemainingPowers[c] = [];
+    for (const [i, attr] of ATTRIBUTES.entries()) {
+      const nextRem = (c + 1 < CATEGORIES.length) ? (config.maxRemainingPowers[c + 1][i] ?? 0) : 0;
+      rem[i] = nextRem + maxAttr[i];
     }
+
+
   }
   return config;
 }
 
+function isSubset(a: number, b: number) {
+  while (a) {
+    const x = a & MASK;
+    const y = b & MASK;
+    if (x > y) return false;
+    a /= EXPONENTS[1];
+    b /= EXPONENTS[1];
+  }
+  return true;
+}
+
 function saveTopConfig(config: Config) {
-  if (!config.powers['Total'].current) return;
+  if (!config.currentPowers) return config;
+  config.numConfig++;
+
+  config.totalPower = 0;
+  for (const [i] of ATTRIBUTES.entries()) {
+    if (config.powerConfig[i].minimum == 0) continue;
+    config.totalPower += getPower(config.currentPowers, i);
+  }
+
   const configs = config.topConfigs;
   configs.push({
     itemNames: [...config.itemNames],
     itemPowers: config.itemPowers,
     itemLevel: config.itemLevel,
     maxRemainingPowers: [],
-    powers: JSON.parse(JSON.stringify(config.powers)),
-    topConfigs: []
+    powerConfig: config.powerConfig,
+    currentPowers: config.currentPowers,
+    totalPower: config.totalPower,
+    topConfigs: [],
+    numConfig: 0,
+    startTime: 0,
   });
   for (let i = configs.length - 2; i >= 0; i--) {
-    if (configs[i].powers['Total'].current < configs[i + 1].powers['Total'].current) {
-      const t = configs[i];
-      configs[i] = configs[i + 1];
-      configs[i + 1] = t;
-    }
+    if (configs[i].totalPower >= configs[i + 1].totalPower) break;
+    const t = configs[i];
+    configs[i] = configs[i + 1];
+    configs[i + 1] = t;
   }
-  if (configs.length > 25) {
+  if (configs.length > 50) {
     configs.pop();
   }
   return config;
@@ -139,33 +187,22 @@ function saveTopConfig(config: Config) {
 
 function computeBestConfigs(config: Config) {
   const catIdx = config.itemNames.length;
-  for (const attr of ATTRIBUTES) {
-    const p = config.powers[attr];
-    const maxRemainer = (catIdx >= CATEGORIES.length) ? 0 : config.maxRemainingPowers[catIdx][attr];
-    if (p.current + maxRemainer < p.minimum) return config;
-    if (p.current > p.maximum) return config;
+  for (const [i] of ATTRIBUTES.entries()) {
+    const { minimum, maximum } = config.powerConfig[i];
+    const maxRemainer = (catIdx >= CATEGORIES.length) ? 0 : (config.maxRemainingPowers[catIdx][i] ?? 0);
+    const current = getPower(config.currentPowers, i);
+    if (current + maxRemainer < minimum) return config;
+    if (current > maximum) return config;
   }
 
   if (catIdx >= CATEGORIES.length) return saveTopConfig(config);
 
   config.itemNames.push('');
-  for (const [itemName, attrPowers] of Object.entries<AttributePower>(config.itemPowers[catIdx])) {
+  for (const [itemName, attrPowers] of Object.entries<number>(config.itemPowers[catIdx])) {
     config.itemNames[catIdx] = itemName;
-    for (const [attr, power] of Object.entries<number>(attrPowers)) {
-      config.powers[attr].current += power;
-      if (config.powers[attr].minimum > 0) {
-        config.powers['Total'].current += power;
-      }
-    }
-
+    config.currentPowers += attrPowers;
     computeBestConfigs(config);
-
-    for (const [attr, power] of Object.entries<number>(attrPowers)) {
-      config.powers[attr].current -= power;
-      if (config.powers[attr].minimum > 0) {
-        config.powers['Total'].current -= power;
-      }
-    }
+    config.currentPowers -= attrPowers;
   }
   config.itemNames.pop();
   return config;
@@ -190,6 +227,7 @@ function computeBestConfigs(config: Config) {
 export class AppComponent implements OnDestroy {
   CATEGORIES = CATEGORIES;
   ATTRIBUTES = ATTRIBUTES;
+  getPower = getPower;
   gears = [];
   inventories: ItemsByCategory;
   formGroup: FormGroup;
@@ -204,13 +242,23 @@ export class AppComponent implements OnDestroy {
     debounceTime(1000),
     map(() => initialConfig(this.inventories, this.formGroup.value)),
     map(config => {
-      const top = computeBestConfigs(config).topConfigs;
+      let top = computeBestConfigs(config).topConfigs;
+      for (let i = 1; i < top.length; i++) {
+        for (let j = 0; j < i; j++) {
+          if (isSubset(top[i].currentPowers, top[j].currentPowers)) {
+            top.splice(i--, 1);
+            break;
+          }
+        }
+      }
+      top = top.slice(0, Math.min(25, top.length));
       this.selectedConfig = top[0];
       this.isOpen = true;
       this.configJson = JSON.stringify({
         "inventories": JSON.parse(localStorage.inventories),
         "configs": JSON.parse(localStorage.configs),
       }, null, 2);
+      console.log('Configs', config.numConfig, 'Runtime', Date.now() - config.startTime);
       return top;
     }),
     shareReplay(1));
@@ -229,10 +277,11 @@ export class AppComponent implements OnDestroy {
     }
 
     const configs = JSON.parse(localStorage.configs ?? '{}');
+    const formConfigs = {};
     for (const attr of ATTRIBUTES)
-      configs[attr] = new FormControl(configs[attr] ?? 1);
-    configs['levelCap'] = new FormControl(configs['levelCap'] ?? 12);
-    this.formGroup = new FormGroup(configs);
+      formConfigs[attr] = new FormControl(configs[attr] ?? 1);
+    formConfigs['levelCap'] = new FormControl(configs['levelCap'] ?? 12);
+    this.formGroup = new FormGroup(formConfigs);
 
     for (const category of CATEGORIES) {
       const items = [];
@@ -245,8 +294,10 @@ export class AppComponent implements OnDestroy {
         const total = [];
         for (const [attr, skills] of Object.entries<any>(item.skills)) {
           const i = ATTRIBUTES.indexOf(attr);
-          if (i === -1 || i === ATTRIBUTES.length - 1)
+          if (i === -1) {
             alert('Unknown attribute: ' + attr);
+            continue;
+          }
           attrs.push({ attr, skills });
           for (let i = 0; i < skills.length; i++) {
             total[i] = (total[i] ?? 0) + skills[i];
@@ -308,11 +359,12 @@ export class AppComponent implements OnDestroy {
     return this.inventories?.[category]?.[name] === level;
   }
 
-  stats(s: any) {
+  stats(powers: any) {
     const arr = [];
-    for (const attr of ATTRIBUTES) {
-      if (s && s[attr]) {
-        arr.push(`${attr.substr(0, 2)}:${s[attr]}`);
+    for (const [i, attr] of ATTRIBUTES.entries()) {
+      const power = getPower(powers, i);
+      if (power) {
+        arr.push(`${attr.substr(0, 2)}:${power}`);
       }
     }
     return arr;
@@ -338,11 +390,11 @@ export class AppComponent implements OnDestroy {
     return this.formGroup.get(attr).value === 0;
   }
 
-  formatUpgrade(s: string) {
+  formatUpgrade(s: string, removeK = false) {
     s = s.toLowerCase();
     if (!s) return '?';
     if (s === '/' || s === 'starter') return '/';
-    if (s[s.length - 1] === 'k') s = s.substring(0, s.length - 1);
+    if (removeK && s[s.length - 1] === 'k') s = s.substring(0, s.length - 1);
     else if (s.length > 3) s = s.substring(0, s.length - 3);
     if (s.length > 3) {
       const i = s.indexOf('.');

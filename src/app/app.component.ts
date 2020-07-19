@@ -224,8 +224,8 @@ function computeBestConfigs(config: Config) {
         opacity: 1,
         backgroundColor: 'yellow'
       })),
-      transition('true => false', animate('0.25s')),
-      transition('false => true', animate('2.5s'))
+      transition('true => false', animate('0.1s')),
+      transition('false => true', animate('1.5s'))
     ])
   ],
   templateUrl: './app.component.html',
@@ -246,7 +246,7 @@ export class AppComponent implements OnDestroy {
 
   bestConfigs$ = this.computeTrigger$.pipe(
     tap(() => { this.isOpen = false; }),
-    debounceTime(10),
+    debounceTime(125),
     map(() => initialConfig(this.inventories, this.formGroup.value)),
     map(config => {
       let top = computeBestConfigs(config).topConfigs;

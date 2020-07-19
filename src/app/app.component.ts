@@ -81,6 +81,7 @@ interface Config {
 }
 
 function initialConfig(inventories: ItemsByCategory, configs: any) {
+  // TODO: save preferred power by level cap.
   localStorage.inventories = JSON.stringify(inventories);
   localStorage.configs = JSON.stringify(configs);
   const config: Config = {
@@ -408,5 +409,14 @@ export class AppComponent implements OnDestroy {
       s = i === -1 ? s : s.substring(0, i);
     }
     return s;
+  }
+
+  sumPowers(a: number) {
+    let sum = 0;
+    while (a) {
+      sum += a & MASK;
+      a /= EXPONENTS[1];
+    }
+    return sum;
   }
 }

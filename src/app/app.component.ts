@@ -81,9 +81,9 @@ interface Config {
 }
 
 function initialConfig(inventories: ItemsByCategory, configs: any) {
-  // TODO: save preferred power by level cap.
   localStorage.inventories = JSON.stringify(inventories);
   localStorage.configs = JSON.stringify(configs);
+  localStorage[`configs${configs.levelCap}`] = JSON.stringify(configs);
   const config: Config = {
     itemNames: [],
     itemPowers: [],
@@ -262,10 +262,16 @@ export class AppComponent implements OnDestroy {
       top = top.slice(0, Math.min(25, top.length));
       this.selectedConfig = top[0];
       this.isOpen = true;
-      this.configJson = JSON.stringify({
+      const configToSave = {
         "inventories": JSON.parse(localStorage.inventories),
         "configs": JSON.parse(localStorage.configs),
-      }, null, 2);
+      };
+      for (let i = 0; i < 15; i++) {
+        const key = `configs${i}`;
+        const c = localStorage[key];
+        if (c) configToSave[key] = JSON.parse(c);
+      }
+      this.configJson = JSON.stringify(configToSave, null, 2);
       console.log('Configs', config.numConfig, 'Runtime', Date.now() - config.startTime);
       return top;
     }),
@@ -338,6 +344,11 @@ export class AppComponent implements OnDestroy {
       const json = JSON.parse(val);
       this.inventories = json.inventories;
       this.formGroup.setValue(json.configs);
+      for (let i = 0; i < 15; i++) {
+        const key = `configs${i}`;
+        const c = json[key];
+        if (c) localStorage[key] = JSON.stringify(c);
+      }
       this.computeTrigger$.next('');
       console.log('Changed configs', json);
     } catch (e) {
@@ -394,8 +405,17 @@ export class AppComponent implements OnDestroy {
     this.formGroup.get(attr).setValue(newValue);
   }
 
+  changeLevelCap(levelCap) {
+    const configsJson = localStorage[`configs${levelCap}`];
+    if (configsJson) {
+      this.formGroup.setValue(JSON.parse(configsJson));
+    }
+    this.formGroup.get('levelCap').setValue(levelCap);
+  }
+
   isIgnored(attr: string) {
-    return this.formGroup.get(attr).value === 0;
+    const value = '' + this.formGroup.get(attr).value;
+    return value.startsWith('0');
   }
 
   formatUpgrade(s: string, removeK = false) {

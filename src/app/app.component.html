@@ -97,7 +97,7 @@
       <tr>
         <th>Set Level Cap :</th>
         <td width="50">
-          <mat-select [value]="levelCap" (selectionChange)="formGroup.get('levelCap').setValue($event.value)">
+          <mat-select [value]="levelCap" (selectionChange)="changeLevelCap($event.value)">
             <mat-option *ngFor="let e of [].constructor(9); index as i" [value]="i+4">{{ i+5 }}</mat-option>
           </mat-select>
         </td>

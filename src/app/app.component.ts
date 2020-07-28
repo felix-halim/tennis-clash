@@ -251,9 +251,9 @@ export class AppComponent implements OnDestroy {
     map(() => initialConfig(this.inventories, this.formGroup.value)),
     map(config => {
       let top = computeBestConfigs(config).topConfigs;
-      for (let i = 1; i < top.length; i++) {
-        for (let j = 0; j < i; j++) {
-          if (isSubset(top[i].currentPowers, top[j].currentPowers)) {
+      for (let i = 0; i < top.length; i++) {
+        for (let j = 0; j < top.length; j++) {
+          if (i != j && isSubset(top[i].currentPowers, top[j].currentPowers)) {
             top.splice(i--, 1);
             break;
           }

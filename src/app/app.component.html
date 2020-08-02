@@ -30,7 +30,7 @@
                 <td>
                   {{item.name}}
                   <ng-container *ngIf="inventories[g.category][item.name] as level">
-                    ({{ level }})
+                    ({{ level + 1 }})
                   </ng-container>
                   <!-- {{item.rarity}}<br> -->
                   <!-- {{item.foundIn}} -->

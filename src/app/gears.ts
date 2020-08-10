@@ -36,8 +36,8 @@ export const GEARS = {
       },
       "skills": {
         "Agility": [
-          2,
-          4,
+          3,
+          5,
           5,
           8,
           9,
@@ -383,7 +383,7 @@ export const GEARS = {
         "Agility": [
           5,
           7,
-          7,
+          8,
           9,
           12,
           14,
@@ -1614,7 +1614,7 @@ export const GEARS = {
           8,
           8,
           8,
-          9,
+          10,
           10,
           10,
           11,
@@ -2831,7 +2831,7 @@ export const GEARS = {
           "",
           "2",
           "",
-          "3",
+          "10",
           "20",
           "50",
           "60",

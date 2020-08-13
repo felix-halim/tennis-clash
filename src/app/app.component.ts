@@ -180,7 +180,7 @@ function saveTopConfig(config: Config) {
     configs[i] = configs[i + 1];
     configs[i + 1] = t;
   }
-  if (configs.length > 50) {
+  if (configs.length > 500) {
     configs.pop();
   }
   return config;

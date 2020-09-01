@@ -143,7 +143,7 @@ async function get_and_parse(url) {
   const endUpgrade = s.indexOf('</table>', i);
   let levelStartI = s.indexOf('</th><th>', startUpgrade) + 9;
   let levelStart = +s.substring(levelStartI, s.indexOf('\n', levelStartI));
-  for (i = startUpgrade; i !== -1 && !item.name.startsWith('Starter'); ) {
+  for (i = startUpgrade; i !== -1 && !item.name.startsWith('Starter');) {
     i = s.indexOf('<td>', i) + 4;
     if (i === 3 || i >= endUpgrade) break;
     j = s.indexOf('\n', i);
@@ -197,7 +197,15 @@ async function get_and_parse(url) {
   for (const [category, urls] of Object.entries(GEARS_URLS)) {
     const items = GEARS[category] = [];
     for (const url of urls) {
-      items.push(await get_and_parse(url));
+      for (let nTry = 0; ; nTry++) {
+        try {
+          items.push(await get_and_parse(url));
+          break;
+        } catch (e) {
+          if (nTry > 5) throw e;
+          console.warn('Retry', nTry, url);
+        }
+      }
     }
   }
   console.log('export const GEARS = ' + JSON.stringify(GEARS, null, 2) + ';');

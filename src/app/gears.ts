@@ -5,7 +5,7 @@ export const GEARS = {
       "name": "Jonah",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a0/Jonah.png/revision/latest?cb=20200119155809",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a0/Jonah.png/revision/latest/scale-to-height-down/100?cb=20200119155809",
       "upgrade": {
         "Cards": [
           "Starter",
@@ -16,7 +16,7 @@ export const GEARS = {
           "8",
           "10",
           "20",
-          "60",
+          "40",
           "120",
           "240"
         ],
@@ -120,7 +120,7 @@ export const GEARS = {
       "name": "Hope",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/18/Hope.png/revision/latest?cb=20200119155826",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/18/Hope.png/revision/latest/scale-to-height-down/100?cb=20200119155826",
       "upgrade": {
         "Cards": [
           "Starter",
@@ -131,7 +131,7 @@ export const GEARS = {
           "8",
           "10",
           "20",
-          "60",
+          "40",
           "120",
           "240"
         ],
@@ -235,7 +235,7 @@ export const GEARS = {
       "name": "Florence",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/d9/Florence.png/revision/latest?cb=20200119155922",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/d9/Florence.png/revision/latest/scale-to-height-down/100?cb=20200119155922",
       "upgrade": {
         "Cards": [
           "Starter",
@@ -245,10 +245,10 @@ export const GEARS = {
           "5",
           "8",
           "10",
-          "30",
+          "20",
           "60",
           "120",
-          "240"
+          "250"
         ],
         "Price": [
           "/",
@@ -350,7 +350,7 @@ export const GEARS = {
       "name": "Leo",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1d/Leo.png/revision/latest?cb=20200119154813",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1d/Leo.png/revision/latest/scale-to-height-down/100?cb=20200119154813",
       "upgrade": {
         "Cards": [
           "Starter",
@@ -465,7 +465,7 @@ export const GEARS = {
       "name": "Kaito",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/92/Kaito.png/revision/latest?cb=20200119155948",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/92/Kaito.png/revision/latest/scale-to-height-down/100?cb=20200119155948",
       "upgrade": {
         "Cards": [
           "",
@@ -500,8 +500,8 @@ export const GEARS = {
       },
       "skills": {
         "Agility": [
-          6,
           8,
+          10,
           12,
           14,
           16,
@@ -596,7 +596,7 @@ export const GEARS = {
       "name": "Viktoria",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/29/Viktoria.png/revision/latest?cb=20200119160110",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/29/Viktoria.png/revision/latest/scale-to-height-down/100?cb=20200119160110",
       "upgrade": {
         "Cards": [
           "L",
@@ -637,7 +637,7 @@ export const GEARS = {
           8,
           9,
           11,
-          11,
+          12,
           14,
           15,
           17,
@@ -727,19 +727,19 @@ export const GEARS = {
       "name": "Diana",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/5f/Diana.png/revision/latest?cb=20200119155840",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/5f/Diana.png/revision/latest/scale-to-height-down/100?cb=20200119155840",
       "upgrade": {
         "Cards": [
           "/",
           "2",
           "3",
           "4",
-          "3",
+          "5",
           "8",
           "10",
           "20",
           "40",
-          "",
+          "60",
           "",
           "120",
           "240"
@@ -858,7 +858,7 @@ export const GEARS = {
       "name": "Mei-Li",
       "foundIn": "Tour 7 and above",
       "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/58/Mei-Li.png/revision/latest?cb=20200129205010",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/58/Mei-Li.png/revision/latest/scale-to-height-down/100?cb=20200129205010",
       "upgrade": {
         "Cards": [
           "",
@@ -898,12 +898,12 @@ export const GEARS = {
           8,
           10,
           12,
-          0,
+          14,
           15,
           15,
           19,
-          0,
-          0,
+          20,
+          22,
           21,
           26
         ],
@@ -917,8 +917,8 @@ export const GEARS = {
           8,
           8,
           9,
-          0,
-          0,
+          10,
+          11,
           12,
           12
         ],
@@ -932,8 +932,8 @@ export const GEARS = {
           7,
           8,
           9,
-          0,
-          0,
+          10,
+          10,
           11,
           12
         ],
@@ -947,8 +947,8 @@ export const GEARS = {
           9,
           10,
           10,
-          0,
-          0,
+          11,
+          12,
           13,
           14
         ],
@@ -962,8 +962,8 @@ export const GEARS = {
           9,
           10,
           11,
-          0,
-          0,
+          12,
+          13,
           13,
           14
         ],
@@ -977,8 +977,8 @@ export const GEARS = {
           8,
           9,
           9,
-          0,
-          0,
+          10,
+          11,
           12,
           13
         ]
@@ -989,7 +989,7 @@ export const GEARS = {
       "name": "Luc",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/bc/Luc.png/revision/latest?cb=20200319135439",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/bc/Luc.png/revision/latest/scale-to-height-down/100?cb=20200319135439",
       "upgrade": {
         "Cards": [
           "L",
@@ -1026,12 +1026,12 @@ export const GEARS = {
         "Agility": [
           4,
           6,
-          4,
+          7,
           8,
           11,
           11,
           14,
-          0,
+          16,
           15,
           19,
           18,
@@ -1046,7 +1046,7 @@ export const GEARS = {
           4,
           5,
           5,
-          0,
+          6,
           7,
           7,
           8,
@@ -1061,7 +1061,7 @@ export const GEARS = {
           8,
           9,
           10,
-          0,
+          10,
           11,
           12,
           13,
@@ -1076,7 +1076,7 @@ export const GEARS = {
           4,
           5,
           6,
-          0,
+          6,
           7,
           8,
           8,
@@ -1091,7 +1091,7 @@ export const GEARS = {
           10,
           11,
           12,
-          0,
+          13,
           14,
           15,
           16,
@@ -1106,7 +1106,7 @@ export const GEARS = {
           7,
           8,
           9,
-          0,
+          10,
           11,
           12,
           13,
@@ -1122,7 +1122,7 @@ export const GEARS = {
       "name": "Starter Racket",
       "foundIn": "Start",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/ba/Starter_Racket.png/revision/latest?cb=20200119161107",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/ba/Starter_Racket.png/revision/latest/scale-to-height-down/100?cb=20200119161107",
       "upgrade": {},
       "skills": {
         "Forehand": [
@@ -1135,7 +1135,7 @@ export const GEARS = {
       "name": "The Bullseye",
       "foundIn": "Tour 7",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ae/The_Bullseye.png/revision/latest?cb=20200119172849",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ae/The_Bullseye.png/revision/latest/scale-to-height-down/100?cb=20200119172849",
       "upgrade": {
         "Cards": [
           "",
@@ -1144,7 +1144,7 @@ export const GEARS = {
           "",
           "2",
           "4",
-          "",
+          "12",
           "20",
           "",
           "",
@@ -1159,7 +1159,7 @@ export const GEARS = {
           "",
           "104.2k",
           "116.7k",
-          "",
+          "150k",
           "183.4k",
           "",
           "",
@@ -1179,9 +1179,9 @@ export const GEARS = {
           27,
           29,
           32,
-          0,
+          35,
           38,
-          0,
+          40,
           43
         ]
       }
@@ -1191,7 +1191,7 @@ export const GEARS = {
       "name": "The Eagle",
       "foundIn": "Tour 1 and above",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/18/The_Eagle.png/revision/latest?cb=20200119160844",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/18/The_Eagle.png/revision/latest/scale-to-height-down/100?cb=20200119160844",
       "upgrade": {
         "Cards": [
           "L",
@@ -1254,7 +1254,7 @@ export const GEARS = {
       "name": "The Hammer",
       "foundIn": "Tour 6",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3a/The_Hammer.png/revision/latest?cb=20200119171931",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3a/The_Hammer.png/revision/latest/scale-to-height-down/100?cb=20200119171931",
       "upgrade": {
         "Cards": [
           "",
@@ -1264,12 +1264,12 @@ export const GEARS = {
           "2",
           "4",
           "10",
-          "20",
-          "9",
+          "40",
           "60",
+          "80",
           "100",
-          "120",
-          "240"
+          "150",
+          "200"
         ],
         "Price": [
           "",
@@ -1325,7 +1325,7 @@ export const GEARS = {
       "name": "The Outback",
       "foundIn": "Tour 3 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a1/The_Outback.png/revision/latest?cb=20200119163206",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a1/The_Outback.png/revision/latest/scale-to-height-down/100?cb=20200119163206",
       "upgrade": {
         "Cards": [
           "",
@@ -1365,7 +1365,7 @@ export const GEARS = {
           9,
           10,
           11,
-          0,
+          11,
           12
         ],
         "Forehand": [
@@ -1378,7 +1378,7 @@ export const GEARS = {
           16,
           18,
           20,
-          0,
+          22,
           24
         ]
       }
@@ -1388,7 +1388,7 @@ export const GEARS = {
       "name": "The Panther",
       "foundIn": "Tour 4 and above",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/27/The_Panther.png/revision/latest?cb=20200119163628",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/27/The_Panther.png/revision/latest/scale-to-height-down/100?cb=20200119163628",
       "upgrade": {
         "Cards": [
           "L",
@@ -1438,7 +1438,7 @@ export const GEARS = {
       "name": "The Patriot",
       "foundIn": "Tour 2 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/88/The_Patriot.png/revision/latest?cb=20200119170819",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/88/The_Patriot.png/revision/latest/scale-to-height-down/100?cb=20200119170819",
       "upgrade": {
         "Cards": [
           "",
@@ -1501,7 +1501,7 @@ export const GEARS = {
       "name": "The Samurai",
       "foundIn": "Tour 5 and above",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/4b/The_Samurai.png/revision/latest?cb=20200119164010",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/4b/The_Samurai.png/revision/latest/scale-to-height-down/100?cb=20200119164010",
       "upgrade": {
         "Cards": [
           "",
@@ -1526,7 +1526,7 @@ export const GEARS = {
           "21.7k",
           "27.5k",
           "35.9k",
-          "49.5k",
+          "45.9k",
           "58.4k",
           "75k",
           "87.5k",
@@ -1572,60 +1572,60 @@ export const GEARS = {
       "name": "Zeus",
       "foundIn": "Tour 8",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3c/Zeus.png/revision/latest?cb=20200119174426",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3c/Zeus.png/revision/latest/scale-to-height-down/100?cb=20200119174426",
       "upgrade": {
         "Cards": [
           "",
-          "",
+          "2",
+          "4",
           "10",
-          "",
-          "",
+          "20",
           "50",
-          "",
+          "100",
           "200",
-          "",
-          "",
+          "400",
+          "800",
           "",
           "",
           ""
         ],
         "Price": [
           "",
-          "",
+          "150k",
+          "180k",
           "210k",
-          "",
-          "",
+          "230K",
           "250k",
-          "",
+          "300K",
           "380k",
+          "450K",
+          "530K",
           "",
           "",
-          "",
-          "",
-          ""
+          "700K"
         ]
       },
       "skills": {
         "Agility": [
-          0,
-          0,
+          6,
+          6,
           7,
-          0,
           8,
           8,
-          8,
+          9,
+          9,
           10,
           10,
-          11,
           11,
           12,
+          13,
           13
         ],
         "Forehand": [
           0,
-          0,
+          1,
           2,
-          0,
+          5,
           8,
           12,
           16,
@@ -1645,7 +1645,7 @@ export const GEARS = {
       "name": "Starter Grip",
       "foundIn": "Start",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/62/Starter_Grip.png/revision/latest?cb=20200119180605",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/62/Starter_Grip.png/revision/latest/scale-to-height-down/100?cb=20200119180605",
       "upgrade": {},
       "skills": {
         "Backhand": [
@@ -1658,7 +1658,7 @@ export const GEARS = {
       "name": "Tactical Grip",
       "foundIn": "Tour 7",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/99/Tactical_Grip.png/revision/latest?cb=20200119183439",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/99/Tactical_Grip.png/revision/latest/scale-to-height-down/100?cb=20200119183439",
       "upgrade": {
         "Cards": [
           "",
@@ -1667,10 +1667,10 @@ export const GEARS = {
           "10",
           "20",
           "50",
-          "60",
-          "120",
+          "100",
+          "200",
           "400",
-          "500",
+          "800",
           "1000",
           "2000",
           "4000"
@@ -1683,11 +1683,11 @@ export const GEARS = {
           "104.2k",
           "116.7k",
           "150k",
-          "",
+          "183.4K",
           "216.7k",
           "250k",
-          "",
-          "",
+          "291.7K",
+          "333.4K",
           ""
         ]
       },
@@ -1729,7 +1729,7 @@ export const GEARS = {
       "name": "The Cobra",
       "foundIn": "Tour 4 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/f/f1/The_Cobra.png/revision/latest?cb=20200119165513",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/f/f1/The_Cobra.png/revision/latest/scale-to-height-down/100?cb=20200119165513",
       "upgrade": {
         "Cards": [
           "",
@@ -1769,7 +1769,7 @@ export const GEARS = {
           9,
           10,
           11,
-          0,
+          11,
           12
         ],
         "Backhand": [
@@ -1782,7 +1782,7 @@ export const GEARS = {
           16,
           18,
           20,
-          0,
+          22,
           24
         ]
       }
@@ -1792,7 +1792,7 @@ export const GEARS = {
       "name": "The Forge",
       "foundIn": "Tour 6 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/86/The_Forge.png/revision/latest?cb=20200119183013",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/86/The_Forge.png/revision/latest/scale-to-height-down/100?cb=20200119183013",
       "upgrade": {
         "Cards": [
           "",
@@ -1863,7 +1863,7 @@ export const GEARS = {
       "name": "The Katana",
       "foundIn": "Tour 5 and above",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/7b/The_Katana.png/revision/latest?cb=20200119180752",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/7b/The_Katana.png/revision/latest/scale-to-height-down/100?cb=20200119180752",
       "upgrade": {
         "Cards": [
           "",
@@ -1934,7 +1934,7 @@ export const GEARS = {
       "name": "The Machete",
       "foundIn": "Tour 3 and above",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/df/The_Machete.png/revision/latest?cb=20200119181219",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/df/The_Machete.png/revision/latest/scale-to-height-down/100?cb=20200119181219",
       "upgrade": {
         "Cards": [
           "",
@@ -1984,7 +1984,7 @@ export const GEARS = {
       "name": "The Talon",
       "foundIn": "Tour 2 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/c/c2/The_Talon.png/revision/latest?cb=20200119181315",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/c/c2/The_Talon.png/revision/latest/scale-to-height-down/100?cb=20200119181315",
       "upgrade": {
         "Cards": [
           "",
@@ -2047,13 +2047,13 @@ export const GEARS = {
       "name": "The Titan",
       "foundIn": "Tour 8",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/71/The_Titan.png/revision/latest?cb=20200119182008",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/71/The_Titan.png/revision/latest/scale-to-height-down/100?cb=20200119182008",
       "upgrade": {
         "Cards": [
           "",
           "",
           "",
-          "",
+          "2",
           "",
           "",
           "",
@@ -2085,15 +2085,15 @@ export const GEARS = {
           0,
           0,
           0,
-          0,
+          15,
           18,
           22,
           27,
           29,
           32,
-          0,
-          0,
-          0,
+          35,
+          38,
+          40,
           43
         ]
       }
@@ -2103,7 +2103,7 @@ export const GEARS = {
       "name": "The Warrior",
       "foundIn": "Tour 1 and above",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/dd/The_Warrior.png/revision/latest?cb=20200119181657",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/dd/The_Warrior.png/revision/latest/scale-to-height-down/100?cb=20200119181657",
       "upgrade": {
         "Cards": [
           "",
@@ -2168,11 +2168,11 @@ export const GEARS = {
       "name": "Starter Shoes",
       "foundIn": "Start",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1b/Starter_Shoe.png/revision/latest?cb=20200119185209",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1b/Starter_Shoe.png/revision/latest/scale-to-height-down/100?cb=20200119185209",
       "upgrade": {},
       "skills": {
         "Agility": [
-          3
+          5
         ]
       }
     },
@@ -2181,7 +2181,7 @@ export const GEARS = {
       "name": "The Anvil",
       "foundIn": "Tour 6",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a8/The_Anvil.png/revision/latest?cb=20200119193426",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a8/The_Anvil.png/revision/latest/scale-to-height-down/100?cb=20200119193426",
       "upgrade": {
         "Cards": [
           "",
@@ -2252,7 +2252,7 @@ export const GEARS = {
       "name": "The Ballistic",
       "foundIn": "Tour 7 and above",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/b7/The_Balistic.png/revision/latest?cb=20200119193138",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/b7/The_Balistic.png/revision/latest/scale-to-height-down/100?cb=20200119193138",
       "upgrade": {
         "Cards": [
           "",
@@ -2263,7 +2263,7 @@ export const GEARS = {
           "10",
           "20",
           "50",
-          "60",
+          "100",
           "200",
           "400",
           "800",
@@ -2287,8 +2287,8 @@ export const GEARS = {
       },
       "skills": {
         "Serve": [
-          null,
-          null,
+          0,
+          0,
           5,
           5,
           5,
@@ -2302,8 +2302,8 @@ export const GEARS = {
           8
         ],
         "Agility": [
-          null,
-          null,
+          0,
+          0,
           12,
           16,
           21,
@@ -2323,7 +2323,7 @@ export const GEARS = {
       "name": "The Feather",
       "foundIn": "Tour 1 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/19/The_Feather.png/revision/latest?cb=20200119192517",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/19/The_Feather.png/revision/latest/scale-to-height-down/100?cb=20200119192517",
       "upgrade": {
         "Cards": [
           "",
@@ -2363,7 +2363,7 @@ export const GEARS = {
           37,
           41,
           45,
-          0,
+          50,
           54
         ]
       }
@@ -2373,7 +2373,7 @@ export const GEARS = {
       "name": "The Hades Treads",
       "foundIn": "Tour 8",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/f/f4/Hades_Treads.png/revision/latest?cb=20200119193746",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/f/f4/Hades_Treads.png/revision/latest/scale-to-height-down/100?cb=20200119193746",
       "upgrade": {
         "Cards": [
           "",
@@ -2411,15 +2411,15 @@ export const GEARS = {
           0,
           0,
           0,
-          19,
-          24,
+          22,
+          27,
           32,
           38,
           42,
           46,
           51,
           55,
-          59,
+          60,
           64
         ]
       }
@@ -2429,7 +2429,7 @@ export const GEARS = {
       "name": "The Hunter",
       "foundIn": "Tour 3 and above",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1b/The_Hunter.png/revision/latest?cb=20200119192607",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1b/The_Hunter.png/revision/latest/scale-to-height-down/100?cb=20200119192607",
       "upgrade": {
         "Cards": [
           "",
@@ -2492,7 +2492,7 @@ export const GEARS = {
       "name": "The Piranha",
       "foundIn": "Tour 4 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/69/The_Piranha.png/revision/latest?cb=20200119192707",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/69/The_Piranha.png/revision/latest/scale-to-height-down/100?cb=20200119192707",
       "upgrade": {
         "Cards": [
           "",
@@ -2531,8 +2531,8 @@ export const GEARS = {
           14,
           14,
           15,
-          0,
-          0,
+          16,
+          17,
           18
         ],
         "Agility": [
@@ -2544,8 +2544,8 @@ export const GEARS = {
           22,
           27,
           31,
-          0,
-          0,
+          35,
+          38,
           42
         ]
       }
@@ -2555,7 +2555,7 @@ export const GEARS = {
       "name": "The Raptor",
       "foundIn": "Tour 2 and above",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/33/The_Raptor.png/revision/latest?cb=20200119194149",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/33/The_Raptor.png/revision/latest/scale-to-height-down/100?cb=20200119194149",
       "upgrade": {
         "Cards": [
           "",
@@ -2599,11 +2599,11 @@ export const GEARS = {
           8
         ],
         "Agility": [
-          3,
+          5,
           8,
           12,
-          14,
-          19,
+          17,
+          21,
           26,
           32,
           36,
@@ -2618,7 +2618,7 @@ export const GEARS = {
       "name": "The Shuriken",
       "foundIn": "Tour 5 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/42/The_Shuriken.png/revision/latest?cb=20200119193927",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/42/The_Shuriken.png/revision/latest/scale-to-height-down/100?cb=20200119193927",
       "upgrade": {
         "Cards": [
           "",
@@ -2626,7 +2626,7 @@ export const GEARS = {
           "",
           "",
           "2",
-          "5",
+          "4",
           "10",
           "20",
           "40",
@@ -2691,7 +2691,7 @@ export const GEARS = {
       "name": "Starter Band",
       "foundIn": "Start",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/0/03/Starter_Band.png/revision/latest?cb=20200119212711",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/0/03/Starter_Band.png/revision/latest/scale-to-height-down/100?cb=20200119212711",
       "upgrade": {},
       "skills": {
         "Volley": [
@@ -2704,7 +2704,7 @@ export const GEARS = {
       "name": "Jolly Roger",
       "foundIn": "Tour 3 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/8f/Jolly_Roger.png/revision/latest?cb=20200119212854",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/8f/Jolly_Roger.png/revision/latest/scale-to-height-down/100?cb=20200119212854",
       "upgrade": {
         "Cards": [
           "",
@@ -2729,7 +2729,7 @@ export const GEARS = {
           "21.7k",
           "27.5k",
           "35.9k",
-          "",
+          "45.9k",
           ""
         ]
       },
@@ -2767,7 +2767,7 @@ export const GEARS = {
       "name": "The Gladiator",
       "foundIn": "Tour 7 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/98/The_Gladiator.png/revision/latest?cb=20200119213722",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/98/The_Gladiator.png/revision/latest/scale-to-height-down/100?cb=20200119213722",
       "upgrade": {
         "Cards": [
           "",
@@ -2823,29 +2823,29 @@ export const GEARS = {
       "name": "The Kodiak",
       "foundIn": "Tour 6 and above",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/26/The_Kodiak.png/revision/latest?cb=20200119213602",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/26/The_Kodiak.png/revision/latest/scale-to-height-down/100?cb=20200119213602",
       "upgrade": {
         "Cards": [
-          "",
-          "",
-          "",
+          "L",
+          "L",
+          "L",
           "2",
-          "",
+          "4",
           "10",
           "20",
           "50",
           "60",
           "200",
-          "240",
+          "400",
           "800",
           "1000"
         ],
         "Price": [
-          "",
-          "",
-          "",
-          "35.9K",
-          "",
+          "L",
+          "L",
+          "L",
+          "35.9k",
+          "45.9k",
           "58.4k",
           "75k",
           "87.5k",
@@ -2894,7 +2894,7 @@ export const GEARS = {
       "name": "The Koi",
       "foundIn": "Tour 5 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/0/0a/The_Koi.png/revision/latest?cb=20200119213437",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/0/0a/The_Koi.png/revision/latest/scale-to-height-down/100?cb=20200119213437",
       "upgrade": {
         "Cards": [
           "L",
@@ -2904,11 +2904,11 @@ export const GEARS = {
           "2",
           "4",
           "10",
-          "30",
+          "20",
           "40",
           "60",
           "100",
-          "",
+          "150",
           ""
         ],
         "Price": [
@@ -2916,22 +2916,22 @@ export const GEARS = {
           "L",
           "L",
           "",
-          "21.7k",
-          "27.5k",
-          "49.5k",
-          "58.4k",
-          "",
-          "75k",
-          "87.5k",
+          "21.7K",
+          "27.5K",
+          "35.9K",
+          "45.5K",
+          "58.4K",
+          "75K",
+          "87.5K",
           "116.7k",
           ""
         ]
       },
       "skills": {
         "Agility": [
-          null,
-          null,
-          null,
+          0,
+          0,
+          0,
           8,
           8,
           9,
@@ -2944,9 +2944,9 @@ export const GEARS = {
           13
         ],
         "Volley": [
-          null,
-          null,
-          null,
+          0,
+          0,
+          0,
           1,
           5,
           9,
@@ -2965,7 +2965,7 @@ export const GEARS = {
       "name": "The Macaw",
       "foundIn": "Tour 4 and above",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/6b/The_Macaw.png/revision/latest?cb=20200119213314",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/6b/The_Macaw.png/revision/latest/scale-to-height-down/100?cb=20200119213314",
       "upgrade": {
         "Cards": [
           "L",
@@ -3028,7 +3028,7 @@ export const GEARS = {
       "name": "The Rocket",
       "foundIn": "Tour 2 and above",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/af/The_Rocket.png/revision/latest?cb=20200119213210",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/af/The_Rocket.png/revision/latest/scale-to-height-down/100?cb=20200119213210",
       "upgrade": {
         "Cards": [
           "",
@@ -3091,13 +3091,13 @@ export const GEARS = {
       "name": "The Shield",
       "foundIn": "Tour 8",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3b/The_Shield.png/revision/latest?cb=20200119214118",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3b/The_Shield.png/revision/latest/scale-to-height-down/100?cb=20200119214118",
       "upgrade": {
         "Cards": [
           "",
           "",
           "",
-          "",
+          "2",
           "4",
           "",
           "20",
@@ -3110,7 +3110,7 @@ export const GEARS = {
           "",
           "",
           "",
-          "",
+          "210k",
           "230k",
           "",
           "300k",
@@ -3158,7 +3158,7 @@ export const GEARS = {
       "name": "The Tomahawk",
       "foundIn": "Tour 1 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/22/The_Tomahawk.png/revision/latest?cb=20200119213054",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/22/The_Tomahawk.png/revision/latest/scale-to-height-down/100?cb=20200119213054",
       "upgrade": {
         "Cards": [
           "",
@@ -3198,7 +3198,7 @@ export const GEARS = {
           25,
           28,
           31,
-          0,
+          34,
           37
         ]
       }
@@ -3210,7 +3210,7 @@ export const GEARS = {
       "name": "Starter Protein",
       "foundIn": "Start",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/4d/Starter_Protein.png/revision/latest?cb=20200120004110",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/4d/Starter_Protein.png/revision/latest/scale-to-height-down/100?cb=20200120004110",
       "upgrade": {},
       "skills": {
         "Stamina": [
@@ -3223,7 +3223,7 @@ export const GEARS = {
       "name": "Antioxidants",
       "foundIn": "Tour 6",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ab/Antioxidants.png/revision/latest?cb=20200120003733",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ab/Antioxidants.png/revision/latest/scale-to-height-down/100?cb=20200120003733",
       "upgrade": {
         "Cards": [
           "",
@@ -3281,7 +3281,7 @@ export const GEARS = {
           13,
           18,
           20,
-          0,
+          22,
           25,
           27,
           29,
@@ -3294,7 +3294,7 @@ export const GEARS = {
       "name": "Carboload",
       "foundIn": "Tour 7",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/55/Carboload.png/revision/latest?cb=20200120003547",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/55/Carboload.png/revision/latest/scale-to-height-down/100?cb=20200120003547",
       "upgrade": {
         "Cards": [
           "",
@@ -3304,8 +3304,8 @@ export const GEARS = {
           "2",
           "4",
           "10",
-          "",
-          "",
+          "20",
+          "40",
           "",
           "",
           "",
@@ -3365,7 +3365,7 @@ export const GEARS = {
       "name": "Increased Hydration",
       "foundIn": "Tour 2 and above",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/d0/Increased_Hydration.png/revision/latest?cb=20200120003908",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/d0/Increased_Hydration.png/revision/latest/scale-to-height-down/100?cb=20200120003908",
       "upgrade": {
         "Cards": [
           "",
@@ -3375,7 +3375,7 @@ export const GEARS = {
           "4",
           "10",
           "30",
-          "120",
+          "60",
           "150",
           "400",
           "800"
@@ -3428,7 +3428,7 @@ export const GEARS = {
       "name": "Keto Sourcing",
       "foundIn": "Tour 5 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/e/ef/Keto_Sourcing.png/revision/latest?cb=20200120004017",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/e/ef/Keto_Sourcing.png/revision/latest/scale-to-height-down/100?cb=20200120004017",
       "upgrade": {
         "Cards": [
           "",
@@ -3484,7 +3484,7 @@ export const GEARS = {
       "name": "Lean Protein",
       "foundIn": "Tour 1 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/dc/Lean_Protein.png/revision/latest?cb=20200120004222",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/dc/Lean_Protein.png/revision/latest/scale-to-height-down/100?cb=20200120004222",
       "upgrade": {
         "Cards": [
           "",
@@ -3523,8 +3523,8 @@ export const GEARS = {
           22,
           26,
           29,
-          0,
-          0,
+          32,
+          35,
           38
         ]
       }
@@ -3534,7 +3534,7 @@ export const GEARS = {
       "name": "Macrobiotic",
       "foundIn": "Tour 3 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/4d/Macrobiotic.png/revision/latest?cb=20200120004328",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/4/4d/Macrobiotic.png/revision/latest/scale-to-height-down/100?cb=20200120004328",
       "upgrade": {
         "Cards": [
           "",
@@ -3597,14 +3597,14 @@ export const GEARS = {
       "name": "Neutral Energy",
       "foundIn": "Tour 7 and above",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/77/Natural_Energy.png/revision/latest?cb=20200120003344",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/77/Natural_Energy.png/revision/latest/scale-to-height-down/100?cb=20200120003344",
       "upgrade": {
         "Cards": [
           "",
           "",
           "",
-          "",
-          "10",
+          "2",
+          "4",
           "",
           "20",
           "40",
@@ -3618,8 +3618,8 @@ export const GEARS = {
           "",
           "",
           "",
-          "",
-          "250k",
+          "210k",
+          "230k",
           "",
           "300k",
           "",
@@ -3634,8 +3634,8 @@ export const GEARS = {
         "Stamina": [
           0,
           0,
-          0,
-          8,
+          2,
+          6,
           9,
           13,
           18,
@@ -3649,8 +3649,8 @@ export const GEARS = {
         "Volley": [
           0,
           0,
-          0,
-          0,
+          5,
+          5,
           5,
           5,
           6,
@@ -3668,7 +3668,7 @@ export const GEARS = {
       "name": "Vegan Diet",
       "foundIn": "Tour 4 and above",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/36/Vegan_Diet.png/revision/latest?cb=20200120004146",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/36/Vegan_Diet.png/revision/latest/scale-to-height-down/100?cb=20200120004146",
       "upgrade": {
         "Cards": [
           "L",
@@ -3677,11 +3677,11 @@ export const GEARS = {
           "10",
           "20",
           "50",
-          "240",
+          "150",
           "400",
           "800",
-          "2k",
-          "4k"
+          "1k",
+          "2k"
         ],
         "Price": [
           "",
@@ -3733,7 +3733,7 @@ export const GEARS = {
       "name": "Starter Training",
       "foundIn": "Start",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ac/Starter_Training.png/revision/latest?cb=20200120002723",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ac/Starter_Training.png/revision/latest/scale-to-height-down/100?cb=20200120002723",
       "upgrade": {},
       "skills": {
         "Serve": [
@@ -3746,7 +3746,7 @@ export const GEARS = {
       "name": "Endurance",
       "foundIn": "Tour 1 and above",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/0/0a/Endurance.png/revision/latest?cb=20200120002438",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/0/0a/Endurance.png/revision/latest/scale-to-height-down/100?cb=20200120002438",
       "upgrade": {
         "Cards": [
           "",
@@ -3809,10 +3809,9 @@ export const GEARS = {
       "name": "Lunges",
       "foundIn": "Tour 8",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/87/Lunges.png/revision/latest?cb=20200120002857",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/87/Lunges.png/revision/latest/scale-to-height-down/100?cb=20200120002857",
       "upgrade": {
         "Cards": [
-          "",
           "",
           "",
           "",
@@ -3832,7 +3831,6 @@ export const GEARS = {
           "",
           "",
           "",
-          "",
           "230K",
           "",
           "300k",
@@ -3846,7 +3844,6 @@ export const GEARS = {
       },
       "skills": {
         "Serve": [
-          0,
           0,
           0,
           0,
@@ -3868,14 +3865,14 @@ export const GEARS = {
       "name": "Mountain Climber",
       "foundIn": "Tour 7 and above",
       "rarity": "Rare",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/80/Mountain_Climber.png/revision/latest?cb=20200120003033",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/8/80/Mountain_Climber.png/revision/latest/scale-to-height-down/100?cb=20200120003033",
       "upgrade": {
         "Cards": [
           "",
           "",
           "",
           "2",
-          "",
+          "4",
           "10",
           "20",
           "50",
@@ -3914,7 +3911,7 @@ export const GEARS = {
           5,
           5,
           6,
-          0,
+          6,
           7
         ],
         "Serve": [
@@ -3929,7 +3926,7 @@ export const GEARS = {
           24,
           27,
           29,
-          0,
+          32,
           34
         ]
       }
@@ -3939,7 +3936,7 @@ export const GEARS = {
       "name": "Plyometrics",
       "foundIn": "Tour 3 and above",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ac/Plyometrics.png/revision/latest?cb=20200120002534",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/ac/Plyometrics.png/revision/latest/scale-to-height-down/100?cb=20200120002534",
       "upgrade": {
         "Cards": [
           "",
@@ -4002,7 +3999,7 @@ export const GEARS = {
       "name": "Powerlifting",
       "foundIn": "Tour 4 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/e/e0/Powerlifting.png/revision/latest?cb=20200120002611",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/e/e0/Powerlifting.png/revision/latest/scale-to-height-down/100?cb=20200120002611",
       "upgrade": {
         "Cards": [
           "",
@@ -4041,8 +4038,8 @@ export const GEARS = {
           14,
           14,
           15,
-          0,
-          0,
+          16,
+          17,
           18
         ],
         "Serve": [
@@ -4054,8 +4051,8 @@ export const GEARS = {
           10,
           15,
           17,
-          0,
-          0,
+          19,
+          21,
           23
         ]
       }
@@ -4065,7 +4062,7 @@ export const GEARS = {
       "name": "Resistance Band",
       "foundIn": "Tour 6 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/67/Resistance_Band.png/revision/latest?cb=20200120003159",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/67/Resistance_Band.png/revision/latest/scale-to-height-down/100?cb=20200120003159",
       "upgrade": {
         "Cards": [
           "",
@@ -4094,7 +4091,7 @@ export const GEARS = {
           "104.2k",
           "116.7k",
           "150k",
-          "",
+          "183.4k",
           ""
         ]
       },
@@ -4136,7 +4133,7 @@ export const GEARS = {
       "name": "Sprint",
       "foundIn": "Tour 2 and above",
       "rarity": "Epic",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/bb/Sprint.png/revision/latest?cb=20200120002656",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/bb/Sprint.png/revision/latest/scale-to-height-down/100?cb=20200120002656",
       "upgrade": {
         "Cards": [
           "",
@@ -4146,9 +4143,9 @@ export const GEARS = {
           "2",
           "4",
           "10",
-          "20",
+          "30",
           "60",
-          "",
+          "120",
           ""
         ],
         "Price": [
@@ -4176,7 +4173,7 @@ export const GEARS = {
           27,
           30,
           33,
-          0,
+          36,
           39
         ]
       }
@@ -4186,7 +4183,7 @@ export const GEARS = {
       "name": "Weight lifting",
       "foundIn": "Tour 5 and above",
       "rarity": "Common",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/e/e2/Weight_Lifting.png/revision/latest?cb=20200120002758",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/e/e2/Weight_Lifting.png/revision/latest/scale-to-height-down/100?cb=20200120002758",
       "upgrade": {
         "Cards": [
           "L",

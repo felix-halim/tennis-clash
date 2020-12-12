@@ -1,3 +1,4 @@
+const { assert } = require('console');
 const https = require('https');
 
 const GEARS_URLS = {
@@ -110,7 +111,7 @@ async function get_and_parse(url) {
   };
   const s = await get(url);
 
-  let meta = '<h1 class="page-header__title">';
+  let meta = 'class="page-header__title">';
   let i = s.indexOf(meta) + meta.length;
   let j = s.indexOf('</h1>', i);
   item.name = s.substring(i, j);
@@ -135,63 +136,68 @@ async function get_and_parse(url) {
 
   meta = '<meta property="og:image" content="';
   i = s.indexOf(meta) + meta.length;
-  j = s.indexOf('" />', i);
+  j = s.indexOf('"/>', i);
   item.imageUrl = s.substring(i, j);
 
-  // Upgrade costs
-  const startUpgrade = s.indexOf('<table class="article-table">');
-  const endUpgrade = s.indexOf('</table>', i);
-  let levelStartI = s.indexOf('</th><th>', startUpgrade) + 9;
-  let levelStart = +s.substring(levelStartI, s.indexOf('\n', levelStartI));
-  for (i = startUpgrade; i !== -1 && !item.name.startsWith('Starter');) {
-    i = s.indexOf('<td>', i) + 4;
-    if (i === 3 || i >= endUpgrade) break;
-    j = s.indexOf('\n', i);
-    let attr = s.substring(i, j);
-    const end = s.indexOf('</td></tr>', j);
-    const upgrade = [];
-    for (let level = 1; ; level++) {
-      if (level < levelStart) { upgrade.push(""); continue; }
-      const k = s.indexOf('</td><td>', i);
-      if (k === -1 || k >= end) break;
-      i = k + 9;
-      j = s.indexOf('\n', i);
-      const value = s.substring(i, j);
-      upgrade.push(value);
+  const k = item.imageUrl.indexOf('/latest?');
+  if (k == -1) console.error('ImageUrl', item.imageUrl, url);
+  else item.imageUrl = item.imageUrl.substring(0, k + 7)
+    + '/scale-to-height-down/100' + item.imageUrl.substring(k + 7);
+  item.imageUrl = item.imageUrl.replace('static.', 'vignette.');
+
+  const read_row = (startIdx, endIdx, prefix) => {
+    const cols = [];
+    while (true) {
+      const idx = s.indexOf(prefix, startIdx);
+      if (idx == -1 || idx >= endIdx) return cols;
+      let end = s.indexOf('\n', idx);
+      const endBr = s.indexOf('<br', idx);
+      if (endBr != -1) end = Math.min(end, endBr);
+      cols.push(s.substring(idx + prefix.length, end));
+      startIdx = idx + 1;
     }
-    item.upgrade[attr] = upgrade;
+  };
+
+  // Upgrade costs
+  const startUpgrade = s.indexOf('id="Upgrade_');
+  if (startUpgrade != -1) {
+    const endUpgrade = s.indexOf('</th></tr>', startUpgrade);
+    const levels = read_row(startUpgrade, endUpgrade, '<th>');
+    for (let l = 1; l < levels.length; l++)
+      if (+levels[l] != l) console.error('Level', l, url);
+
+    const endCards = s.indexOf('</td></tr>', endUpgrade);
+    const cards = read_row(endUpgrade, endCards, '<td>');
+    if (cards[0] != 'Cards') console.error('Cards', cards[0], url);
+    item.upgrade[cards.shift()] = cards;
+
+    const endPrice = s.indexOf('</table>', endCards);
+    const price = read_row(endCards, endPrice, '<td>');
+    if (price[0] != 'Price') console.error('Price', price[0], url);
+    item.upgrade[price.shift()] = price;
   }
 
   // Skills
-  const startSkill = startUpgrade + (item.name.startsWith('Starter') ? 0 : 1);
-  i = s.indexOf('<table class="article-table">', startSkill);
-  levelStartI = s.indexOf('</th><th>', startUpgrade) + 9;
-  levelStart = +s.substring(levelStartI, s.indexOf('\n', levelStartI));
-  while (i !== -1) {
-    i = s.indexOf('<td>', i) + 4;
-    if (i === 3) break;
-    j = s.indexOf('\n', i);
-    let attr = s.substring(i, j);
-    const end = s.indexOf('</td></tr>', j);
-    const skills = [];
-    for (let level = 1; ; level++) {
-      if (level < levelStart) { skills.push(0); continue; }
-      const k = s.indexOf('</td><td>', i);
-      if (k === -1 || k >= end) break;
-      i = k + 9;
-      j = s.indexOf('\n', i);
-      const value = s.substring(i, j);
-      skills.push(+value);
-      // console.log(level, value, i, end);
-    }
-    item.skills[attr] = skills;
-    // console.log(i, end);
+  const startSkill = s.indexOf('id="Skills_');
+  const endSkill = s.indexOf('</table>', startSkill);
+  const skillLevels = read_row(startSkill, endSkill, '<th>');
+  for (let l = 1; l < skillLevels.length; l++)
+    if (+skillLevels[l] != l) console.error('Skills', +skillLevels[l], l, url);
+
+  for (let i = startSkill; ;) {
+    const endAttr = s.indexOf('</td></tr>', i);
+    if (endAttr == -1 || endAttr >= endSkill) break;
+    const attr = read_row(i, endAttr, '<td>');
+    item.skills[attr.shift()] = attr;
+    for (let j = 0; j < attr.length; j++)
+      attr[j] = +attr[j] || 0;
+    i = endAttr + 1;
   }
   return item;
 }
 
 (async () => {
-  // const url = 'https://tennis-clash.fandom.com/wiki/Starter_Band';
+  // const url = 'https://tennis-clash.fandom.com/wiki/The_Kodiak';
   // return console.log(JSON.stringify(await get_and_parse(url), null, 2));
   const GEARS = {};
   for (const [category, urls] of Object.entries(GEARS_URLS)) {

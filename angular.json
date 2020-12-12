@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "tennis-clash"
+  "defaultProject": "tennis-clash",
+  "cli": {
+    "analytics": "d533c679-7897-4e51-a9db-c1a04ab735b7"
+  }
 }

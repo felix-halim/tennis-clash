@@ -137,13 +137,7 @@ async function get_and_parse(url) {
   meta = '<meta property="og:image" content="';
   i = s.indexOf(meta) + meta.length;
   j = s.indexOf('"/>', i);
-  item.imageUrl = s.substring(i, j);
-
-  const k = item.imageUrl.indexOf('/latest?');
-  if (k == -1) console.error('ImageUrl', item.imageUrl, url);
-  else item.imageUrl = item.imageUrl.substring(0, k + 7)
-    + '/scale-to-height-down/100' + item.imageUrl.substring(k + 7);
-  item.imageUrl = item.imageUrl.replace('static.', 'vignette.');
+  item.imageUrl = s.substring(i, j).replace('static.', 'vignette.');
 
   const read_row = (startIdx, endIdx, prefix) => {
     const cols = [];

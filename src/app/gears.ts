@@ -43,7 +43,7 @@ export const GEARS = {
           9,
           11,
           12,
-          14,
+          10,
           15,
           17,
           18
@@ -56,7 +56,7 @@ export const GEARS = {
           5,
           6,
           6,
-          7,
+          8,
           8,
           9,
           9
@@ -95,7 +95,7 @@ export const GEARS = {
           9,
           10,
           11,
-          12,
+          14,
           13,
           14,
           15
@@ -108,7 +108,7 @@ export const GEARS = {
           7,
           8,
           9,
-          9,
+          11,
           10,
           11,
           12
@@ -158,7 +158,7 @@ export const GEARS = {
           12,
           14,
           15,
-          17,
+          13,
           19,
           20,
           22
@@ -171,7 +171,7 @@ export const GEARS = {
           6,
           7,
           8,
-          8,
+          9,
           9,
           10,
           11
@@ -210,7 +210,7 @@ export const GEARS = {
           7,
           8,
           9,
-          10,
+          11,
           11,
           11,
           12
@@ -223,7 +223,7 @@ export const GEARS = {
           6,
           7,
           8,
-          9,
+          10,
           10,
           10,
           11
@@ -272,8 +272,8 @@ export const GEARS = {
           14,
           16,
           18,
-          20,
-          22,
+          16,
+          18,
           24,
           27,
           29
@@ -325,7 +325,7 @@ export const GEARS = {
           6,
           6,
           7,
-          8,
+          9,
           9,
           9,
           10
@@ -338,7 +338,7 @@ export const GEARS = {
           5,
           6,
           7,
-          7,
+          9,
           8,
           9,
           10
@@ -388,7 +388,7 @@ export const GEARS = {
           12,
           14,
           15,
-          17,
+          13,
           19,
           20,
           22
@@ -401,7 +401,7 @@ export const GEARS = {
           3,
           4,
           4,
-          5,
+          6,
           6,
           6,
           7
@@ -414,7 +414,7 @@ export const GEARS = {
           10,
           11,
           12,
-          13,
+          14,
           14,
           15,
           16
@@ -427,7 +427,7 @@ export const GEARS = {
           10,
           11,
           12,
-          13,
+          14,
           14,
           16,
           17
@@ -440,7 +440,7 @@ export const GEARS = {
           6,
           7,
           8,
-          9,
+          10,
           10,
           10,
           11
@@ -453,7 +453,7 @@ export const GEARS = {
           5,
           6,
           7,
-          7,
+          9,
           8,
           9,
           10
@@ -506,7 +506,7 @@ export const GEARS = {
           14,
           16,
           18,
-          20,
+          16,
           22,
           24,
           27,
@@ -566,7 +566,7 @@ export const GEARS = {
           5,
           6,
           6,
-          7,
+          8,
           8,
           9,
           9,
@@ -581,7 +581,7 @@ export const GEARS = {
           4,
           5,
           6,
-          7,
+          8,
           7,
           8,
           9,
@@ -636,8 +636,8 @@ export const GEARS = {
           6,
           8,
           9,
-          11,
-          12,
+          8,
+          9,
           14,
           15,
           17,
@@ -652,7 +652,7 @@ export const GEARS = {
           4,
           5,
           6,
-          6,
+          7,
           7,
           8,
           9,
@@ -681,7 +681,7 @@ export const GEARS = {
           3,
           4,
           5,
-          5,
+          6,
           6,
           7,
           8,
@@ -696,8 +696,8 @@ export const GEARS = {
           7,
           8,
           10,
-          11,
-          12,
+          13,
+          14,
           13,
           14,
           15,
@@ -711,8 +711,8 @@ export const GEARS = {
           5,
           6,
           7,
-          8,
           9,
+          10,
           9,
           10,
           11,
@@ -763,8 +763,8 @@ export const GEARS = {
       "skills": {
         "Agility": [
           5,
+          5,
           7,
-          9,
           11,
           13,
           14,
@@ -778,7 +778,7 @@ export const GEARS = {
         ],
         "Stamina": [
           1,
-          1,
+          2,
           2,
           2,
           2,
@@ -823,8 +823,8 @@ export const GEARS = {
         ],
         "Forehand": [
           3,
-          3,
           4,
+          5,
           5,
           6,
           7,
@@ -838,8 +838,8 @@ export const GEARS = {
         ],
         "Backhand": [
           3,
-          3,
           4,
+          5,
           5,
           6,
           6,
@@ -893,8 +893,8 @@ export const GEARS = {
       },
       "skills": {
         "Agility": [
+          3,
           5,
-          7,
           8,
           10,
           12,
@@ -924,7 +924,7 @@ export const GEARS = {
         ],
         "Serve": [
           3,
-          3,
+          4,
           4,
           5,
           6,
@@ -938,7 +938,7 @@ export const GEARS = {
           12
         ],
         "Volley": [
-          3,
+          4,
           4,
           5,
           6,
@@ -954,7 +954,7 @@ export const GEARS = {
         ],
         "Forehand": [
           4,
-          4,
+          5,
           5,
           6,
           7,
@@ -968,8 +968,8 @@ export const GEARS = {
           14
         ],
         "Backhand": [
-          3,
           4,
+          5,
           5,
           5,
           6,
@@ -1264,8 +1264,8 @@ export const GEARS = {
           "2",
           "4",
           "10",
+          "20",
           "40",
-          "60",
           "80",
           "100",
           "150",
@@ -1585,9 +1585,9 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "",
-          "",
-          ""
+          "1000",
+          "2000",
+          "4000"
         ],
         "Price": [
           "",
@@ -1600,8 +1600,8 @@ export const GEARS = {
           "380k",
           "450K",
           "530K",
-          "",
-          "",
+          "560K",
+          "600K",
           "700K"
         ]
       },
@@ -1616,10 +1616,10 @@ export const GEARS = {
           9,
           10,
           10,
-          11,
-          12,
+          9,
+          10,
           13,
-          13
+          11
         ],
         "Forehand": [
           0,
@@ -1631,10 +1631,10 @@ export const GEARS = {
           16,
           18,
           20,
-          22,
-          24,
+          25,
+          27,
           26,
-          28
+          32
         ]
       }
     }
@@ -1661,7 +1661,6 @@ export const GEARS = {
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/99/Tactical_Grip.png/revision/latest?cb=20200119183439",
       "upgrade": {
         "Cards": [
-          "",
           "2",
           "4",
           "10",
@@ -1676,7 +1675,6 @@ export const GEARS = {
           "4000"
         ],
         "Price": [
-          "",
           "58.4k",
           "75k",
           "87.5k",
@@ -1688,7 +1686,7 @@ export const GEARS = {
           "250k",
           "291.7K",
           "333.4K",
-          ""
+          "416.7K"
         ]
       },
       "skills": {
@@ -2528,8 +2526,8 @@ export const GEARS = {
           0,
           12,
           13,
-          14,
-          14,
+          13,
+          13,
           15,
           16,
           17,
@@ -2541,8 +2539,8 @@ export const GEARS = {
           0,
           13,
           17,
-          22,
-          27,
+          16,
+          20,
           31,
           35,
           38,
@@ -2834,7 +2832,7 @@ export const GEARS = {
           "10",
           "20",
           "50",
-          "60",
+          "100",
           "200",
           "400",
           "800",
@@ -2939,8 +2937,8 @@ export const GEARS = {
           10,
           10,
           11,
-          11,
           12,
+          13,
           13
         ],
         "Volley": [
@@ -3132,7 +3130,7 @@ export const GEARS = {
           6,
           7,
           7,
-          0,
+          7,
           8,
           8
         ],
@@ -3147,7 +3145,7 @@ export const GEARS = {
           21,
           23,
           25,
-          0,
+          28,
           30,
           32
         ]
@@ -3546,7 +3544,7 @@ export const GEARS = {
           "10",
           "30",
           "60",
-          "",
+          "120",
           ""
         ],
         "Price": [
@@ -4072,7 +4070,7 @@ export const GEARS = {
           "2",
           "4",
           "10",
-          "30",
+          "20",
           "40",
           "60",
           "100",

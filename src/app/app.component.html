@@ -42,7 +42,7 @@
           </ng-template>
           <table class="border" cellpadding="5" cellspacing="0">
             <tr>
-              <th width="80">Level [<a [href]="item.url" target="_blank">edit</a>]</th>
+              <th width="80">Level [<a [href]="item.url + '?veaction=edit&section=2'" target="_blank">edit</a>]</th>
               <th width="25" *ngFor="let v of item.total; index as i" (click)="setInventory(g.category, item.name, i)"
                 [ngClass]="{'selected': hasInventory(g.category, item.name, i), 'number': true}">
                 {{ i + 1 }}

@@ -8,7 +8,7 @@ export const GEARS = {
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a0/Jonah.png/revision/latest?cb=20200119155809",
       "upgrade": {
         "Cards": [
-          "Starter",
+          "",
           "2",
           "3",
           "4",
@@ -21,7 +21,7 @@ export const GEARS = {
           "240"
         ],
         "Price": [
-          "/",
+          "",
           "400",
           "1.4k",
           "3.2k",
@@ -1363,10 +1363,10 @@ export const GEARS = {
           10,
           10,
           10,
-          10,
           11,
-          11,
-          12
+          12,
+          13,
+          14
         ],
         "Forehand": [
           0,
@@ -1376,10 +1376,10 @@ export const GEARS = {
           10,
           14,
           18,
-          21,
           20,
           22,
-          24
+          24,
+          27
         ]
       }
     },
@@ -1750,7 +1750,7 @@ export const GEARS = {
           "",
           "",
           "21.7k",
-          "",
+          "27.5k",
           "35.9k",
           "45.9k",
           "58.4k",
@@ -1765,12 +1765,12 @@ export const GEARS = {
           0,
           8,
           10,
-          9,
           10,
           10,
           11,
-          11,
-          12
+          12,
+          13,
+          14
         ],
         "Backhand": [
           0,
@@ -1778,12 +1778,12 @@ export const GEARS = {
           0,
           5,
           10,
-          12,
-          18,
+          14,
           18,
           20,
           22,
-          24
+          24,
+          27
         ]
       }
     },
@@ -1885,7 +1885,7 @@ export const GEARS = {
           "",
           "",
           "15k",
-          "21.7",
+          "21.7k",
           "27.5k",
           "35.9k",
           "45.9k",
@@ -1923,7 +1923,7 @@ export const GEARS = {
           25,
           28,
           31,
-          29,
+          34,
           36,
           38
         ]
@@ -2349,7 +2349,7 @@ export const GEARS = {
           "10.9k",
           "15k",
           "21.7k",
-          ""
+          "27.5k"
         ]
       },
       "skills": {
@@ -2357,7 +2357,7 @@ export const GEARS = {
           0,
           0,
           0,
-          21,
+          13,
           19,
           25,
           28,
@@ -2402,8 +2402,8 @@ export const GEARS = {
           "450k",
           "510k",
           "560k",
-          "",
-          ""
+          "600k",
+          "700k"
         ]
       },
       "skills": {
@@ -2476,12 +2476,12 @@ export const GEARS = {
           5,
           8,
           12,
+          13,
           15,
-          15,
-          26,
-          32,
-          36,
-          40,
+          19,
+          24,
+          27,
+          30,
           34,
           37
         ]
@@ -2517,8 +2517,8 @@ export const GEARS = {
           "35.9k",
           "45.9k",
           "58.4k",
-          "",
-          ""
+          "75k",
+          "87.5k"
         ]
       },
       "skills": {
@@ -2526,7 +2526,7 @@ export const GEARS = {
           0,
           0,
           0,
-          12,
+          11,
           12,
           13,
           13,
@@ -2539,7 +2539,7 @@ export const GEARS = {
           0,
           0,
           0,
-          12,
+          10,
           12,
           16,
           20,
@@ -2571,7 +2571,7 @@ export const GEARS = {
           "2k"
         ],
         "Price": [
-          "-",
+          "",
           "0.6k",
           "1.4k",
           "2.5k",
@@ -2601,14 +2601,14 @@ export const GEARS = {
         "Agility": [
           5,
           8,
+          9,
           12,
-          17,
           15,
           19,
           24,
-          36,
+          27,
           30,
-          43,
+          33,
           37
         ]
       }
@@ -2673,7 +2673,7 @@ export const GEARS = {
           0,
           8,
           12,
-          22,
+          16,
           20,
           23,
           26,
@@ -2730,7 +2730,7 @@ export const GEARS = {
           "27.5k",
           "35.9k",
           "45.9k",
-          ""
+          "58.4k"
         ]
       },
       "skills": {
@@ -2745,7 +2745,7 @@ export const GEARS = {
           13,
           14,
           15,
-          15
+          16
         ],
         "Volley": [
           0,
@@ -2758,7 +2758,7 @@ export const GEARS = {
           15,
           17,
           19,
-          21
+          22
         ]
       }
     },
@@ -2790,14 +2790,14 @@ export const GEARS = {
           "",
           "",
           "104.2k",
-          "",
-          "",
+          "116.7k",
+          "150k",
           "183.4k",
           "216.7k",
-          "",
-          "",
-          "",
-          ""
+          "250k",
+          "291.7k",
+          "333.4k",
+          "416.7k"
         ]
       },
       "skills": {
@@ -2826,9 +2826,9 @@ export const GEARS = {
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/26/The_Kodiak.png/revision/latest?cb=20200119213602",
       "upgrade": {
         "Cards": [
-          "L",
-          "L",
-          "L",
+          "",
+          "",
+          "",
           "2",
           "4",
           "10",
@@ -2841,9 +2841,9 @@ export const GEARS = {
           "1000"
         ],
         "Price": [
-          "L",
-          "L",
-          "L",
+          "",
+          "",
+          "",
           "35.9k",
           "45.9k",
           "58.4k",
@@ -2868,9 +2868,9 @@ export const GEARS = {
           4,
           4,
           5,
-          6,
-          6,
-          6
+          5,
+          5,
+          5
         ],
         "Volley": [
           0,
@@ -2879,13 +2879,13 @@ export const GEARS = {
           6,
           10,
           14,
-          19,
+          18,
           21,
           24,
           25,
           28,
           30,
-          32
+          33
         ]
       }
     },
@@ -2897,9 +2897,9 @@ export const GEARS = {
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/0/0a/The_Koi.png/revision/latest?cb=20200119213437",
       "upgrade": {
         "Cards": [
-          "L",
-          "L",
-          "L",
+          "",
+          "",
+          "",
           "",
           "2",
           "4",
@@ -2912,9 +2912,9 @@ export const GEARS = {
           ""
         ],
         "Price": [
-          "L",
-          "L",
-          "L",
+          "",
+          "",
+          "",
           "",
           "21.7K",
           "27.5K",
@@ -2924,7 +2924,7 @@ export const GEARS = {
           "75K",
           "87.5K",
           "116.7k",
-          ""
+          "150k"
         ]
       },
       "skills": {
@@ -2968,7 +2968,7 @@ export const GEARS = {
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/6/6b/The_Macaw.png/revision/latest?cb=20200119213314",
       "upgrade": {
         "Cards": [
-          "L",
+          "",
           "2",
           "4",
           "10",
@@ -2981,7 +2981,7 @@ export const GEARS = {
           "2000"
         ],
         "Price": [
-          "L",
+          "",
           "7.2k",
           "10.9k",
           "15k",
@@ -3104,6 +3104,8 @@ export const GEARS = {
           "50",
           "",
           "",
+          "",
+          "",
           ""
         ],
         "Price": [
@@ -3112,9 +3114,11 @@ export const GEARS = {
           "",
           "210k",
           "230k",
-          "",
+          "270k",
           "300k",
           "380k",
+          "",
+          "",
           "",
           "",
           ""
@@ -3178,13 +3182,13 @@ export const GEARS = {
           "",
           "",
           "",
-          "",
+          "2.5k",
           "4.6k",
           "7.2k",
           "10.9k",
           "15k",
-          "",
-          ""
+          "21.7k",
+          "27.5k"
         ]
       },
       "skills": {
@@ -3199,7 +3203,7 @@ export const GEARS = {
           28,
           31,
           34,
-          37
+          38
         ]
       }
     }
@@ -3261,7 +3265,7 @@ export const GEARS = {
           3,
           3,
           4,
-          4,
+          5,
           5,
           5,
           5,
@@ -3321,10 +3325,10 @@ export const GEARS = {
           "150k",
           "183.4k",
           "216.7k",
-          "",
-          "",
-          "",
-          ""
+          "250k",
+          "291.7k",
+          "333.4k",
+          "416.7k"
         ]
       },
       "skills": {
@@ -3333,7 +3337,7 @@ export const GEARS = {
           0,
           0,
           8,
-          9,
+          10,
           10,
           10,
           11,
@@ -3457,8 +3461,8 @@ export const GEARS = {
           "58.4k",
           "75k",
           "87.5k",
-          "",
-          ""
+          "104.2k",
+          "116.7k"
         ]
       },
       "skills": {
@@ -3474,8 +3478,8 @@ export const GEARS = {
           34,
           37,
           40,
-          43,
-          46
+          42,
+          44
         ]
       }
     },
@@ -3509,8 +3513,8 @@ export const GEARS = {
           "7.2k",
           "10.9k",
           "15k",
-          "",
-          ""
+          "21.7k",
+          "27.5k"
         ]
       },
       "skills": {
@@ -3522,10 +3526,10 @@ export const GEARS = {
           17,
           22,
           25,
-          29,
-          32,
-          35,
-          38
+          28,
+          31,
+          34,
+          36
         ]
       }
     },
@@ -3559,8 +3563,8 @@ export const GEARS = {
           "21.7k",
           "27.5k",
           "35.9k",
-          "",
-          ""
+          "45.9k",
+          "58.4k"
         ]
       },
       "skills": {
@@ -3575,7 +3579,7 @@ export const GEARS = {
           13,
           13,
           14,
-          15
+          16
         ],
         "Stamina": [
           0,
@@ -3588,7 +3592,7 @@ export const GEARS = {
           13,
           15,
           17,
-          19
+          18
         ]
       }
     },
@@ -3622,12 +3626,12 @@ export const GEARS = {
           "230k",
           "250K",
           "300k",
-          "",
-          "",
+          "380k",
+          "450k",
           "530k",
-          "",
-          "",
-          ""
+          "560k",
+          "600k",
+          "700k"
         ]
       },
       "skills": {
@@ -3691,7 +3695,7 @@ export const GEARS = {
           "21,7k",
           "27,5k",
           "35.9k",
-          "45,9k",
+          "45.9k",
           "58.4k",
           "75k",
           "104.2k"
@@ -3706,7 +3710,7 @@ export const GEARS = {
           5,
           5,
           5,
-          5,
+          6,
           6,
           6,
           7
@@ -3719,7 +3723,7 @@ export const GEARS = {
           10,
           14,
           18,
-          21,
+          20,
           23,
           25,
           26
@@ -3800,7 +3804,7 @@ export const GEARS = {
           23,
           26,
           29,
-          30
+          31
         ]
       }
     },
@@ -4040,7 +4044,7 @@ export const GEARS = {
           15,
           16,
           17,
-          18
+          17
         ],
         "Serve": [
           0,
@@ -4053,7 +4057,7 @@ export const GEARS = {
           17,
           19,
           21,
-          23
+          24
         ]
       }
     },
@@ -4158,8 +4162,8 @@ export const GEARS = {
           "10.9k",
           "15k",
           "21.7k",
-          "",
-          ""
+          "27.5k",
+          "35.9k"
         ]
       },
       "skills": {
@@ -4186,7 +4190,7 @@ export const GEARS = {
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/e/e2/Weight_Lifting.png/revision/latest?cb=20200120002758",
       "upgrade": {
         "Cards": [
-          "L",
+          "",
           "2",
           "4",
           "10",
@@ -4201,7 +4205,7 @@ export const GEARS = {
           "4k"
         ],
         "Price": [
-          "L",
+          "",
           "10.9k",
           "12k",
           "15k",
@@ -4226,7 +4230,7 @@ export const GEARS = {
           6,
           6,
           7,
-          8,
+          7,
           8,
           8,
           9,
@@ -4241,7 +4245,7 @@ export const GEARS = {
           16,
           21,
           22,
-          24,
+          25,
           28,
           30,
           33,

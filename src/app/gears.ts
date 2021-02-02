@@ -1613,7 +1613,7 @@ export const GEARS = {
           8,
           8,
           9,
-          9,
+          7,
           9,
           9,
           9,
@@ -1628,7 +1628,7 @@ export const GEARS = {
           5,
           8,
           12,
-          16,
+          18,
           18,
           23,
           25,
@@ -3578,7 +3578,7 @@ export const GEARS = {
           12,
           13,
           14,
-          14,
+          15,
           16
         ],
         "Stamina": [
@@ -3642,7 +3642,7 @@ export const GEARS = {
           6,
           9,
           13,
-          18,
+          17,
           20,
           21,
           25,
@@ -3973,7 +3973,7 @@ export const GEARS = {
         "Backhand": [
           2,
           3,
-          3,
+          4,
           4,
           4,
           4,
@@ -3985,7 +3985,7 @@ export const GEARS = {
         ],
         "Serve": [
           1,
-          2,
+          3,
           4,
           8,
           12,

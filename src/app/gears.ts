@@ -284,7 +284,7 @@ export const GEARS = {
           9,
           10,
           11,
-          12,
+          13,
           14,
           15,
           16,
@@ -550,7 +550,7 @@ export const GEARS = {
           4,
           4,
           5,
-          5,
+          6,
           6,
           7,
           8,
@@ -631,7 +631,7 @@ export const GEARS = {
       },
       "skills": {
         "Agility": [
-          3,
+          2,
           3,
           4,
           6,
@@ -646,7 +646,7 @@ export const GEARS = {
           17
         ],
         "Stamina": [
-          2,
+          3,
           4,
           4,
           5,
@@ -661,7 +661,7 @@ export const GEARS = {
           11
         ],
         "Serve": [
-          3,
+          4,
           5,
           5,
           6,
@@ -691,7 +691,7 @@ export const GEARS = {
           10
         ],
         "Forehand": [
-          5,
+          6,
           7,
           9,
           10,
@@ -706,7 +706,7 @@ export const GEARS = {
           22
         ],
         "Backhand": [
-          3,
+          4,
           5,
           6,
           7,
@@ -901,7 +901,7 @@ export const GEARS = {
           14,
           12,
           15,
-          19,
+          15,
           20,
           22,
           21,
@@ -946,7 +946,7 @@ export const GEARS = {
           8,
           9,
           10,
-          10,
+          11,
           11,
           12,
           13,
@@ -961,7 +961,7 @@ export const GEARS = {
           8,
           10,
           10,
-          11,
+          13,
           12,
           13,
           13,
@@ -976,7 +976,7 @@ export const GEARS = {
           7,
           9,
           9,
-          9,
+          11,
           10,
           11,
           12,
@@ -1028,7 +1028,7 @@ export const GEARS = {
           4,
           7,
           8,
-          11,
+          8,
           9,
           11,
           16,
@@ -1043,7 +1043,7 @@ export const GEARS = {
           3,
           3,
           4,
-          4,
+          5,
           5,
           6,
           6,
@@ -1088,7 +1088,7 @@ export const GEARS = {
           7,
           7,
           8,
-          10,
+          11,
           12,
           14,
           13,
@@ -1103,7 +1103,7 @@ export const GEARS = {
           5,
           5,
           6,
-          7,
+          9,
           10,
           11,
           10,
@@ -2141,7 +2141,7 @@ export const GEARS = {
           5,
           5,
           5,
-          5,
+          6,
           6,
           6,
           7
@@ -2154,7 +2154,7 @@ export const GEARS = {
           14,
           19,
           23,
-          23,
+          26,
           29,
           31,
           34
@@ -2172,7 +2172,7 @@ export const GEARS = {
       "upgrade": {},
       "skills": {
         "Agility": [
-          5
+          1
         ]
       }
     },
@@ -2413,7 +2413,7 @@ export const GEARS = {
           0,
           15,
           20,
-          32,
+          24,
           29,
           42,
           46,
@@ -2810,7 +2810,7 @@ export const GEARS = {
           23,
           27,
           30,
-          32,
+          33,
           35,
           38,
           41,
@@ -3980,7 +3980,7 @@ export const GEARS = {
           4,
           5,
           5,
-          5,
+          6,
           6
         ],
         "Serve": [
@@ -4176,7 +4176,7 @@ export const GEARS = {
           23,
           28,
           31,
-          33,
+          34,
           36,
           40
         ]

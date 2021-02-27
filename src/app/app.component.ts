@@ -1,10 +1,10 @@
-import { Component, OnDestroy } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import {Component, OnDestroy} from '@angular/core';
+import {trigger, state, style, animate, transition} from '@angular/animations';
 
-import { GEARS } from './gears';
-import { FormGroup, FormControl } from '@angular/forms';
-import { Subscription, BehaviorSubject } from 'rxjs';
-import { debounceTime, map, shareReplay, tap } from 'rxjs/operators';
+import {GEARS} from './gears';
+import {FormGroup, FormControl} from '@angular/forms';
+import {Subscription, BehaviorSubject} from 'rxjs';
+import {debounceTime, map, shareReplay, tap} from 'rxjs/operators';
 
 const CATEGORIES = Object.keys(GEARS);
 const ATTRIBUTES = ['Agility', 'Stamina', 'Serve', 'Volley', 'Forehand', 'Backhand'];
@@ -50,10 +50,10 @@ interface Config {
   itemNames: string[];
 
   /** The power of each available item in a category. */
-  itemPowers: { [itemName: string]: number }[];
+  itemPowers: {[itemName: string]: number}[];
 
   /** The level of each available item in a category. */
-  itemLevel: { [itemName: string]: number }[];
+  itemLevel: {[itemName: string]: number}[];
 
   /** The maximum power for the rest of the categories on the right. */
   maxRemainingPowers: number[][];
@@ -106,7 +106,7 @@ function initialConfig(inventories: ItemsByCategory, configs: any) {
       minimum = +range[0];
       maximum = +range[1];
     }
-    config.powerConfig[i] = { minimum, maximum };
+    config.powerConfig[i] = {minimum, maximum};
   }
   for (let c = CATEGORIES.length - 1; c >= 0; c--) {
     const cat = CATEGORIES[c];
@@ -191,7 +191,7 @@ function computeBestConfigs(config: Config) {
 
   config.totalPower = 0;
   for (const [i] of ATTRIBUTES.entries()) {
-    const { minimum, maximum } = config.powerConfig[i];
+    const {minimum, maximum} = config.powerConfig[i];
     const maxRemainer = (catIdx >= CATEGORIES.length) ? 0 : (config.maxRemainingPowers[catIdx][i] ?? 0);
     const current = getPower(config.currentPowers, i);
     if (current + maxRemainer < minimum) return config;
@@ -246,7 +246,7 @@ export class AppComponent implements OnDestroy {
   isOpen = true;
 
   bestConfigs$ = this.computeTrigger$.pipe(
-    tap(() => { this.isOpen = false; }),
+    tap(() => {this.isOpen = false;}),
     debounceTime(125),
     map(() => initialConfig(this.inventories, this.formGroup.value)),
     map(config => {
@@ -312,14 +312,14 @@ export class AppComponent implements OnDestroy {
             alert('Unknown attribute: ' + attr);
             continue;
           }
-          attrs.push({ attr, skills });
+          attrs.push({attr, skills});
           for (let i = 0; i < skills.length; i++) {
             total[i] = (total[i] ?? 0) + skills[i];
           }
         }
-        items.push({ ...item, attrs, total });
+        items.push({...item, attrs, total});
       }
-      this.gears.push({ category, items });
+      this.gears.push({category, items});
     }
 
     this.subscription = this.formGroup.valueChanges

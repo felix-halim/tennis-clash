@@ -610,8 +610,8 @@ export const GEARS = {
           "40",
           "60",
           "100",
-          "120",
-          "240"
+          "150",
+          "300"
         ],
         "Price": [
           "/",
@@ -631,9 +631,9 @@ export const GEARS = {
       },
       "skills": {
         "Agility": [
-          2,
           3,
-          4,
+          5,
+          6,
           6,
           7,
           8,
@@ -646,9 +646,9 @@ export const GEARS = {
           17
         ],
         "Stamina": [
+          2,
+          2,
           3,
-          4,
-          4,
           5,
           6,
           6,
@@ -661,9 +661,9 @@ export const GEARS = {
           11
         ],
         "Serve": [
-          4,
           5,
-          5,
+          7,
+          8,
           6,
           7,
           8,
@@ -676,9 +676,9 @@ export const GEARS = {
           15
         ],
         "Volley": [
-          2,
-          3,
-          4,
+          6,
+          7,
+          8,
           4,
           5,
           6,
@@ -691,9 +691,9 @@ export const GEARS = {
           10
         ],
         "Forehand": [
-          6,
-          7,
-          9,
+          3,
+          4,
+          5,
           10,
           11,
           13,
@@ -706,9 +706,9 @@ export const GEARS = {
           22
         ],
         "Backhand": [
+          3,
           4,
           5,
-          6,
           7,
           8,
           9,
@@ -740,7 +740,7 @@ export const GEARS = {
           "20",
           "40",
           "60",
-          "",
+          "100",
           "120",
           "240"
         ],
@@ -915,7 +915,7 @@ export const GEARS = {
           6,
           7,
           8,
-          8,
+          9,
           9,
           10,
           11,
@@ -945,7 +945,7 @@ export const GEARS = {
           7,
           8,
           9,
-          9,
+          10,
           11,
           11,
           12,
@@ -1026,7 +1026,7 @@ export const GEARS = {
         "Agility": [
           3,
           4,
-          7,
+          5,
           8,
           8,
           9,
@@ -1041,7 +1041,7 @@ export const GEARS = {
         "Stamina": [
           2,
           3,
-          3,
+          4,
           4,
           5,
           5,
@@ -1086,7 +1086,7 @@ export const GEARS = {
         "Forehand": [
           6,
           7,
-          7,
+          9,
           8,
           11,
           12,
@@ -1101,7 +1101,7 @@ export const GEARS = {
         "Backhand": [
           4,
           5,
-          5,
+          6,
           6,
           9,
           10,
@@ -1607,14 +1607,14 @@ export const GEARS = {
       },
       "skills": {
         "Agility": [
+          5,
+          5,
           6,
-          6,
-          7,
           8,
           8,
           9,
           7,
-          9,
+          8,
           9,
           9,
           10,
@@ -1629,7 +1629,7 @@ export const GEARS = {
           8,
           12,
           18,
-          18,
+          21,
           23,
           25,
           27,
@@ -1735,9 +1735,9 @@ export const GEARS = {
           "",
           "",
           "",
+          "",
           "2",
           "4",
-          "",
           "10",
           "30",
           "60",
@@ -2467,7 +2467,7 @@ export const GEARS = {
           5,
           5,
           5,
-          5,
+          6,
           6,
           7,
           7
@@ -2600,7 +2600,7 @@ export const GEARS = {
         ],
         "Agility": [
           5,
-          8,
+          4,
           9,
           12,
           15,
@@ -2775,8 +2775,8 @@ export const GEARS = {
           "",
           "",
           "2",
-          "",
-          "",
+          "4",
+          "10",
           "20",
           "",
           "",
@@ -3173,7 +3173,7 @@ export const GEARS = {
           "10",
           "30",
           "60",
-          "",
+          "120",
           ""
         ],
         "Price": [
@@ -3283,7 +3283,7 @@ export const GEARS = {
           9,
           13,
           17,
-          20,
+          19,
           21,
           23,
           26,

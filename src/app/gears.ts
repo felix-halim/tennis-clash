@@ -1114,6 +1114,137 @@ export const GEARS = {
           17
         ]
       }
+    },
+    {
+      "url": "https://tennis-clash.fandom.com/wiki/Omar",
+      "name": "Omar",
+      "foundIn": "",
+      "rarity": "",
+      "imageUrl": "https://vignette.wikia.nocookie.net/ucp-internal-test-starter-commons/images/b/bc/Wiki.png/revision/latest/zoom-crop/width/200/height/200?cb=20200817122948",
+      "upgrade": {
+        "Cards": [
+          "/",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "20",
+          "40",
+          "60",
+          "100",
+          "150",
+          "300"
+        ],
+        "Price": [
+          "/",
+          "11k",
+          "17.2k",
+          "26k",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          3,
+          5,
+          6,
+          8,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          21
+        ],
+        "Stamina": [
+          2,
+          2,
+          3,
+          3,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8
+        ],
+        "Serve": [
+          5,
+          7,
+          8,
+          9,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20
+        ],
+        "Volley": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          20
+        ],
+        "Forehand": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14
+        ],
+        "Backhand": [
+          3,
+          4,
+          5,
+          5,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      }
     }
   ],
   "Racket": [
@@ -2586,7 +2717,7 @@ export const GEARS = {
       },
       "skills": {
         "Stamina": [
-          4,
+          3,
           4,
           5,
           5,
@@ -2599,7 +2730,7 @@ export const GEARS = {
           8
         ],
         "Agility": [
-          5,
+          1,
           4,
           9,
           12,

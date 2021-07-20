@@ -994,10 +994,10 @@ export const GEARS = {
         "Cards": [
           "L",
           "2",
-          "L",
-          "2",
-          "",
-          "",
+          "3",
+          "4",
+          "5",
+          "8",
           "10",
           "",
           "",
@@ -1009,10 +1009,10 @@ export const GEARS = {
         "Price": [
           "/",
           "140k",
-          "/",
+          "180k",
           "210k",
-          "",
-          "",
+          "250k",
+          "280k",
           "360k",
           "",
           "",
@@ -1027,11 +1027,11 @@ export const GEARS = {
           3,
           4,
           5,
-          8,
+          7,
           8,
           9,
           11,
-          16,
+          12,
           15,
           19,
           18,
@@ -1046,7 +1046,7 @@ export const GEARS = {
           5,
           5,
           6,
-          6,
+          7,
           7,
           7,
           8,
@@ -1061,7 +1061,7 @@ export const GEARS = {
           8,
           9,
           10,
-          10,
+          11,
           11,
           12,
           13,
@@ -1091,7 +1091,7 @@ export const GEARS = {
           11,
           12,
           14,
-          13,
+          15,
           14,
           15,
           16,
@@ -1102,11 +1102,11 @@ export const GEARS = {
           4,
           5,
           6,
-          6,
+          8,
           9,
           10,
           11,
-          10,
+          12,
           11,
           12,
           13,
@@ -1120,7 +1120,7 @@ export const GEARS = {
       "name": "Omar",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/ucp-internal-test-starter-commons/images/b/bc/Wiki.png/revision/latest/zoom-crop/width/200/height/200?cb=20200817122948",
+      "imageUrl": "TYPE html>\n<html class=",
       "upgrade": {
         "Cards": [
           "/",
@@ -1142,8 +1142,8 @@ export const GEARS = {
           "11k",
           "17.2k",
           "26k",
-          "",
-          "",
+          "36k",
+          "52k",
           "",
           "",
           "",
@@ -1281,7 +1281,7 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          ""
+          "300"
         ],
         "Price": [
           "",
@@ -1292,11 +1292,11 @@ export const GEARS = {
           "116.7k",
           "150k",
           "183.4k",
-          "",
-          "",
-          "",
+          "216.7k",
+          "250k",
+          "291.7k",
           "333.4k",
-          ""
+          "416.7"
         ]
       },
       "skills": {
@@ -1468,8 +1468,8 @@ export const GEARS = {
           "10",
           "30",
           "60",
-          "",
-          ""
+          "120",
+          "240"
         ],
         "Price": [
           "",
@@ -1481,8 +1481,8 @@ export const GEARS = {
           "21.7k",
           "27.5k",
           "35.9k",
-          "",
-          ""
+          "45.9k",
+          "75k"
         ]
       },
       "skills": {
@@ -1582,7 +1582,7 @@ export const GEARS = {
           "30",
           "60",
           "120",
-          ""
+          "240"
         ],
         "Price": [
           "",
@@ -1595,7 +1595,7 @@ export const GEARS = {
           "15k",
           "21.7k",
           "27.5k",
-          "35.9k"
+          "45.9k"
         ]
       },
       "skills": {
@@ -1647,7 +1647,7 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1k"
+          "1000"
         ],
         "Price": [
           "",
@@ -1661,8 +1661,8 @@ export const GEARS = {
           "58.4k",
           "75k",
           "87.5k",
-          "104k",
-          "183.4K"
+          "104,2k",
+          "183.4k"
         ]
       },
       "skills": {
@@ -1872,8 +1872,8 @@ export const GEARS = {
           "10",
           "30",
           "60",
-          "",
-          ""
+          "120",
+          "240"
         ],
         "Price": [
           "",
@@ -1885,8 +1885,8 @@ export const GEARS = {
           "35.9k",
           "45.9k",
           "58.4k",
-          "",
-          ""
+          "75k",
+          "104.2k"
         ]
       },
       "skills": {
@@ -1937,8 +1937,8 @@ export const GEARS = {
           "40",
           "60",
           "100",
-          "",
-          ""
+          "150",
+          "300"
         ],
         "Price": [
           "",
@@ -1953,7 +1953,7 @@ export const GEARS = {
           "116.7k",
           "150k",
           "183.4k",
-          "216.7k"
+          "291.7k"
         ]
       },
       "skills": {
@@ -2128,7 +2128,7 @@ export const GEARS = {
           "30",
           "60",
           "120",
-          ""
+          "240"
         ],
         "Price": [
           "",
@@ -2141,7 +2141,7 @@ export const GEARS = {
           "15k",
           "21.7k",
           "27.5K",
-          ""
+          "45.9k"
         ]
       },
       "skills": {
@@ -2189,11 +2189,11 @@ export const GEARS = {
           "4",
           "10",
           "20",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "40",
+          "60",
+          "100",
+          "150",
+          "300"
         ],
         "Price": [
           "",
@@ -2204,11 +2204,11 @@ export const GEARS = {
           "250K",
           "300K",
           "380k",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "450k",
+          "530k",
+          "560k",
+          "600k",
+          "700k"
         ]
       },
       "skills": {
@@ -2398,7 +2398,7 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          ""
+          "1000"
         ],
         "Price": [
           "",
@@ -2413,7 +2413,7 @@ export const GEARS = {
           "250k",
           "291.7k",
           "333.4k",
-          ""
+          "416.7"
         ]
       },
       "skills": {
@@ -2467,7 +2467,7 @@ export const GEARS = {
           "30",
           "60",
           "120",
-          ""
+          "240"
         ],
         "Price": [
           "",
@@ -2513,13 +2513,13 @@ export const GEARS = {
           "",
           "2",
           "4",
-          "-",
+          "10",
           "20",
-          "9",
-          "20",
+          "40",
           "60",
-          "120",
-          "240"
+          "100",
+          "150",
+          "300"
         ],
         "Price": [
           "",
@@ -2528,10 +2528,10 @@ export const GEARS = {
           "",
           "230k",
           "250k",
-          "",
+          "300k",
           "380k",
           "450k",
-          "510k",
+          "530k",
           "560k",
           "600k",
           "700k"
@@ -2572,8 +2572,8 @@ export const GEARS = {
           "150",
           "400",
           "800",
-          "1k",
-          "2k"
+          "1000",
+          "2000"
         ],
         "Price": [
           "",
@@ -2635,8 +2635,8 @@ export const GEARS = {
           "10",
           "30",
           "60",
-          "",
-          ""
+          "120",
+          "240"
         ],
         "Price": [
           "",
@@ -2649,7 +2649,7 @@ export const GEARS = {
           "45.9k",
           "58.4k",
           "75k",
-          "87.5k"
+          "104.2k"
         ]
       },
       "skills": {
@@ -2763,8 +2763,8 @@ export const GEARS = {
           "40",
           "60",
           "100",
-          "",
-          ""
+          "150",
+          "300"
         ],
         "Price": [
           "",
@@ -2778,8 +2778,8 @@ export const GEARS = {
           "58.4k",
           "75k",
           "87.5k",
-          "104k",
-          "116.7k"
+          "104.2k",
+          "183.4k"
         ]
       },
       "skills": {
@@ -2861,7 +2861,7 @@ export const GEARS = {
           "27.5k",
           "35.9k",
           "45.9k",
-          "58.4k"
+          "75k"
         ]
       },
       "skills": {
@@ -2909,10 +2909,11 @@ export const GEARS = {
           "4",
           "10",
           "20",
-          "",
-          "",
-          "",
-          ""
+          "40",
+          "60",
+          "100",
+          "150",
+          "300"
         ],
         "Price": [
           "",
@@ -2927,7 +2928,7 @@ export const GEARS = {
           "250k",
           "291.7k",
           "333.4k",
-          "416.7k"
+          "416.7"
         ]
       },
       "skills": {
@@ -2979,7 +2980,7 @@ export const GEARS = {
           "58.4k",
           "75k",
           "87.5k",
-          "104k",
+          "104.2k",
           "116.7k",
           "150k",
           "183.4k",
@@ -3039,7 +3040,7 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          ""
+          "300"
         ],
         "Price": [
           "",
@@ -3049,12 +3050,12 @@ export const GEARS = {
           "21.7K",
           "27.5K",
           "35.9K",
-          "45.5K",
+          "45.9K",
           "58.4K",
           "75K",
           "87.5K",
-          "116.7k",
-          "150k"
+          "104.2k",
+          "183.4k"
         ]
       },
       "skills": {
@@ -3170,8 +3171,8 @@ export const GEARS = {
           "150",
           "400",
           "800",
-          "1K",
-          "2K"
+          "1000",
+          "2000"
         ],
         "Price": [
           "",
@@ -3727,8 +3728,8 @@ export const GEARS = {
       }
     },
     {
-      "url": "https://tennis-clash.fandom.com/wiki/Neutral_Energy",
-      "name": "Neutral Energy",
+      "url": "https://tennis-clash.fandom.com/wiki/Natural_Energy",
+      "name": "Natural Energy",
       "foundIn": "Tour 7 and above",
       "rarity": "Rare",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/77/Natural_Energy.png/revision/latest?cb=20200120003344",
@@ -3744,9 +3745,9 @@ export const GEARS = {
           "50",
           "100",
           "200",
-          "",
-          "",
-          ""
+          "400",
+          "800",
+          "1000"
         ],
         "Price": [
           "",

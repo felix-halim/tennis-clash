@@ -284,6 +284,11 @@ export class AppComponent implements OnDestroy {
 
   constructor() {
     this.inventories = JSON.parse(localStorage.inventories ?? '{}');
+    const nutrition = this.inventories["Nutrition"];
+    if (nutrition["Neutral Energy"]) {
+      nutrition["Natural Energy"] = nutrition["Neutral Energy"];
+      delete nutrition["Neutral Energy"];
+    }
     for (const [category, itemName] of STARTERS) {
       if (this.inventories[category]?.[itemName] === undefined) {
         this.setInventory(category, itemName, 0);

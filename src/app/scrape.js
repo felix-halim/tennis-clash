@@ -66,7 +66,7 @@ const GEARS_URLS = {
     'https://tennis-clash.fandom.com/wiki/Keto_Sourcing',
     'https://tennis-clash.fandom.com/wiki/Lean_Protein',
     'https://tennis-clash.fandom.com/wiki/Macrobiotic',
-    'https://tennis-clash.fandom.com/wiki/Neutral_Energy',
+    'https://tennis-clash.fandom.com/wiki/Natural_Energy',
     'https://tennis-clash.fandom.com/wiki/Vegan_Diet',
   ],
   'Workout': [
@@ -112,10 +112,10 @@ async function get_and_parse(url) {
   };
   const s = await get(url);
 
-  let meta = 'class="page-header__title">';
+  let meta = 'class="page-header__title" id="firstHeading">';
   let i = s.indexOf(meta) + meta.length;
   let j = s.indexOf('</h1>', i);
-  item.name = s.substring(i, j);
+  item.name = s.substring(i, j).trim();
 
   meta = '>Found in</h3>';
   i = s.indexOf(meta);
@@ -135,9 +135,9 @@ async function get_and_parse(url) {
     item.rarity = s.substring(i, j);
   }
 
-  meta = '<meta property="og:image" content="';
-  i = s.indexOf(meta) + meta.length;
-  j = s.indexOf('"/>', i);
+  meta = 'href="https://static.wikia.nocookie.net/tennis-clash/images';
+  i = s.indexOf(meta) + 6;
+  j = s.indexOf('"', i);
   item.imageUrl = s.substring(i, j).replace('static.', 'vignette.');
 
   const read_row = (startIdx, endIdx, prefix) => {

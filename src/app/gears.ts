@@ -1120,7 +1120,7 @@ export const GEARS = {
       "name": "Omar",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "TYPE html>\n<html class=",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3d/Omar_Polishing_WIP_1.png/revision/latest?cb=20210908140518",
       "upgrade": {
         "Cards": [
           "/",
@@ -1647,7 +1647,7 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1000"
+          "1k"
         ],
         "Price": [
           "",
@@ -1716,9 +1716,9 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1000",
-          "2000",
-          "4000"
+          "1k",
+          "2k",
+          "4k"
         ],
         "Price": [
           "0",
@@ -3747,7 +3747,7 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1000"
+          "1k"
         ],
         "Price": [
           "",

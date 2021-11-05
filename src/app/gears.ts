@@ -2155,7 +2155,7 @@ export const GEARS = {
           7,
           8,
           8,
-          8,
+          9,
           9
         ],
         "Backhand": [
@@ -2168,7 +2168,7 @@ export const GEARS = {
           26,
           29,
           32,
-          35,
+          34,
           37
         ]
       }

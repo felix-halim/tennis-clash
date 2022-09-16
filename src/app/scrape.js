@@ -12,6 +12,7 @@ const GEARS_URLS = {
     'https://tennis-clash.fandom.com/wiki/Diana',
     'https://tennis-clash.fandom.com/wiki/Mei-Li',
     'https://tennis-clash.fandom.com/wiki/Luc',
+    'https://tennis-clash.fandom.com/wiki/Abeke',
     'https://tennis-clash.fandom.com/wiki/Omar',
   ],
   'Racket': [

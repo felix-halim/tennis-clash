@@ -136,7 +136,7 @@ async function get_and_parse(url) {
     item.rarity = s.substring(i, j);
   }
 
-  meta = 'href="https://static.wikia.nocookie.net/tennis-clash/images';
+  meta = 'href="https://vignette.wikia.nocookie.net/tennis-clash/images';
   i = s.indexOf(meta) + 6;
   j = s.indexOf('"', i);
   item.imageUrl = s.substring(i, j).replace('static.', 'vignette.');

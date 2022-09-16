@@ -1120,7 +1120,7 @@ export const GEARS = {
       "name": "Abeke",
       "foundIn": "",
       "rarity": "",
-      "imageUrl": "https://static.wikia.nocookie.net/tennis-clash/images/9/99/Abeke2.png/revision/latest?cb=20220702175508",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/99/Abeke2.png/revision/latest?cb=20220702175508",
       "upgrade": {
         "Cards": [
           "",

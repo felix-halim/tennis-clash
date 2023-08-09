@@ -3,8 +3,6 @@ export const GEARS = {
     {
       "url": "https://tennis-clash.fandom.com/wiki/Jonah",
       "name": "Jonah",
-      "foundIn": "",
-      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/a0/Jonah.png/revision/latest?cb=20200119155809",
       "upgrade": {
         "Cards": [
@@ -18,7 +16,7 @@ export const GEARS = {
           "20",
           "40",
           "60",
-          "240"
+          "100"
         ],
         "Price": [
           "",
@@ -46,7 +44,9 @@ export const GEARS = {
           10,
           12,
           13,
-          14
+          14,
+          15,
+          17
         ],
         "Stamina": [
           3,
@@ -59,7 +59,9 @@ export const GEARS = {
           8,
           8,
           9,
-          10
+          10,
+          10,
+          11
         ],
         "Serve": [
           4,
@@ -72,7 +74,9 @@ export const GEARS = {
           10,
           11,
           12,
-          13
+          13,
+          14,
+          15
         ],
         "Volley": [
           2,
@@ -85,7 +89,9 @@ export const GEARS = {
           7,
           8,
           8,
-          9
+          9,
+          10,
+          10
         ],
         "Forehand": [
           5,
@@ -98,7 +104,9 @@ export const GEARS = {
           14,
           15,
           16,
-          17
+          17,
+          18,
+          20
         ],
         "Backhand": [
           4,
@@ -111,15 +119,15 @@ export const GEARS = {
           11,
           12,
           13,
-          14
+          14,
+          15,
+          16
         ]
       }
     },
     {
       "url": "https://tennis-clash.fandom.com/wiki/Hope",
       "name": "Hope",
-      "foundIn": "",
-      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/18/Hope.png/revision/latest?cb=20200119155826",
       "upgrade": {
         "Cards": [
@@ -133,7 +141,9 @@ export const GEARS = {
           "20",
           "40",
           "60",
-          "100"
+          "100",
+          "",
+          ""
         ],
         "Price": [
           "/",
@@ -146,38 +156,43 @@ export const GEARS = {
           "26k",
           "36k",
           "52k",
-          "66k"
+          "66k",
+          "",
+          ""
         ]
       },
       "skills": {
         "Agility": [
           3,
           5,
-          6,
           7,
-          9,
+          8,
           10,
+          11,
           12,
-          13,
-          15,
+          14,
           16,
-          18
+          17,
+          18,
+          0,
+          22
         ],
         "Stamina": [
           3,
           4,
           5,
           6,
-          6,
           7,
           8,
           9,
-          9,
           10,
-          11
+          10,
+          11,
+          12,
+          0,
+          14
         ],
         "Serve": [
-          3,
           4,
           4,
           5,
@@ -187,7 +202,10 @@ export const GEARS = {
           8,
           9,
           10,
-          11
+          10,
+          11,
+          0,
+          12
         ],
         "Volley": [
           4,
@@ -200,11 +218,12 @@ export const GEARS = {
           10,
           11,
           12,
-          13
+          13,
+          0,
+          14
         ],
         "Forehand": [
           4,
-          5,
           6,
           7,
           8,
@@ -213,7 +232,10 @@ export const GEARS = {
           11,
           12,
           13,
-          14
+          14,
+          15,
+          0,
+          17
         ],
         "Backhand": [
           4,
@@ -226,15 +248,15 @@ export const GEARS = {
           10,
           11,
           12,
-          13
+          13,
+          13,
+          14
         ]
       }
     },
     {
       "url": "https://tennis-clash.fandom.com/wiki/Florence",
       "name": "Florence",
-      "foundIn": "",
-      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/d/d9/Florence.png/revision/latest?cb=20200119155922",
       "upgrade": {
         "Cards": [
@@ -273,10 +295,12 @@ export const GEARS = {
           12,
           14,
           16,
-          18,
+          52,
           20,
           21,
-          23
+          23,
+          25,
+          27
         ],
         "Stamina": [
           7,
@@ -286,10 +310,12 @@ export const GEARS = {
           11,
           13,
           14,
-          15,
+          43,
           16,
           17,
-          19
+          19,
+          20,
+          21
         ],
         "Serve": [
           1,
@@ -299,10 +325,12 @@ export const GEARS = {
           3,
           4,
           4,
-          5,
+          43,
           5,
           6,
-          7
+          7,
+          7,
+          8
         ],
         "Volley": [
           2,
@@ -312,10 +340,12 @@ export const GEARS = {
           4,
           5,
           5,
-          6,
+          20,
           7,
           7,
-          8
+          8,
+          9,
+          9
         ],
         "Forehand": [
           3,
@@ -325,10 +355,12 @@ export const GEARS = {
           7,
           7,
           8,
-          9,
+          39,
           10,
           11,
-          12
+          12,
+          13,
+          13
         ],
         "Backhand": [
           3,
@@ -338,18 +370,18 @@ export const GEARS = {
           6,
           7,
           8,
-          9,
+          56,
           10,
           10,
-          11
+          11,
+          12,
+          13
         ]
       }
     },
     {
       "url": "https://tennis-clash.fandom.com/wiki/Leo",
       "name": "Leo",
-      "foundIn": "",
-      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/1/1d/Leo.png/revision/latest?cb=20200119154813",
       "upgrade": {
         "Cards": [
@@ -391,7 +423,9 @@ export const GEARS = {
           13,
           15,
           16,
-          18
+          18,
+          19,
+          21
         ],
         "Stamina": [
           2,
@@ -404,7 +438,9 @@ export const GEARS = {
           6,
           6,
           7,
-          7
+          7,
+          8,
+          8
         ],
         "Serve": [
           5,
@@ -417,7 +453,9 @@ export const GEARS = {
           14,
           15,
           16,
-          17
+          17,
+          18,
+          19
         ],
         "Volley": [
           5,
@@ -430,7 +468,9 @@ export const GEARS = {
           14,
           15,
           16,
-          17
+          17,
+          18,
+          19
         ],
         "Forehand": [
           4,
@@ -443,7 +483,9 @@ export const GEARS = {
           10,
           11,
           12,
-          13
+          13,
+          14,
+          15
         ],
         "Backhand": [
           3,
@@ -456,15 +498,144 @@ export const GEARS = {
           9,
           10,
           10,
+          11,
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "url": "https://tennis-clash.fandom.com/wiki/Hyun-Jun",
+      "name": "Hyun-Jun",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/f/fa/Hyun-Jun.png/revision/latest?cb=20230302201326",
+      "upgrade": {
+        "Cards": [
+          "",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "20",
+          "40",
+          "60",
+          "100",
+          "200",
+          "600"
+        ],
+        "Price": [
+          "",
+          "6k",
+          "11k",
+          "17.2k",
+          "26k",
+          "36k",
+          "52k",
+          "66k",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          0,
+          0,
+          0,
+          17
+        ],
+        "Stamina": [
+          4,
+          4,
+          5,
+          5,
+          6,
+          6,
+          7,
+          8,
+          8,
+          0,
+          0,
+          0,
           11
+        ],
+        "Serve": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          0,
+          0,
+          0,
+          16
+        ],
+        "Volley": [
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          6,
+          7,
+          8,
+          0,
+          0,
+          0,
+          11
+        ],
+        "Forehand": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          16,
+          18,
+          19,
+          0,
+          0,
+          0,
+          23
+        ],
+        "Backhand": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          0,
+          0,
+          0,
+          17
         ]
       }
     },
     {
       "url": "https://tennis-clash.fandom.com/wiki/Kaito",
       "name": "Kaito",
-      "foundIn": "",
-      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/92/Kaito.png/revision/latest?cb=20200119155948",
       "upgrade": {
         "Cards": [
@@ -480,7 +651,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "450",
+          "750"
         ],
         "Price": [
           "",
@@ -495,7 +668,9 @@ export const GEARS = {
           "110k",
           "140k",
           "180k",
-          "250k"
+          "250k",
+          "3.5m",
+          "10m"
         ]
       },
       "skills": {
@@ -512,7 +687,9 @@ export const GEARS = {
           21,
           23,
           25,
-          27
+          27,
+          28,
+          30
         ],
         "Stamina": [
           6,
@@ -527,7 +704,9 @@ export const GEARS = {
           17,
           19,
           20,
-          21
+          21,
+          22,
+          24
         ],
         "Serve": [
           1,
@@ -542,7 +721,9 @@ export const GEARS = {
           6,
           7,
           7,
-          8
+          8,
+          8,
+          9
         ],
         "Volley": [
           2,
@@ -557,7 +738,9 @@ export const GEARS = {
           8,
           9,
           10,
-          10
+          10,
+          11,
+          12
         ],
         "Forehand": [
           3,
@@ -572,7 +755,9 @@ export const GEARS = {
           11,
           12,
           13,
-          13
+          13,
+          14,
+          15
         ],
         "Backhand": [
           3,
@@ -587,15 +772,160 @@ export const GEARS = {
           10,
           11,
           12,
-          13
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "url": "https://tennis-clash.fandom.com/wiki/Anton",
+      "name": "Anton",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/a/af/Anton2.jpg/revision/latest?cb=20221024142010",
+      "upgrade": {
+        "Cards": [
+          "",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "20",
+          "40",
+          "60",
+          "100",
+          "150",
+          "300",
+          "450",
+          "750"
+        ],
+        "Price": [
+          "",
+          "6k",
+          "11K",
+          "17,2K",
+          "26k",
+          "36k",
+          "52k",
+          "66k",
+          "86k",
+          "110k",
+          "140k",
+          "180k",
+          "250k",
+          "3.5m",
+          "10m"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          4,
+          5,
+          7,
+          8,
+          10,
+          12,
+          13,
+          15,
+          16,
+          0,
+          0,
+          21,
+          22,
+          0,
+          26
+        ],
+        "Stamina": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          9,
+          10,
+          11,
+          0,
+          0,
+          14,
+          15,
+          0,
+          16
+        ],
+        "Serve": [
+          3,
+          4,
+          4,
+          5,
+          6,
+          7,
+          8,
+          8,
+          9,
+          0,
+          0,
+          12,
+          12,
+          0,
+          14
+        ],
+        "Volley": [
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          7,
+          7,
+          8,
+          0,
+          0,
+          10,
+          11,
+          0,
+          12
+        ],
+        "Forehand": [
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          0,
+          0,
+          16,
+          17,
+          0,
+          19
+        ],
+        "Backhand": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          0,
+          0,
+          17,
+          18,
+          0,
+          20
         ]
       }
     },
     {
       "url": "https://tennis-clash.fandom.com/wiki/Viktoria",
       "name": "Viktoria",
-      "foundIn": "",
-      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/29/Viktoria.png/revision/latest?cb=20200119160110",
       "upgrade": {
         "Cards": [
@@ -611,7 +941,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "450",
+          "750"
         ],
         "Price": [
           "/",
@@ -626,14 +958,16 @@ export const GEARS = {
           "180k",
           "210k",
           "250k",
-          "440k"
+          "440k",
+          "2m",
+          "10m"
         ]
       },
       "skills": {
         "Agility": [
+          2,
           3,
-          5,
-          6,
+          4,
           6,
           7,
           8,
@@ -642,28 +976,32 @@ export const GEARS = {
           12,
           13,
           14,
-          16,
-          17
+          15,
+          17,
+          18,
+          19
         ],
         "Stamina": [
-          2,
-          2,
-          3,
+          4,
+          5,
           5,
           6,
-          6,
           7,
-          8,
+          7,
           8,
           9,
+          9,
           10,
-          10,
-          11
+          11,
+          11,
+          12,
+          12,
+          13
         ],
         "Serve": [
+          4,
           5,
-          7,
-          8,
+          5,
           6,
           7,
           8,
@@ -673,16 +1011,20 @@ export const GEARS = {
           12,
           13,
           14,
-          15
+          15,
+          16,
+          17
         ],
         "Volley": [
-          6,
-          7,
-          8,
+          2,
+          3,
           4,
+          4,
+          5,
           5,
           6,
           6,
+          7,
           7,
           8,
           8,
@@ -691,107 +1033,24 @@ export const GEARS = {
           10
         ],
         "Forehand": [
-          3,
-          4,
-          5,
-          10,
-          11,
-          13,
-          14,
-          15,
-          16,
-          18,
-          19,
-          20,
-          22
-        ],
-        "Backhand": [
-          3,
-          4,
-          5,
-          7,
           8,
           9,
           10,
           11,
           12,
-          13,
           14,
           15,
-          16
-        ]
-      }
-    },
-    {
-      "url": "https://tennis-clash.fandom.com/wiki/Diana",
-      "name": "Diana",
-      "foundIn": "",
-      "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/5f/Diana.png/revision/latest?cb=20200119155840",
-      "upgrade": {
-        "Cards": [
-          "/",
-          "2",
-          "3",
-          "4",
-          "5",
-          "8",
-          "10",
-          "20",
-          "40",
-          "60",
-          "100",
-          "120",
-          "240"
-        ],
-        "Price": [
-          "/",
-          "52k",
-          "66k",
-          "86k",
-          "110k",
-          "140k",
-          "180k",
-          "210k",
-          "250k",
-          "280k",
-          "360k",
-          "440k",
-          "700k"
-        ]
-      },
-      "skills": {
-        "Agility": [
-          4,
-          5,
-          7,
-          8,
-          10,
-          11,
-          13,
-          14,
           16,
           17,
           19,
           20,
-          22
+          22,
+          23,
+          25,
+          26
         ],
-        "Stamina": [
-          1,
-          2,
-          2,
-          3,
-          3,
+        "Backhand": [
           4,
-          4,
-          4,
-          5,
-          5,
-          6,
-          6,
-          7
-        ],
-        "Serve": [
           5,
           6,
           7,
@@ -801,325 +1060,17 @@ export const GEARS = {
           11,
           12,
           13,
+          14,
           15,
           16,
           17,
           18
-        ],
-        "Volley": [
-          6,
-          7,
-          8,
-          9,
-          11,
-          12,
-          13,
-          14,
-          16,
-          17,
-          18,
-          19,
-          20
-        ],
-        "Forehand": [
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          10,
-          11,
-          12,
-          13,
-          14
-        ],
-        "Backhand": [
-          3,
-          4,
-          5,
-          6,
-          7,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14
-        ]
-      }
-    },
-    {
-      "url": "https://tennis-clash.fandom.com/wiki/Mei-Li",
-      "name": "Mei-Li",
-      "foundIn": "Tour 7 and above",
-      "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/58/Mei-Li.png/revision/latest?cb=20200129205010",
-      "upgrade": {
-        "Cards": [
-          "",
-          "2",
-          "3",
-          "4",
-          "5",
-          "8",
-          "10",
-          "20",
-          "40",
-          "60",
-          "100",
-          "150",
-          "300"
-        ],
-        "Price": [
-          "",
-          "140k",
-          "180k",
-          "210k",
-          "250k",
-          "280k",
-          "360k",
-          "440k",
-          "520k",
-          "600k",
-          "700k",
-          "800k",
-          "1000k"
-        ]
-      },
-      "skills": {
-        "Agility": [
-          3,
-          5,
-          6,
-          7,
-          9,
-          10,
-          12,
-          13,
-          15,
-          16,
-          22,
-          21,
-          21
-        ],
-        "Stamina": [
-          3,
-          4,
-          5,
-          6,
-          6,
-          7,
-          8,
-          9,
-          9,
-          10,
-          11,
-          12,
-          12
-        ],
-        "Serve": [
-          3,
-          4,
-          4,
-          5,
-          6,
-          7,
-          8,
-          8,
-          9,
-          10,
-          10,
-          11,
-          12
-        ],
-        "Volley": [
-          4,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          12,
-          13,
-          14
-        ],
-        "Forehand": [
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          12,
-          13,
-          14,
-          13,
-          13,
-          17
-        ],
-        "Backhand": [
-          4,
-          5,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          11,
-          12,
-          15
-        ]
-      }
-    },
-    {
-      "url": "https://tennis-clash.fandom.com/wiki/Luc",
-      "name": "Luc",
-      "foundIn": "",
-      "rarity": "",
-      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/bc/Luc.png/revision/latest?cb=20200319135439",
-      "upgrade": {
-        "Cards": [
-          "L",
-          "2",
-          "3",
-          "4",
-          "5",
-          "8",
-          "10",
-          "20",
-          "40",
-          "60",
-          "100",
-          "150",
-          "300"
-        ],
-        "Price": [
-          "/",
-          "140k",
-          "180k",
-          "210k",
-          "250k",
-          "280k",
-          "360k",
-          "440k",
-          "520k",
-          "600k",
-          "700k",
-          "800k",
-          "1000k"
-        ]
-      },
-      "skills": {
-        "Agility": [
-          3,
-          4,
-          5,
-          7,
-          8,
-          9,
-          11,
-          12,
-          13,
-          15,
-          16,
-          17,
-          19
-        ],
-        "Stamina": [
-          2,
-          3,
-          4,
-          4,
-          5,
-          5,
-          6,
-          7,
-          7,
-          8,
-          8,
-          9,
-          10
-        ],
-        "Serve": [
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16
-        ],
-        "Volley": [
-          2,
-          3,
-          3,
-          4,
-          4,
-          5,
-          6,
-          6,
-          7,
-          8,
-          8,
-          9,
-          10
-        ],
-        "Forehand": [
-          6,
-          7,
-          9,
-          10,
-          11,
-          12,
-          14,
-          15,
-          16,
-          18,
-          19,
-          20,
-          21
-        ],
-        "Backhand": [
-          4,
-          5,
-          6,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16,
-          17
         ]
       }
     },
     {
       "url": "https://tennis-clash.fandom.com/wiki/Omar",
       "name": "Omar",
-      "foundIn": "",
-      "rarity": "",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3d/Omar_Polishing_WIP_1.png/revision/latest?cb=20210908140518",
       "upgrade": {
         "Cards": [
@@ -1135,7 +1086,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "450",
+          "750"
         ],
         "Price": [
           "/",
@@ -1150,7 +1103,9 @@ export const GEARS = {
           "140k",
           "180k",
           "210k",
-          "360k"
+          "360k",
+          "0",
+          "0"
         ]
       },
       "skills": {
@@ -1165,9 +1120,11 @@ export const GEARS = {
           14,
           15,
           17,
-          19,
+          18,
+          20,
           21,
-          21
+          22,
+          24
         ],
         "Stamina": [
           2,
@@ -1180,9 +1137,11 @@ export const GEARS = {
           5,
           6,
           6,
-          6,
           7,
-          8
+          7,
+          8,
+          9,
+          9
         ],
         "Serve": [
           5,
@@ -1196,8 +1155,10 @@ export const GEARS = {
           15,
           16,
           17,
-          18,
-          20
+          19,
+          20,
+          21,
+          22
         ],
         "Volley": [
           6,
@@ -1212,7 +1173,9 @@ export const GEARS = {
           16,
           18,
           19,
-          20
+          20,
+          21,
+          22
         ],
         "Forehand": [
           3,
@@ -1225,9 +1188,11 @@ export const GEARS = {
           10,
           11,
           11,
+          12,
           13,
           14,
-          14
+          15,
+          16
         ],
         "Backhand": [
           3,
@@ -1242,7 +1207,590 @@ export const GEARS = {
           10,
           11,
           12,
-          13
+          13,
+          14,
+          14
+        ]
+      }
+    },
+    {
+      "url": "https://tennis-clash.fandom.com/wiki/Diana",
+      "name": "Diana",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/5f/Diana.png/revision/latest?cb=20200119155840",
+      "upgrade": {
+        "Cards": [
+          "/",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "20",
+          "40",
+          "60",
+          "100",
+          "120",
+          "240",
+          "450",
+          "750"
+        ],
+        "Price": [
+          "/",
+          "52k",
+          "66k",
+          "86k",
+          "110k",
+          "140k",
+          "180k",
+          "210k",
+          "250k",
+          "280k",
+          "360k",
+          "440k",
+          "700k",
+          "2.5m",
+          "10m"
+        ]
+      },
+      "skills": {
+        "Agility": [
+          4,
+          5,
+          7,
+          8,
+          10,
+          11,
+          13,
+          14,
+          16,
+          17,
+          19,
+          20,
+          22,
+          24,
+          25
+        ],
+        "Stamina": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4,
+          5,
+          5,
+          6,
+          6,
+          7,
+          7,
+          8
+        ],
+        "Serve": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "Volley": [
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18,
+          19,
+          20,
+          22,
+          23
+        ],
+        "Forehand": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "Backhand": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "url": "https://tennis-clash.fandom.com/wiki/Abeke",
+      "name": "Abeke",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/99/Abeke2.png/revision/latest?cb=20220702175508",
+      "upgrade": {
+        "Cards": [
+          "",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "20",
+          "40",
+          "60",
+          "100",
+          "150",
+          "300",
+          "450",
+          "750"
+        ],
+        "Price": [
+          "",
+          "52k",
+          "66K",
+          "86K",
+          "110K",
+          "140K",
+          "180k",
+          "210k",
+          "250k",
+          "280k",
+          "360k",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          17,
+          19,
+          21,
+          23,
+          25,
+          26,
+          28,
+          30,
+          32
+        ],
+        "Stamina": [
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          19,
+          20,
+          22,
+          23,
+          24
+        ],
+        "Serve": [
+          4,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          13,
+          14,
+          15,
+          16
+        ],
+        "Volley": [
+          2,
+          2,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          7,
+          7,
+          8,
+          9,
+          9,
+          10,
+          10
+        ],
+        "Forehand": [
+          3,
+          4,
+          5,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "Backhand": [
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "url": "https://tennis-clash.fandom.com/wiki/Mei-Li",
+      "name": "Mei-Li",
+      "foundIn": "Tour 7 and above",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/5/58/Mei-Li.png/revision/latest?cb=20200129205010",
+      "upgrade": {
+        "Cards": [
+          "",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "20",
+          "40",
+          "60",
+          "100",
+          "150",
+          "300",
+          "450",
+          "750"
+        ],
+        "Price": [
+          "",
+          "140k",
+          "180k",
+          "210k",
+          "250k",
+          "280k",
+          "360k",
+          "440k",
+          "520k",
+          "600k",
+          "700k",
+          "800k",
+          "1000k",
+          "3.5m",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          4,
+          6,
+          8,
+          9,
+          11,
+          13,
+          15,
+          17,
+          18,
+          20,
+          21,
+          23,
+          24,
+          26,
+          27
+        ],
+        "Stamina": [
+          3,
+          4,
+          5,
+          6,
+          6,
+          7,
+          8,
+          9,
+          9,
+          10,
+          11,
+          12,
+          12,
+          13,
+          14
+        ],
+        "Serve": [
+          4,
+          5,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          11,
+          12,
+          13,
+          13,
+          14,
+          15
+        ],
+        "Volley": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          14,
+          15,
+          16,
+          17
+        ],
+        "Forehand": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "Backhand": [
+          4,
+          5,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "url": "https://tennis-clash.fandom.com/wiki/Luc",
+      "name": "Luc",
+      "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/b/bc/Luc.png/revision/latest?cb=20200319135439",
+      "upgrade": {
+        "Cards": [
+          "L",
+          "2",
+          "3",
+          "4",
+          "5",
+          "8",
+          "10",
+          "20",
+          "40",
+          "60",
+          "100",
+          "150",
+          "300",
+          "450",
+          "750"
+        ],
+        "Price": [
+          "/",
+          "140k",
+          "180k",
+          "210k",
+          "250k",
+          "280k",
+          "360k",
+          "440k",
+          "520k",
+          "600k",
+          "700k",
+          "800k",
+          "1000k",
+          "",
+          ""
+        ]
+      },
+      "skills": {
+        "Agility": [
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          19,
+          20,
+          21
+        ],
+        "Stamina": [
+          2,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          7,
+          7,
+          8,
+          8,
+          9,
+          10,
+          10,
+          11
+        ],
+        "Serve": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "Volley": [
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          6,
+          6,
+          7,
+          8,
+          8,
+          9,
+          10,
+          11,
+          11
+        ],
+        "Forehand": [
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          18,
+          19,
+          20,
+          21,
+          22,
+          24
+        ],
+        "Backhand": [
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
         ]
       }
     }
@@ -1281,7 +1829,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "",
+          ""
         ],
         "Price": [
           "",
@@ -1296,7 +1846,9 @@ export const GEARS = {
           "250k",
           "291.7k",
           "333.4k",
-          "416.7k"
+          "416.7k",
+          "",
+          ""
         ]
       },
       "skills": {
@@ -1313,7 +1865,9 @@ export const GEARS = {
           40,
           43,
           46,
-          49
+          49,
+          52,
+          55
         ]
       }
     },
@@ -1335,7 +1889,9 @@ export const GEARS = {
           "400",
           "800",
           "1k",
-          "2k"
+          "2k",
+          "5k",
+          "8k"
         ],
         "Price": [
           "",
@@ -1348,35 +1904,41 @@ export const GEARS = {
           "10.9k",
           "15k",
           "21.7k",
-          "27.5k"
+          "27.5k",
+          "100k",
+          "180k"
         ]
       },
       "skills": {
         "Agility": [
+          2,
+          2,
           2,
           3,
           3,
           3,
           3,
           3,
-          3,
-          3,
           4,
           4,
-          4
+          4,
+          4,
+          5
         ],
         "Forehand": [
+          2,
           3,
-          4,
+          5,
           7,
-          10,
-          14,
+          11,
+          15,
           19,
           23,
           26,
           29,
-          31,
-          34
+          32,
+          35,
+          37
         ]
       }
     },
@@ -1400,7 +1962,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "500",
+          ""
         ],
         "Price": [
           "",
@@ -1415,7 +1979,9 @@ export const GEARS = {
           "116.7k",
           "150k",
           "183.4k",
-          "216.7k"
+          "216.7k",
+          "750k",
+          ""
         ]
       },
       "skills": {
@@ -1432,7 +1998,9 @@ export const GEARS = {
           10,
           10,
           11,
-          12
+          12,
+          12,
+          13
         ],
         "Forehand": [
           0,
@@ -1447,7 +2015,9 @@ export const GEARS = {
           35,
           38,
           41,
-          44
+          44,
+          47,
+          50
         ]
       }
     },
@@ -1487,30 +2057,34 @@ export const GEARS = {
       },
       "skills": {
         "Backhand": [
-          0,
-          0,
-          0,
-          10,
-          10,
-          10,
-          10,
-          11,
+          7,
+          8,
+          9,
           12,
-          13,
-          14
+          12,
+          12,
+          12,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20
         ],
         "Forehand": [
           0,
-          0,
-          0,
-          6,
+          1,
+          2,
+          8,
           10,
           14,
           18,
           21,
           23,
-          24,
-          27
+          26,
+          29,
+          32,
+          35
         ]
       }
     },
@@ -1532,7 +2106,9 @@ export const GEARS = {
           "60",
           "150",
           "400",
-          "800"
+          "800",
+          "2000",
+          "4000"
         ],
         "Price": [
           "",
@@ -1545,14 +2121,16 @@ export const GEARS = {
           "45.9k",
           "58.4k",
           "75k",
-          "104.2k"
+          "104.2k",
+          "200k",
+          ""
         ]
       },
       "skills": {
         "Forehand": [
           0,
           0,
-          12,
+          13,
           16,
           20,
           25,
@@ -1560,7 +2138,9 @@ export const GEARS = {
           32,
           35,
           38,
-          42
+          42,
+          45,
+          48
         ]
       }
     },
@@ -1609,8 +2189,10 @@ export const GEARS = {
           7,
           8,
           8,
-          8,
-          9
+          9,
+          9,
+          10,
+          11
         ],
         "Forehand": [
           0,
@@ -1622,8 +2204,10 @@ export const GEARS = {
           26,
           29,
           32,
-          35,
-          37
+          34,
+          37,
+          39,
+          43
         ]
       }
     },
@@ -1647,7 +2231,9 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1k"
+          "1k",
+          "1.5k",
+          "5k"
         ],
         "Price": [
           "",
@@ -1661,15 +2247,17 @@ export const GEARS = {
           "58.4k",
           "75k",
           "87.5k",
-          "104,2k",
-          "183.4k"
+          "104.2k",
+          "183.4k",
+          "",
+          ""
         ]
       },
       "skills": {
         "Agility": [
           0,
           0,
-          3,
+          0,
           3,
           3,
           3,
@@ -1679,13 +2267,15 @@ export const GEARS = {
           4,
           5,
           5,
-          5
+          5,
+          6,
+          6
         ],
         "Forehand": [
           0,
           0,
-          6,
-          9,
+          0,
+          10,
           14,
           18,
           23,
@@ -1694,7 +2284,9 @@ export const GEARS = {
           31,
           33,
           36,
-          38
+          38,
+          41,
+          43
         ]
       }
     },
@@ -1702,7 +2294,7 @@ export const GEARS = {
       "url": "https://tennis-clash.fandom.com/wiki/Zeus",
       "name": "Zeus",
       "foundIn": "Tour 8",
-      "rarity": "Common",
+      "rarity": "Epic",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/3/3c/Zeus.png/revision/latest?cb=20200119174426",
       "upgrade": {
         "Cards": [
@@ -1718,7 +2310,9 @@ export const GEARS = {
           "800",
           "1k",
           "2k",
-          "4k"
+          "4k",
+          "500",
+          ""
         ],
         "Price": [
           "0",
@@ -1733,7 +2327,9 @@ export const GEARS = {
           "530K",
           "560K",
           "600K",
-          "700K"
+          "700K",
+          "1.85m",
+          ""
         ]
       },
       "skills": {
@@ -1750,7 +2346,9 @@ export const GEARS = {
           9,
           10,
           10,
-          11
+          11,
+          12,
+          12
         ],
         "Forehand": [
           0,
@@ -1765,7 +2363,9 @@ export const GEARS = {
           25,
           27,
           29,
-          32
+          32,
+          34,
+          36
         ]
       }
     }
@@ -1788,29 +2388,31 @@ export const GEARS = {
       "url": "https://tennis-clash.fandom.com/wiki/Tactical_Grip",
       "name": "Tactical Grip",
       "foundIn": "Tour 7",
-      "rarity": "Common",
+      "rarity": "Epic",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/9/99/Tactical_Grip.png/revision/latest?cb=20200119183439",
       "upgrade": {
         "Cards": [
+          "",
+          "",
+          "",
           "",
           "2",
           "4",
           "10",
           "20",
-          "50",
+          "40",
+          "60",
           "100",
-          "200",
-          "400",
-          "800",
-          "1000",
-          "2000",
-          "4000"
+          "150",
+          "300",
+          "500",
+          "1000"
         ],
         "Price": [
           "",
-          "58.4k",
-          "75k",
-          "87.5k",
+          "",
+          "",
+          "",
           "104.2k",
           "116.7k",
           "150k",
@@ -1819,7 +2421,9 @@ export const GEARS = {
           "250k",
           "291.7K",
           "333.4K",
-          "416.7K"
+          "416.7K",
+          "1.2m",
+          ""
         ]
       },
       "skills": {
@@ -1836,7 +2440,9 @@ export const GEARS = {
           15,
           16,
           17,
-          18
+          18,
+          19,
+          19
         ],
         "Backhand": [
           0,
@@ -1851,7 +2457,9 @@ export const GEARS = {
           25,
           27,
           29,
-          32
+          32,
+          34,
+          36
         ]
       }
     },
@@ -1891,30 +2499,34 @@ export const GEARS = {
       },
       "skills": {
         "Forehand": [
-          0,
-          0,
-          0,
-          10,
-          10,
-          10,
-          10,
-          11,
+          7,
+          8,
+          9,
+          12,
+          12,
+          12,
           12,
           13,
-          14
+          15,
+          16,
+          17,
+          18,
+          20
         ],
         "Backhand": [
           0,
-          0,
-          0,
-          6,
+          1,
+          2,
+          8,
           10,
           14,
           18,
           21,
           23,
-          24,
-          27
+          26,
+          29,
+          32,
+          35
         ]
       }
     },
@@ -1938,7 +2550,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "450",
+          ""
         ],
         "Price": [
           "",
@@ -1953,7 +2567,9 @@ export const GEARS = {
           "116.7k",
           "150k",
           "183.4k",
-          "291.7k"
+          "291.7k",
+          "750k",
+          ""
         ]
       },
       "skills": {
@@ -1970,7 +2586,9 @@ export const GEARS = {
           10,
           10,
           11,
-          12
+          12,
+          12,
+          13
         ],
         "Backhand": [
           0,
@@ -1985,7 +2603,9 @@ export const GEARS = {
           35,
           38,
           41,
-          44
+          44,
+          47,
+          50
         ]
       }
     },
@@ -2009,7 +2629,9 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1k"
+          "1k",
+          "",
+          ""
         ],
         "Price": [
           "",
@@ -2024,7 +2646,9 @@ export const GEARS = {
           "75.0k",
           "87.5k",
           "104.2k",
-          "183.4K"
+          "183.4K",
+          "",
+          ""
         ]
       },
       "skills": {
@@ -2041,6 +2665,8 @@ export const GEARS = {
           7,
           8,
           8,
+          9,
+          9,
           9
         ],
         "Backhand": [
@@ -2056,7 +2682,9 @@ export const GEARS = {
           31,
           33,
           36,
-          38
+          38,
+          40,
+          43
         ]
       }
     },
@@ -2078,7 +2706,9 @@ export const GEARS = {
           "60",
           "150",
           "400",
-          "800"
+          "800",
+          "2000",
+          "4000"
         ],
         "Price": [
           "",
@@ -2091,7 +2721,22 @@ export const GEARS = {
           "27.5k",
           "35.9k",
           "45.9k",
-          "75k"
+          "75k",
+          "200k",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ]
       },
       "skills": {
@@ -2106,7 +2751,9 @@ export const GEARS = {
           32,
           35,
           38,
-          42
+          42,
+          45,
+          48
         ]
       }
     },
@@ -2156,7 +2803,9 @@ export const GEARS = {
           8,
           8,
           9,
-          9
+          9,
+          10,
+          11
         ],
         "Backhand": [
           0,
@@ -2169,7 +2818,9 @@ export const GEARS = {
           29,
           32,
           34,
-          37
+          37,
+          39,
+          43
         ]
       }
     },
@@ -2193,7 +2844,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "",
+          ""
         ],
         "Price": [
           "",
@@ -2208,7 +2861,9 @@ export const GEARS = {
           "530k",
           "560k",
           "600k",
-          "700k"
+          "700k",
+          "",
+          ""
         ]
       },
       "skills": {
@@ -2225,7 +2880,9 @@ export const GEARS = {
           40,
           43,
           46,
-          49
+          49,
+          52,
+          55
         ]
       }
     },
@@ -2265,6 +2922,8 @@ export const GEARS = {
       },
       "skills": {
         "Volley": [
+          2,
+          3,
           3,
           4,
           4,
@@ -2279,16 +2938,18 @@ export const GEARS = {
         ],
         "Backhand": [
           3,
-          5,
+          4,
           7,
-          10,
-          14,
+          9,
+          12,
+          15,
           19,
           23,
-          26,
-          29,
-          31,
-          34
+          27,
+          30,
+          33,
+          36,
+          38
         ]
       }
     }
@@ -2327,7 +2988,9 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1k"
+          "1k",
+          "1.5k",
+          "5k"
         ],
         "Price": [
           "",
@@ -2342,7 +3005,9 @@ export const GEARS = {
           "116.7k",
           "150k",
           "183.4k",
-          "216.7k"
+          "216.7k",
+          "750k",
+          "5m"
         ]
       },
       "skills": {
@@ -2359,7 +3024,9 @@ export const GEARS = {
           8,
           8,
           9,
-          10
+          10,
+          10,
+          11
         ],
         "Agility": [
           0,
@@ -2374,7 +3041,9 @@ export const GEARS = {
           33,
           36,
           40,
-          43
+          43,
+          46,
+          50
         ]
       }
     },
@@ -2398,7 +3067,9 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1k"
+          "1k",
+          "1.5k",
+          "5k"
         ],
         "Price": [
           "",
@@ -2413,7 +3084,9 @@ export const GEARS = {
           "250k",
           "291.7k",
           "333.4k",
-          "416.7k"
+          "416.7k",
+          "750k",
+          "5m"
         ]
       },
       "skills": {
@@ -2430,7 +3103,9 @@ export const GEARS = {
           7,
           8,
           8,
-          9
+          9,
+          9,
+          10
         ],
         "Agility": [
           0,
@@ -2445,7 +3120,9 @@ export const GEARS = {
           33,
           36,
           40,
-          43
+          43,
+          46,
+          50
         ]
       }
     },
@@ -2494,8 +3171,10 @@ export const GEARS = {
           28,
           32,
           35,
-          40,
-          43
+          39,
+          43,
+          46,
+          50
         ]
       }
     },
@@ -2519,7 +3198,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "500",
+          ""
         ],
         "Price": [
           "",
@@ -2534,7 +3215,9 @@ export const GEARS = {
           "530k",
           "560k",
           "600k",
-          "700k"
+          "700k",
+          "1.85m",
+          ""
         ]
       },
       "skills": {
@@ -2551,7 +3234,9 @@ export const GEARS = {
           40,
           44,
           47,
-          51
+          51,
+          55,
+          58
         ]
       }
     },
@@ -2592,29 +3277,33 @@ export const GEARS = {
       "skills": {
         "Serve": [
           3,
+          3,
+          4,
           4,
           5,
           5,
           5,
           5,
-          5,
+          6,
           6,
           6,
           7,
           7
         ],
         "Agility": [
+          1,
+          3,
           5,
-          6,
           7,
-          11,
-          15,
-          19,
+          10,
+          13,
+          16,
+          20,
           24,
-          27,
-          30,
+          29,
           34,
-          37
+          36,
+          42
         ]
       }
     },
@@ -2658,13 +3347,15 @@ export const GEARS = {
           0,
           0,
           12,
-          12,
           13,
-          13,
+          14,
           14,
           15,
           16,
-          17
+          17,
+          18,
+          18,
+          19
         ],
         "Agility": [
           0,
@@ -2672,12 +3363,14 @@ export const GEARS = {
           0,
           8,
           12,
-          16,
-          20,
-          23,
-          26,
+          17,
+          22,
+          25,
           29,
-          32
+          33,
+          36,
+          38,
+          41
         ]
       }
     },
@@ -2699,6 +3392,8 @@ export const GEARS = {
           "400",
           "800",
           "1k",
+          "2k",
+          "2k",
           "2k"
         ],
         "Price": [
@@ -2712,6 +3407,8 @@ export const GEARS = {
           "15k",
           "21.7k",
           "27.5k",
+          "45.9k",
+          "45.9k",
           "45.9k"
         ]
       },
@@ -2725,9 +3422,11 @@ export const GEARS = {
           6,
           6,
           6,
-          7,
-          7,
-          8
+          6,
+          6,
+          8,
+          8,
+          9
         ],
         "Agility": [
           1,
@@ -2739,8 +3438,10 @@ export const GEARS = {
           24,
           27,
           30,
-          34,
-          37
+          32,
+          37,
+          40,
+          44
         ]
       }
     },
@@ -2764,7 +3465,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "500",
+          ""
         ],
         "Price": [
           "",
@@ -2779,7 +3482,9 @@ export const GEARS = {
           "75k",
           "87.5k",
           "104.2k",
-          "183.4k"
+          "183.4k",
+          "",
+          ""
         ]
       },
       "skills": {
@@ -2796,7 +3501,9 @@ export const GEARS = {
           15,
           16,
           17,
-          18
+          18,
+          19,
+          20
         ],
         "Agility": [
           0,
@@ -2811,7 +3518,9 @@ export const GEARS = {
           29,
           32,
           35,
-          38
+          38,
+          41,
+          44
         ]
       }
     }
@@ -2876,7 +3585,9 @@ export const GEARS = {
           13,
           14,
           15,
-          16
+          16,
+          17,
+          18
         ],
         "Volley": [
           0,
@@ -2889,7 +3600,9 @@ export const GEARS = {
           16,
           18,
           19,
-          22
+          22,
+          24,
+          26
         ]
       }
     },
@@ -2913,7 +3626,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "500",
+          "1000"
         ],
         "Price": [
           "",
@@ -2928,7 +3643,9 @@ export const GEARS = {
           "250k",
           "291.7k",
           "333.4k",
-          "416.7k"
+          "416.7k",
+          "500k",
+          "800k"
         ]
       },
       "skills": {
@@ -2945,7 +3662,9 @@ export const GEARS = {
           36,
           39,
           43,
-          46
+          46,
+          49,
+          52
         ]
       }
     },
@@ -2969,7 +3688,9 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1k"
+          "1k",
+          "1.5k",
+          "2k"
         ],
         "Price": [
           "",
@@ -2984,7 +3705,9 @@ export const GEARS = {
           "116.7k",
           "150k",
           "183.4k",
-          "291.7k"
+          "291.7k",
+          "750k",
+          ""
         ]
       },
       "skills": {
@@ -3001,7 +3724,9 @@ export const GEARS = {
           4,
           5,
           5,
-          5
+          5,
+          6,
+          6
         ],
         "Volley": [
           0,
@@ -3016,7 +3741,9 @@ export const GEARS = {
           26,
           28,
           31,
-          33
+          33,
+          36,
+          38
         ]
       }
     },
@@ -3040,7 +3767,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "500",
+          ""
         ],
         "Price": [
           "",
@@ -3055,7 +3784,9 @@ export const GEARS = {
           "75K",
           "87.5K",
           "104.2k",
-          "183.4k"
+          "183.4k",
+          "500k",
+          ""
         ]
       },
       "skills": {
@@ -3072,7 +3803,9 @@ export const GEARS = {
           9,
           10,
           10,
-          11
+          11,
+          12,
+          12
         ],
         "Volley": [
           0,
@@ -3087,7 +3820,9 @@ export const GEARS = {
           20,
           22,
           24,
-          26
+          26,
+          28,
+          30
         ]
       }
     },
@@ -3129,7 +3864,7 @@ export const GEARS = {
         "Serve": [
           3,
           4,
-          4,
+          5,
           5,
           5,
           5,
@@ -3137,7 +3872,9 @@ export const GEARS = {
           6,
           6,
           7,
-          7
+          7,
+          7,
+          8
         ],
         "Volley": [
           0,
@@ -3150,7 +3887,9 @@ export const GEARS = {
           22,
           24,
           27,
-          29
+          29,
+          32,
+          38
         ]
       }
     },
@@ -3200,7 +3939,9 @@ export const GEARS = {
           3,
           4,
           4,
-          4
+          4,
+          4,
+          5
         ],
         "Volley": [
           0,
@@ -3213,7 +3954,9 @@ export const GEARS = {
           22,
           24,
           27,
-          29
+          29,
+          32,
+          34
         ]
       }
     },
@@ -3237,7 +3980,9 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1k"
+          "1k",
+          "1.5k",
+          "5k"
         ],
         "Price": [
           "",
@@ -3252,7 +3997,9 @@ export const GEARS = {
           "530k",
           "560k",
           "600k",
-          "700k"
+          "700k",
+          "",
+          "7.5m"
         ]
       },
       "skills": {
@@ -3269,7 +4016,9 @@ export const GEARS = {
           7,
           8,
           8,
-          9
+          9,
+          9,
+          10
         ],
         "Volley": [
           0,
@@ -3284,7 +4033,9 @@ export const GEARS = {
           26,
           28,
           31,
-          33
+          33,
+          36,
+          38
         ]
       }
     },
@@ -3334,7 +4085,9 @@ export const GEARS = {
           29,
           32,
           34,
-          38
+          38,
+          41,
+          44
         ]
       }
     }
@@ -3373,7 +4126,9 @@ export const GEARS = {
           "800",
           "1k",
           "2k",
-          "4k"
+          "4k",
+          "7k",
+          "25k"
         ],
         "Price": [
           "",
@@ -3388,13 +4143,15 @@ export const GEARS = {
           "116.7k",
           "150k",
           "183.4k",
-          "291.7k"
+          "291.7k",
+          "750k",
+          "3m"
         ]
       },
       "skills": {
         "Forehand": [
           3,
-          3,
+          4,
           4,
           5,
           5,
@@ -3405,7 +4162,9 @@ export const GEARS = {
           6,
           7,
           7,
-          7
+          7,
+          8,
+          8
         ],
         "Stamina": [
           0,
@@ -3420,7 +4179,9 @@ export const GEARS = {
           23,
           26,
           28,
-          30
+          30,
+          32,
+          34
         ]
       }
     },
@@ -3444,7 +4205,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "500",
+          ""
         ],
         "Price": [
           "",
@@ -3459,7 +4222,9 @@ export const GEARS = {
           "250k",
           "291.7k",
           "333.4k",
-          "416.7k"
+          "416.7k",
+          "1.2m",
+          ""
         ]
       },
       "skills": {
@@ -3476,7 +4241,9 @@ export const GEARS = {
           13,
           14,
           15,
-          15
+          15,
+          16,
+          17
         ],
         "Stamina": [
           0,
@@ -3491,7 +4258,9 @@ export const GEARS = {
           17,
           18,
           20,
-          22
+          22,
+          24,
+          25
         ]
       }
     },
@@ -3531,10 +4300,12 @@ export const GEARS = {
       },
       "skills": {
         "Forehand": [
-          0,
-          0,
-          4,
-          4,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
           4,
           4,
           4,
@@ -3545,16 +4316,18 @@ export const GEARS = {
         ],
         "Stamina": [
           0,
-          0,
+          2,
           3,
           6,
-          10,
-          13,
+          9,
+          12,
+          15,
           18,
-          20,
-          22,
-          24,
-          26
+          21,
+          23,
+          26,
+          28,
+          30
         ]
       }
     },
@@ -3578,7 +4351,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "",
+          ""
         ],
         "Price": [
           "",
@@ -3593,7 +4368,9 @@ export const GEARS = {
           "75k",
           "87.5k",
           "104.2k",
-          "183.4k"
+          "183.4k",
+          "",
+          ""
         ]
       },
       "skills": {
@@ -3610,7 +4387,9 @@ export const GEARS = {
           35,
           38,
           41,
-          44
+          44,
+          47,
+          49
         ]
       }
     },
@@ -3660,7 +4439,9 @@ export const GEARS = {
           28,
           31,
           34,
-          36
+          36,
+          39,
+          42
         ]
       }
     },
@@ -3682,7 +4463,9 @@ export const GEARS = {
           "30",
           "60",
           "120",
-          "240"
+          "240",
+          "",
+          ""
         ],
         "Price": [
           "",
@@ -3695,27 +4478,31 @@ export const GEARS = {
           "27.5k",
           "35.9k",
           "45.9k",
-          "58.4k"
+          "58.4k",
+          "",
+          ""
         ]
       },
       "skills": {
         "Volley": [
-          0,
-          0,
-          0,
-          11,
-          11,
-          12,
+          8,
+          9,
+          10,
           12,
           13,
           14,
+          14,
           15,
-          16
+          16,
+          17,
+          19,
+          20,
+          21
         ],
         "Stamina": [
-          0,
-          0,
-          0,
+          -4,
+          -3,
+          -2,
           1,
           4,
           7,
@@ -3723,14 +4510,16 @@ export const GEARS = {
           13,
           15,
           17,
-          18
+          18,
+          20,
+          22
         ]
       }
     },
     {
       "url": "https://tennis-clash.fandom.com/wiki/Natural_Energy",
       "name": "Natural Energy",
-      "foundIn": "Tour 7 and above",
+      "foundIn": "Tour 8 and above",
       "rarity": "Rare",
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/7/77/Natural_Energy.png/revision/latest?cb=20200120003344",
       "upgrade": {
@@ -3747,7 +4536,9 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1k"
+          "1k",
+          "1.5k",
+          "5k"
         ],
         "Price": [
           "",
@@ -3762,7 +4553,9 @@ export const GEARS = {
           "530k",
           "560k",
           "600k",
-          "700k"
+          "700k",
+          "1.85m",
+          "7.5m"
         ]
       },
       "skills": {
@@ -3779,7 +4572,9 @@ export const GEARS = {
           23,
           26,
           28,
-          30
+          30,
+          32,
+          34
         ],
         "Volley": [
           0,
@@ -3794,6 +4589,8 @@ export const GEARS = {
           7,
           8,
           8,
+          9,
+          9,
           9
         ]
       }
@@ -3844,7 +4641,9 @@ export const GEARS = {
           6,
           6,
           6,
-          7
+          7,
+          7,
+          8
         ],
         "Stamina": [
           0,
@@ -3857,7 +4656,9 @@ export const GEARS = {
           20,
           22,
           24,
-          26
+          26,
+          29,
+          31
         ]
       }
     }
@@ -3912,8 +4713,8 @@ export const GEARS = {
       },
       "skills": {
         "Stamina": [
-          0,
-          0,
+          3,
+          4,
           5,
           5,
           5,
@@ -3922,20 +4723,24 @@ export const GEARS = {
           6,
           7,
           7,
-          8
+          8,
+          8,
+          9
         ],
         "Serve": [
-          0,
-          0,
+          1,
+          3,
           4,
-          8,
-          12,
-          16,
+          6,
+          9,
+          13,
+          18,
           21,
-          24,
-          26,
+          23,
+          27,
           29,
-          31
+          31,
+          33
         ]
       }
     },
@@ -3959,7 +4764,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "",
+          ""
         ],
         "Price": [
           "",
@@ -3974,7 +4781,9 @@ export const GEARS = {
           "530k",
           "560k",
           "600k",
-          "700k"
+          "700k",
+          "",
+          ""
         ]
       },
       "skills": {
@@ -3991,7 +4800,9 @@ export const GEARS = {
           39,
           42,
           45,
-          48
+          48,
+          51,
+          54
         ]
       }
     },
@@ -4015,7 +4826,9 @@ export const GEARS = {
           "200",
           "400",
           "800",
-          "1k"
+          "1k",
+          "",
+          ""
         ],
         "Price": [
           "",
@@ -4030,7 +4843,9 @@ export const GEARS = {
           "250k",
           "291.7k",
           "333.4k",
-          "416.7k"
+          "416.7k",
+          "",
+          ""
         ]
       },
       "skills": {
@@ -4047,7 +4862,9 @@ export const GEARS = {
           6,
           7,
           7,
-          7
+          7,
+          7,
+          8
         ],
         "Serve": [
           0,
@@ -4062,7 +4879,9 @@ export const GEARS = {
           28,
           30,
           33,
-          35
+          35,
+          38,
+          40
         ]
       }
     },
@@ -4112,7 +4931,9 @@ export const GEARS = {
           5,
           5,
           6,
-          6
+          6,
+          6,
+          7
         ],
         "Serve": [
           1,
@@ -4125,7 +4946,9 @@ export const GEARS = {
           24,
           26,
           29,
-          31
+          31,
+          34,
+          36
         ]
       }
     },
@@ -4165,9 +4988,9 @@ export const GEARS = {
       },
       "skills": {
         "Stamina": [
-          0,
-          0,
-          0,
+          8,
+          10,
+          11,
           12,
           12,
           13,
@@ -4175,20 +4998,24 @@ export const GEARS = {
           14,
           15,
           16,
-          17
+          17,
+          18,
+          20
         ],
         "Serve": [
-          0,
-          0,
-          0,
-          2,
+          -3,
+          -2,
+          -1,
           6,
-          11,
-          15,
-          18,
-          20,
-          22,
-          24
+          10,
+          13,
+          17,
+          19,
+          21,
+          23,
+          26,
+          29,
+          31
         ]
       }
     },
@@ -4212,7 +5039,9 @@ export const GEARS = {
           "60",
           "100",
           "150",
-          "300"
+          "300",
+          "500",
+          ""
         ],
         "Price": [
           "",
@@ -4227,7 +5056,9 @@ export const GEARS = {
           "116.7k",
           "150k",
           "183.4k",
-          "291.7k"
+          "291.7k",
+          "750k",
+          ""
         ]
       },
       "skills": {
@@ -4244,7 +5075,9 @@ export const GEARS = {
           13,
           14,
           15,
-          15
+          15,
+          16,
+          17
         ],
         "Serve": [
           0,
@@ -4259,7 +5092,9 @@ export const GEARS = {
           22,
           24,
           26,
-          28
+          28,
+          30,
+          32
         ]
       }
     },
@@ -4309,7 +5144,9 @@ export const GEARS = {
           31,
           34,
           36,
-          40
+          40,
+          43,
+          46
         ]
       }
     },
@@ -4333,7 +5170,9 @@ export const GEARS = {
           "800",
           "1k",
           "2k",
-          "4k"
+          "4k",
+          "7k",
+          "15k"
         ],
         "Price": [
           "",
@@ -4348,7 +5187,9 @@ export const GEARS = {
           "75k",
           "87.5k",
           "104.2k",
-          "183.4k"
+          "183.4k",
+          "500k",
+          ""
         ]
       },
       "skills": {
@@ -4365,7 +5206,9 @@ export const GEARS = {
           8,
           8,
           9,
-          10
+          10,
+          10,
+          11
         ],
         "Serve": [
           1,
@@ -4380,7 +5223,9 @@ export const GEARS = {
           28,
           30,
           33,
-          35
+          35,
+          38,
+          40
         ]
       }
     }

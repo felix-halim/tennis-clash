@@ -174,7 +174,7 @@ export const GEARS = {
           16,
           17,
           18,
-          0,
+          20,
           22
         ],
         "Stamina": [
@@ -189,7 +189,7 @@ export const GEARS = {
           10,
           11,
           12,
-          0,
+          13,
           14
         ],
         "Serve": [
@@ -204,7 +204,7 @@ export const GEARS = {
           10,
           10,
           11,
-          0,
+          11,
           12
         ],
         "Volley": [
@@ -219,7 +219,7 @@ export const GEARS = {
           11,
           12,
           13,
-          0,
+          13,
           14
         ],
         "Forehand": [
@@ -234,7 +234,7 @@ export const GEARS = {
           13,
           14,
           15,
-          0,
+          16,
           17
         ],
         "Backhand": [
@@ -395,7 +395,9 @@ export const GEARS = {
           "20",
           "40",
           "60",
-          "100"
+          "100",
+          "?",
+          "?"
         ],
         "Price": [
           "/",
@@ -408,7 +410,9 @@ export const GEARS = {
           "66k",
           "86k",
           "110k",
-          "180k"
+          "180k",
+          "?",
+          "?"
         ]
       },
       "skills": {
@@ -551,7 +555,7 @@ export const GEARS = {
           11,
           12,
           13,
-          0,
+          14,
           0,
           0,
           17
@@ -566,7 +570,7 @@ export const GEARS = {
           7,
           8,
           8,
-          0,
+          9,
           0,
           0,
           11
@@ -581,7 +585,7 @@ export const GEARS = {
           10,
           11,
           12,
-          0,
+          13,
           0,
           0,
           16
@@ -596,7 +600,7 @@ export const GEARS = {
           6,
           7,
           8,
-          0,
+          8,
           0,
           0,
           11
@@ -611,7 +615,7 @@ export const GEARS = {
           16,
           18,
           19,
-          0,
+          20,
           0,
           0,
           23
@@ -626,7 +630,7 @@ export const GEARS = {
           11,
           12,
           13,
-          0,
+          14,
           0,
           0,
           17
@@ -2096,9 +2100,9 @@ export const GEARS = {
       "imageUrl": "https://vignette.wikia.nocookie.net/tennis-clash/images/2/27/The_Panther.png/revision/latest?cb=20200119163628",
       "upgrade": {
         "Cards": [
-          "L",
-          "L",
-          "UL",
+          "",
+          "",
+          "",
           "2",
           "4",
           "10",
@@ -2722,21 +2726,7 @@ export const GEARS = {
           "35.9k",
           "45.9k",
           "75k",
-          "200k",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "200k"
         ]
       },
       "skills": {
@@ -4411,7 +4401,9 @@ export const GEARS = {
           "30",
           "60",
           "120",
-          "240"
+          "240",
+          "?",
+          "?"
         ],
         "Price": [
           "",
@@ -4424,7 +4416,9 @@ export const GEARS = {
           "10.9k",
           "15k",
           "21.7k",
-          "27.5k"
+          "27.5k",
+          "?",
+          "?"
         ]
       },
       "skills": {

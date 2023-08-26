@@ -1,5 +1,7 @@
-const { assert } = require('console');
+const fs = require('fs');
 const https = require('https');
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
 const GEARS_URLS = {
   'Character': [
@@ -7,12 +9,15 @@ const GEARS_URLS = {
     'https://tennis-clash.fandom.com/wiki/Hope',
     'https://tennis-clash.fandom.com/wiki/Florence',
     'https://tennis-clash.fandom.com/wiki/Leo',
+    'https://tennis-clash.fandom.com/wiki/Hyun-Jun',
     'https://tennis-clash.fandom.com/wiki/Kaito',
+    'https://tennis-clash.fandom.com/wiki/Anton',
     'https://tennis-clash.fandom.com/wiki/Viktoria',
+    'https://tennis-clash.fandom.com/wiki/Omar',
     'https://tennis-clash.fandom.com/wiki/Diana',
+    'https://tennis-clash.fandom.com/wiki/Abeke',
     'https://tennis-clash.fandom.com/wiki/Mei-Li',
     'https://tennis-clash.fandom.com/wiki/Luc',
-    'https://tennis-clash.fandom.com/wiki/Omar',
   ],
   'Racket': [
     'https://tennis-clash.fandom.com/wiki/Starter_Racket',
@@ -83,6 +88,7 @@ const GEARS_URLS = {
 };
 
 function get(url) {
+  console.log(`Fetching data for ${url}`);
   return new Promise((resolve, reject) => {
     https.get(url, (resp) => {
       let data = '';
@@ -101,93 +107,61 @@ function get(url) {
 }
 
 async function get_and_parse(url) {
+  const s = await get(url);
+  const document = new JSDOM(s).window.document;
   const item = {
     url,
-    name: '',
-    foundIn: '',
-    rarity: '',
-    imageUrl: '',
+    name: document.querySelector("#firstHeading").textContent.trim(),
+    foundIn: document.querySelector("[data-source='found_in'] .pi-data-value")?.textContent.trim(),
+    rarity: document.querySelector("[data-source='rarity'] .pi-data-value")?.textContent.trim(),
+    imageUrl: document.querySelector(".image")?.href.replace('static.', 'vignette.'),
     upgrade: {},
     skills: {}
   };
-  const s = await get(url);
 
-  let meta = 'class="page-header__title" id="firstHeading">';
-  let i = s.indexOf(meta) + meta.length;
-  let j = s.indexOf('</h1>', i);
-  item.name = s.substring(i, j).trim();
-
-  meta = '>Found in</h3>';
-  i = s.indexOf(meta);
-  if (i !== -1) {
-    meta = '<div class="pi-data-value pi-font">';
-    i = s.indexOf(meta, i) + meta.length;
-    j = s.indexOf('</div>', i);
-    item.foundIn = s.substring(i, j);
-  }
-
-  meta = '>Rarity</h3>';
-  i = s.indexOf(meta);
-  if (i !== -1) {
-    meta = '<div class="pi-data-value pi-font">';
-    i = s.indexOf(meta, i) + meta.length;
-    j = s.indexOf('</div>', i);
-    item.rarity = s.substring(i, j);
-  }
-
-  meta = 'href="https://static.wikia.nocookie.net/tennis-clash/images';
-  i = s.indexOf(meta) + 6;
-  j = s.indexOf('"', i);
-  item.imageUrl = s.substring(i, j).replace('static.', 'vignette.');
-
-  const read_row = (startIdx, endIdx, prefix) => {
-    const cols = [];
-    while (true) {
-      const idx = s.indexOf(prefix, startIdx);
-      if (idx == -1 || idx >= endIdx) return cols;
-      let end = s.indexOf('\n', idx);
-      const endBr = s.indexOf('<br', idx);
-      if (endBr != -1) end = Math.min(end, endBr);
-      cols.push(s.substring(idx + prefix.length, end));
-      startIdx = idx + 1;
+  const tables = [
+    {
+      tableId: "Upgrade_Table",
+      rowSelector: "tr:nth-child(2)",
+      itemProperty: "upgrade"
+    },
+    {
+      tableId: "Upgrade_Table",
+      rowSelector: "tr:nth-child(3)",
+      itemProperty: "upgrade"
+    },
+    {
+      tableId: "Skills_Table",
+      rowSelector: "tr:nth-child(n+2)",
+      itemProperty: "skills"
     }
+  ];
+
+  const read_row = (cells, skills = false) => {
+    const rowData = [];
+    cells.forEach((cell, i) => {
+      cell = cell.textContent.trim();
+      if (skills) cell = i ? +cell || 0 : cell;
+      rowData.push(cell);
+    });
+    console.log(`${rowData[0]} data scraped`);
+    return rowData;
   };
 
-  // Upgrade costs
-  const startUpgrade = s.indexOf('id="Upgrade_');
-  if (startUpgrade != -1) {
-    const endUpgrade = s.indexOf('</th></tr>', startUpgrade);
-    const levels = read_row(startUpgrade, endUpgrade, '<th>');
-    for (let l = 1; l < levels.length; l++)
-      if (+levels[l] != l) console.error('Level', l, url);
+  tables.forEach((table) => {
+    const { tableId, rowSelector, itemProperty } = table;
+    const tableData = document.getElementById(tableId)?.parentElement.nextElementSibling;
 
-    const endCards = s.indexOf('</td></tr>', endUpgrade);
-    const cards = read_row(endUpgrade, endCards, '<td>');
-    if (cards[0] != 'Cards') console.error('Cards', cards[0], url);
-    item.upgrade[cards.shift()] = cards;
+    if (tableData) {
+      const tableRows = tableData.querySelectorAll(rowSelector);
+      tableRows.forEach((row) => {
+        const rowData = read_row(row.querySelectorAll("td"), ["skills"].includes(itemProperty));
+        item[itemProperty][rowData.shift()] = rowData;
+      });
+    }
+  })
 
-    const endPrice = s.indexOf('</table>', endCards);
-    const price = read_row(endCards, endPrice, '<td>');
-    if (price[0] != 'Price') console.error('Price', price[0], url);
-    item.upgrade[price.shift()] = price;
-  }
-
-  // Skills
-  const startSkill = s.indexOf('id="Skills_');
-  const endSkill = s.indexOf('</table>', startSkill);
-  const skillLevels = read_row(startSkill, endSkill, '<th>');
-  for (let l = 1; l < skillLevels.length; l++)
-    if (+skillLevels[l] != l) console.error('Skills', +skillLevels[l], l, url);
-
-  for (let i = startSkill; ;) {
-    const endAttr = s.indexOf('</td></tr>', i);
-    if (endAttr == -1 || endAttr >= endSkill) break;
-    const attr = read_row(i, endAttr, '<td>');
-    item.skills[attr.shift()] = attr;
-    for (let j = 0; j < attr.length; j++)
-      attr[j] = +attr[j] || 0;
-    i = endAttr + 1;
-  }
+  // console.log(item)
   return item;
 }
 
@@ -209,5 +183,12 @@ async function get_and_parse(url) {
       }
     }
   }
-  console.log('export const GEARS = ' + JSON.stringify(GEARS, null, 2) + ';');
+  // console.log(JSON.stringify(GEARS, null, 2));
+  fs.writeFile('./gears.ts', 'export const GEARS = ' + JSON.stringify(GEARS, null, 2) + ';', err => {
+    if (err) {
+      console.log('Error writing file', err)
+    } else {
+      console.log('Successfully wrote file')
+    }
+  })
 })();
